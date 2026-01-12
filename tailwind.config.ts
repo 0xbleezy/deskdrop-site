@@ -9,50 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Premium Chocolate Color Palette
-        chocolate: {
-          50: '#F5F3F0',
-          100: '#E8E0D6',
-          200: '#D4C4B0',
-          300: '#B89D7A',
-          400: '#9A7A5A',
-          500: '#5C4033', // Primary chocolate brown
-          600: '#3D2817', // Deep chocolate
-          700: '#2D1E12',
-          800: '#1F150D',
-          900: '#120C08',
+        // Minimalist Neutral Palette - Loro Piana/Aesop Style
+        neutral: {
+          50: '#FAFAFA',
+          100: '#F5F5F0',
+          200: '#E8E8E3',
+          300: '#E5E5E5',
+          400: '#D4D4D4',
+          500: '#A3A3A3',
+          600: '#737373',
+          700: '#525252',
+          800: '#404040',
+          900: '#1A1A1A', // Primary text
+          950: '#000000', // Pure black
         },
-        gold: {
-          50: '#FDF9F0',
-          100: '#FAF2D9',
-          200: '#F5E4B3',
-          300: '#EFD088',
-          400: '#E8C55C',
-          500: '#C9A961', // Primary gold accent
-          600: '#B8954F',
-          700: '#9A7A3F',
-          800: '#7C5F2F',
-          900: '#5E451F',
-        },
-        burgundy: {
-          50: '#F8F4F2',
-          100: '#EDE0D6',
-          200: '#D9C1AD',
-          300: '#C5A284',
-          400: '#B1835B',
-          500: '#8B4513', // Primary burgundy
-          600: '#6B3410',
-          700: '#4B240B',
-          800: '#2B1406',
-          900: '#0B0401',
-        },
+        // Keep cream for subtle backgrounds
         cream: {
-          50: '#FAF9F6',
-          100: '#F5F3F0',
-          200: '#EBE7E0',
-          300: '#E1DBD0',
-          400: '#D7CFC0',
-          500: '#CDC3B0',
+          50: '#FAFAFA',
+          100: '#F5F5F0',
+          200: '#E8E8E3',
         },
       },
       fontFamily: {
@@ -60,18 +35,25 @@ const config: Config = {
         serif: ['var(--font-playfair)', 'Georgia', 'serif'],
         display: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
+      fontSize: {
+        '8xl': ['6rem', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
+        '9xl': ['8rem', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
+        '10xl': ['10rem', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
+      },
       lineHeight: {
-        'relaxed': '1.75',
-        'loose': '1.8',
+        'relaxed': '1.8',
+        'loose': '2.0',
+        'editorial': '1.9',
       },
       spacing: {
         '18': '4.5rem',
         '88': '22rem',
         '128': '32rem',
+        '144': '36rem',
+        '160': '40rem',
       },
-      boxShadow: {
-        'luxury': '0 10px 40px -10px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05)',
-        'luxury-lg': '0 20px 60px -15px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05)',
+      maxWidth: {
+        'editorial': '1200px',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

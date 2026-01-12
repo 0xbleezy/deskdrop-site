@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FAF9F6;
-  --foreground: #171717;
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
 }
 
 @theme inline {
@@ -16,19 +16,36 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
-  line-height: 1.75;
+  line-height: 1.9;
+  font-size: 18px;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Premium Typography */
+/* Editorial Typography - Loro Piana/Aesop Style */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-playfair), Georgia, serif;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+h1 {
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 300;
+}
+
+h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 300;
+}
+
+h3 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
 }
 
 /* Smooth scroll animations */

@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-cream-50 text-gray-900 pb-20 md:pb-0`}
+        className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-white text-neutral-900 pb-20 md:pb-0`}
       >
         <Navigation />
         {children}

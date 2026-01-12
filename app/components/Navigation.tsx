@@ -24,56 +24,50 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/98 shadow-luxury backdrop-blur-md'
-          : 'bg-white/95 backdrop-blur-sm'
+          ? 'bg-white/90'
+          : 'bg-white/80'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-editorial mx-auto px-8">
+        <div className="flex justify-between items-center h-14">
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-2xl font-display font-bold text-chocolate-700 hover:text-chocolate-600 transition-colors"
+              className="text-sm font-light text-neutral-900 hover:text-neutral-600 transition-colors tracking-wider uppercase"
             >
               Chocolate Gifting
             </button>
           </div>
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-12">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-chocolate-600 hover:text-chocolate-700 transition-colors font-medium"
+              className="text-xs text-neutral-600 hover:text-neutral-900 transition-colors font-light tracking-widest uppercase"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-chocolate-600 hover:text-chocolate-700 transition-colors font-medium"
+              className="text-xs text-neutral-600 hover:text-neutral-900 transition-colors font-light tracking-widest uppercase"
             >
-              Corporate Gifts
+              Services
             </button>
             <button
               onClick={() => scrollToSection('star-product')}
-              className="text-chocolate-600 hover:text-chocolate-700 transition-colors font-medium"
+              className="text-xs text-neutral-600 hover:text-neutral-900 transition-colors font-light tracking-widest uppercase"
             >
-              Star Product
-            </button>
-            <button
-              onClick={() => scrollToSection('about')}
-              className="text-chocolate-600 hover:text-chocolate-700 transition-colors font-medium"
-            >
-              About
+              Product
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-chocolate-600 hover:text-chocolate-700 transition-colors font-medium"
+              className="text-xs text-neutral-600 hover:text-neutral-900 transition-colors font-light tracking-widest uppercase"
             >
               Contact
             </button>
           </div>
           <div className="md:hidden">
-            <button className="text-gray-700 hover:text-gray-900">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <button className="text-neutral-600">
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </div>
@@ -82,4 +76,3 @@ export default function Navigation() {
     </nav>
   );
 }
-

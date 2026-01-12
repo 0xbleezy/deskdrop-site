@@ -20,7 +20,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
     console.log('Form submitted:', formData);
     alert('Thank you for your inquiry! We will contact you soon.');
   };
@@ -33,26 +32,26 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-cream-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-chocolate-700 mb-4">
+    <section id="contact" className="py-32 bg-white">
+      <div className="max-w-editorial mx-auto px-8">
+        <div className="text-center mb-24">
+          <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Get Started Today
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
             Request a quote, sample, or speak with our corporate gifting specialists
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-20">
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl p-8 shadow-luxury-lg border border-gray-200">
-            <h3 className="text-2xl font-display font-bold text-chocolate-700 mb-6">
+          <div className="border-t border-neutral-200 pt-12">
+            <h3 className="text-2xl font-display font-light text-neutral-950 mb-12">
               Request a Quote
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-8">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
                   Full Name
                 </label>
                 <input
@@ -62,11 +61,11 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
                   Email Address
                 </label>
                 <input
@@ -76,11 +75,11 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light"
                 />
               </div>
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="company" className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
                   Company Name
                 </label>
                 <input
@@ -89,11 +88,11 @@ export default function Contact() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light"
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="phone" className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
                   Phone Number
                 </label>
                 <input
@@ -102,11 +101,11 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
                   Message
                 </label>
                 <textarea
@@ -115,13 +114,13 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light resize-none"
                   placeholder="Tell us about your gifting needs..."
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-chocolate-600 text-white rounded-xl font-semibold text-lg hover:bg-chocolate-700 transition-all shadow-luxury hover:shadow-luxury-lg transform hover:-translate-y-1"
+                className="w-full px-8 py-4 bg-neutral-950 text-white text-xs uppercase tracking-widest font-light hover:bg-neutral-800 transition-colors mt-8"
               >
                 Submit Request
               </button>
@@ -129,56 +128,23 @@ export default function Contact() {
           </div>
 
           {/* Contact Information */}
-          <div>
-            <div className="bg-white rounded-2xl p-8 shadow-luxury border border-gray-200 mb-8">
-              <h3 className="text-2xl font-display font-bold text-chocolate-700 mb-6">
-                Contact Information
-              </h3>
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="text-2xl mr-4">📞</div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-600">(310) 826-3380</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="text-2xl mr-4">✉️</div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">support@chocolategifting.com</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="text-2xl mr-4">🕒</div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Business Hours</h4>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM PST</p>
-                  </div>
-                </div>
+          <div className="border-t border-neutral-200 pt-12">
+            <h3 className="text-2xl font-display font-light text-neutral-950 mb-12">
+              Contact Information
+            </h3>
+            <div className="space-y-10">
+              <div>
+                <h4 className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">Phone</h4>
+                <p className="text-base text-neutral-950 font-light">(310) 826-3380</p>
               </div>
-            </div>
-
-            {/* Multiple CTA Buttons */}
-            <div className="space-y-4">
-              <button 
-                onClick={focusForm}
-                className="w-full px-6 py-4 bg-chocolate-600 text-white rounded-xl font-semibold hover:bg-chocolate-700 transition-all shadow-luxury hover:shadow-luxury-lg transform hover:-translate-y-1"
-              >
-                Contact Us
-              </button>
-              <button 
-                onClick={focusForm}
-                className="w-full px-6 py-4 bg-white text-chocolate-700 border-2 border-chocolate-600 rounded-xl font-semibold hover:bg-cream-50 transition-all shadow-luxury hover:shadow-luxury-lg transform hover:-translate-y-1"
-              >
-                Get Started
-              </button>
-              <button 
-                onClick={focusForm}
-                className="w-full px-6 py-4 bg-cream-100 text-chocolate-700 rounded-xl font-semibold hover:bg-cream-200 transition-all"
-              >
-                Learn More
-              </button>
+              <div>
+                <h4 className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">Email</h4>
+                <p className="text-base text-neutral-950 font-light">support@chocolategifting.com</p>
+              </div>
+              <div>
+                <h4 className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">Business Hours</h4>
+                <p className="text-base text-neutral-950 font-light">Monday - Friday: 9:00 AM - 6:00 PM PST</p>
+              </div>
             </div>
           </div>
         </div>
@@ -186,4 +152,3 @@ export default function Contact() {
     </section>
   );
 }
-
