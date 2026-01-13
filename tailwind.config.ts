@@ -29,6 +29,10 @@ const config: Config = {
           100: '#F5F5F0',
           200: '#E8E8E3',
         },
+        // Custom background
+        page: {
+          bg: '#f9f8fa',
+        },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],

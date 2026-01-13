@@ -41,7 +41,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-20 bg-cream-50">
+    <section className="py-20" style={{ backgroundColor: '#f9f8fa' }}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-chocolate-600 mb-4">

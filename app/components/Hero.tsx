@@ -36,49 +36,52 @@ export default function Hero() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+    <section id="hero" className="relative min-h-screen flex items-end justify-center overflow-hidden" style={{ backgroundColor: '#f9f8fa' }}>
       {/* Full Viewport Hero Image */}
       <div className="absolute inset-0 z-0">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1606312619070-d48b4bdc5e3b?w=1920&q=80')"
+            backgroundImage: "url('https://weary-plum-57sim2yjwn.edgeone.app/prospecting%20jar%20on%20desk.png')"
           }}
         >
-          <div className="absolute inset-0 bg-white/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-white/20 to-transparent"></div>
         </div>
       </div>
 
-      <div className="relative z-10 max-w-editorial mx-auto px-8 py-32 w-full">
-        <div className="text-center">
-          {/* Massive Typography */}
-          <h1 className="text-8xl md:text-9xl font-display font-light text-neutral-950 mb-8 leading-none tracking-tight">
-            Win Desk<br />Ad Space
+      <div className="relative z-10 w-full px-8 pb-16 md:pb-24">
+        <div className="max-w-full mx-auto">
+          {/* Massive Typography - Full Width */}
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-display font-light text-neutral-950 mb-8 leading-none tracking-tight text-center md:text-left">
+            Win Desk Ad Space
           </h1>
           
-          <p className="text-xl md:text-2xl text-neutral-700 mb-16 font-light max-w-2xl mx-auto leading-relaxed">
-            Cut through digital noise with physical touchpoints.<br />
-            A prospecting gift that sits on their desk.
-          </p>
-
-          {/* Minimal Stats */}
-          <div className="flex justify-center gap-16 mb-20">
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-2">
+          {/* Stats directly under headline */}
+          <div className="flex justify-center md:justify-start gap-12 md:gap-16 mb-12">
+            <div className="text-center md:text-left">
+              <div className="text-5xl md:text-6xl font-display font-light text-neutral-950 mb-2">
                 {replyRate}%
               </div>
               <div className="text-xs text-neutral-600 uppercase tracking-widest font-light">Reply Rate</div>
             </div>
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-2">
+            <div className="text-center md:text-left">
+              <div className="text-5xl md:text-6xl font-display font-light text-neutral-950 mb-2">
                 {exposure}x
               </div>
               <div className="text-xs text-neutral-600 uppercase tracking-widest font-light">Daily Exposure</div>
             </div>
           </div>
 
-          {/* Minimal CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          {/* Description */}
+          <div className="mb-12">
+            <p className="text-lg md:text-xl text-neutral-700 font-light leading-relaxed max-w-2xl">
+              Cut through digital noise with physical touchpoints.<br />
+              A prospecting gift that sits on their desk.
+            </p>
+          </div>
+
+          {/* Minimal CTAs - Full Width */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
               onClick={scrollToContact}
               className="px-12 py-4 bg-neutral-950 text-white text-sm uppercase tracking-widest font-light hover:bg-neutral-800 transition-colors"

@@ -23,7 +23,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-32 bg-white">
+    <section className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
       <div className="max-w-editorial mx-auto px-8">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
@@ -51,25 +51,6 @@ export default function HowItWorks() {
               </p>
             </div>
           ))}
-        </div>
-
-        {/* Integration Mentions - Minimal */}
-        <div className="mt-24 border-t border-neutral-200 pt-16">
-          <div className="text-center">
-            <p className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-8">
-              Works With Your Existing Tools
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-8">
-              {['Salesforce', 'HubSpot', 'Outreach.io', 'Salesforce Pardot'].map((tool) => (
-                <div
-                  key={tool}
-                  className="text-sm text-neutral-600 font-light"
-                >
-                  {tool}
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 export default function Customization() {
   return (
-    <section id="customization" className="py-20 bg-cream-50">
+    <section id="customization" className="py-20" style={{ backgroundColor: '#f9f8fa' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-chocolate-700 mb-4">
@@ -13,7 +13,6 @@ export default function Customization() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="bg-white rounded-2xl p-6 text-center shadow-luxury border border-gray-200 hover:shadow-luxury-lg transition-all transform hover:-translate-y-1">
-            <div className="text-5xl mb-4">🎨</div>
             <h3 className="text-xl font-display font-bold text-chocolate-700 mb-3">
               Logo Branding
             </h3>
@@ -23,7 +22,6 @@ export default function Customization() {
           </div>
 
           <div className="bg-white rounded-2xl p-6 text-center shadow-luxury border border-gray-200 hover:shadow-luxury-lg transition-all transform hover:-translate-y-1">
-            <div className="text-5xl mb-4">💬</div>
             <h3 className="text-xl font-display font-bold text-chocolate-700 mb-3">
               Value Props
             </h3>
@@ -33,7 +31,6 @@ export default function Customization() {
           </div>
 
           <div className="bg-white rounded-2xl p-6 text-center shadow-luxury border border-gray-200 hover:shadow-luxury-lg transition-all transform hover:-translate-y-1">
-            <div className="text-5xl mb-4">📦</div>
             <h3 className="text-xl font-display font-bold text-chocolate-700 mb-3">
               Branded Packaging
             </h3>
@@ -43,7 +40,6 @@ export default function Customization() {
           </div>
 
           <div className="bg-white rounded-2xl p-6 text-center shadow-luxury border border-gray-200 hover:shadow-luxury-lg transition-all transform hover:-translate-y-1">
-            <div className="text-5xl mb-4">💼</div>
             <h3 className="text-xl font-display font-bold text-chocolate-700 mb-3">
               Volume Pricing
             </h3>

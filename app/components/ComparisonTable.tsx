@@ -52,32 +52,32 @@ export default function ComparisonTable() {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-chocolate-600 mb-4">
+    <section className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
+      <div className="max-w-editorial mx-auto px-8">
+        <div className="text-center mb-24">
+          <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Why Physical Gifts Win
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
             See how prospecting gifts outperform traditional outreach methods
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-luxury-lg border border-gray-200 overflow-hidden">
+        <div className="border border-neutral-200 overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="bg-cream-50 border-b border-gray-200">
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-chocolate-700">
+                <tr className="border-b border-neutral-200">
+                  <th className="px-6 py-4 text-left text-xs font-light text-neutral-950 uppercase tracking-widest">
                     Feature
                   </th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-chocolate-700 bg-gold-50">
+                  <th className="px-6 py-4 text-center text-xs font-light text-neutral-950 uppercase tracking-widest bg-neutral-50">
                     Your Gift
                   </th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-gray-700">
+                  <th className="px-6 py-4 text-center text-xs font-light text-neutral-600 uppercase tracking-widest">
                     Email
                   </th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-gray-700">
+                  <th className="px-6 py-4 text-center text-xs font-light text-neutral-600 uppercase tracking-widest">
                     Cold Call
                   </th>
                 </tr>
@@ -86,24 +86,24 @@ export default function ComparisonTable() {
                 {features.map((item, index) => (
                   <tr
                     key={index}
-                    className={`border-b border-gray-100 ${
-                      index % 2 === 0 ? 'bg-white' : 'bg-cream-50'
+                    className={`border-b border-neutral-100 ${
+                      index % 2 === 0 ? 'bg-white' : 'bg-neutral-50'
                     }`}
                   >
-                    <td className="px-6 py-4 text-sm font-medium text-gray-900">
+                    <td className="px-6 py-4 text-sm font-light text-neutral-950">
                       {item.feature}
                     </td>
-                    <td className={`px-6 py-4 text-center text-sm font-semibold ${
+                    <td className={`px-6 py-4 text-center text-sm font-light ${
                       item.yourGiftHighlight
-                        ? 'text-chocolate-700 bg-gold-50'
-                        : 'text-gray-700'
+                        ? 'text-neutral-950 bg-neutral-50'
+                        : 'text-neutral-700'
                     }`}>
                       {item.yourGift}
                     </td>
-                    <td className="px-6 py-4 text-center text-sm text-gray-600">
+                    <td className="px-6 py-4 text-center text-sm text-neutral-600 font-light">
                       {item.email}
                     </td>
-                    <td className="px-6 py-4 text-center text-sm text-gray-600">
+                    <td className="px-6 py-4 text-center text-sm text-neutral-600 font-light">
                       {item.coldCall}
                     </td>
                   </tr>
@@ -113,13 +113,13 @@ export default function ComparisonTable() {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-lg text-gray-700 mb-6">
+        <div className="mt-24 text-center border-t border-neutral-200 pt-16">
+          <p className="text-lg text-neutral-700 mb-8 font-light">
             Ready to see the difference a physical touchpoint can make?
           </p>
           <a
             href="#contact"
-            className="inline-block px-8 py-4 bg-chocolate-600 text-white rounded-lg font-semibold text-lg hover:bg-chocolate-700 transition-colors shadow-lg hover:shadow-xl"
+            className="inline-block px-12 py-4 bg-neutral-950 text-white text-sm uppercase tracking-widest font-light hover:bg-neutral-800 transition-colors"
           >
             Request a Sample
           </a>
@@ -128,4 +128,3 @@ export default function ComparisonTable() {
     </section>
   );
 }
-

@@ -24,8 +24,8 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/90'
-          : 'bg-white/80'
+          ? 'bg-[#f9f8fa]/90'
+          : 'bg-[#f9f8fa]/80'
       }`}
     >
       <div className="max-w-editorial mx-auto px-8">

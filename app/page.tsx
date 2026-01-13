@@ -7,8 +7,6 @@ import UseCases from './components/UseCases';
 import ComparisonTable from './components/ComparisonTable';
 import ROICalculator from './components/ROICalculator';
 import Customization from './components/Customization';
-import CaseStudies from './components/CaseStudies';
-import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 
@@ -24,8 +22,6 @@ export default function Home() {
       <ComparisonTable />
       <ROICalculator />
       <Customization />
-      <CaseStudies />
-      <Testimonials />
       <FAQ />
       <Contact />
     </main>

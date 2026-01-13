@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section id="services" className="py-32 bg-white">
+    <section id="services" className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
       <div className="max-w-editorial mx-auto px-8">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
