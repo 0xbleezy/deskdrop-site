@@ -16,7 +16,7 @@ export default function StarProduct() {
             The Prospecting Gift
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            Your star product for winning desk ad space and cutting through digital noise
+            Your competitive advantage in outbound sales and ABM programs
           </p>
         </div>
 
@@ -34,12 +34,19 @@ export default function StarProduct() {
           {/* Right - Content */}
           <div>
             <h3 className="text-4xl font-display font-light text-neutral-950 mb-8 leading-tight">
-              A Gift That Works Harder
+              A Play That Earns Real Attention
             </h3>
             <p className="text-lg text-neutral-600 mb-12 leading-relaxed font-light">
-              Send your prospect a beautifully branded chocolate jar that sits on their desk. 
-              Each chocolate wrapper features your logo and value prop, ensuring they see your 
-              brand multiple times - following the proven "12 times before they buy" marketing principle.
+              A physical touchpoint designed to break through inbox fatigue. Unlike email or cold calls, 
+              this gift sits on their desk—creating repeated, non-intrusive exposure to your brand every 
+              single day.
+              <br /><br />
+              Each time they reach for a chocolate, they see your logo and value proposition. No spam 
+              filters. No ignored calls. Just consistent, welcome brand presence that builds familiarity 
+              and goodwill.
+              <br /><br />
+              This gives your sellers a genuine reason to follow up that recipients actually appreciate, 
+              transforming cold outreach into warm conversations.
             </p>
 
             {/* Minimal Stats */}
@@ -57,20 +64,20 @@ export default function StarProduct() {
             {/* Value Propositions - Minimal */}
             <div className="space-y-6 mb-12">
               <div>
-                <h4 className="text-lg font-light text-neutral-950 mb-2">Wins Ad Space on Their Desk</h4>
-                <p className="text-base text-neutral-600 leading-relaxed font-light">Physical presence advantage over digital marketing</p>
+                <h4 className="text-lg font-light text-neutral-950 mb-2">Wins Attention Without Interruption</h4>
+                <p className="text-base text-neutral-600 leading-relaxed font-light">Unlike email and cold calls, this creates passive brand exposure that builds familiarity over time</p>
               </div>
               <div>
-                <h4 className="text-lg font-light text-neutral-950 mb-2">Cuts Through Digital Noise</h4>
-                <p className="text-base text-neutral-600 leading-relaxed font-light">Tangible touchpoint that stands out</p>
+                <h4 className="text-lg font-light text-neutral-950 mb-2">Reopens Stalled Conversations</h4>
+                <p className="text-base text-neutral-600 leading-relaxed font-light">The perfect reason to re-engage decision-makers who've gone quiet on your outreach attempts</p>
               </div>
               <div>
-                <h4 className="text-lg font-light text-neutral-950 mb-2">Account-Based Marketing Integration</h4>
-                <p className="text-base text-neutral-600 leading-relaxed font-light">Perfect for your sales and marketing strategy</p>
+                <h4 className="text-lg font-light text-neutral-950 mb-2">Integrates with Your ABM Strategy</h4>
+                <p className="text-base text-neutral-600 leading-relaxed font-light">Deploy at key moments in your account penetration plan—targeting decision-makers with precision</p>
               </div>
               <div>
-                <h4 className="text-lg font-light text-neutral-950 mb-2">Increases Deal Velocity</h4>
-                <p className="text-base text-neutral-600 leading-relaxed font-light">Creates goodwill and accelerates sales cycles</p>
+                <h4 className="text-lg font-light text-neutral-950 mb-2">Accelerates Deal Velocity</h4>
+                <p className="text-base text-neutral-600 leading-relaxed font-light">Creates goodwill that reduces sales resistance and speeds up sales cycles significantly</p>
               </div>
             </div>
 

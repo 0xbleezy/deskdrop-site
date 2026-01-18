@@ -3,75 +3,73 @@ export default function Customization() {
     <section id="customization" className="py-20" style={{ backgroundColor: '#f9f8fa' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-chocolate-700 mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Customization Options
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Make every gift uniquely yours with our comprehensive customization options
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
+            Every detail designed to reinforce your brand and value proposition
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-white rounded-2xl p-6 text-center shadow-luxury border border-gray-200 hover:shadow-luxury-lg transition-all transform hover:-translate-y-1">
-            <h3 className="text-xl font-display font-bold text-chocolate-700 mb-3">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="border-t border-neutral-200 pt-8 text-center">
+            <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
               Logo Branding
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Your logo prominently displayed on each chocolate wrapper for maximum brand visibility
+            <p className="text-neutral-600 leading-relaxed font-light">
+              Your logo prominently displayed on each wrapper. Maximum brand visibility where it matters most.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 text-center shadow-luxury border border-gray-200 hover:shadow-luxury-lg transition-all transform hover:-translate-y-1">
-            <h3 className="text-xl font-display font-bold text-chocolate-700 mb-3">
-              Value Props
+          <div className="border-t border-neutral-200 pt-8 text-center">
+            <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
+              Value Proposition Messaging
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Custom messaging and value propositions on wrappers to reinforce your key messages
+            <p className="text-neutral-600 leading-relaxed font-light">
+              Custom messaging on wrappers that reinforces your key value props. Each wrapper features your logo and messaging for consistent brand reinforcement.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 text-center shadow-luxury border border-gray-200 hover:shadow-luxury-lg transition-all transform hover:-translate-y-1">
-            <h3 className="text-xl font-display font-bold text-chocolate-700 mb-3">
+          <div className="border-t border-neutral-200 pt-8 text-center">
+            <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
               Branded Packaging
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Custom packaging with your brand colors, logo, and design elements
+            <p className="text-neutral-600 leading-relaxed font-light">
+              Custom jar and presentation that matches your brand. Professional first impression that sets the tone for the relationship.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 text-center shadow-luxury border border-gray-200 hover:shadow-luxury-lg transition-all transform hover:-translate-y-1">
-            <h3 className="text-xl font-display font-bold text-chocolate-700 mb-3">
+          <div className="border-t border-neutral-200 pt-8 text-center">
+            <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
               Volume Pricing
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Competitive pricing for bulk orders with volume discounts available
+            <p className="text-neutral-600 leading-relaxed font-light">
+              Competitive pricing for bulk orders. Volume discounts make it easier to scale across your entire prospect list.
             </p>
           </div>
         </div>
 
-        <div className="mt-12 bg-gradient-to-r from-chocolate-50 to-cream-50 rounded-2xl p-8 border border-chocolate-100 shadow-luxury">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-display font-bold text-chocolate-700 mb-4">
-              Personalized Gift Messages
-            </h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Add personalized messages, gift cards, or promotional materials to create a truly 
-              customized gifting experience for each recipient.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <span className="px-4 py-2 bg-white rounded-lg text-gray-700 border border-gray-200">
-                Custom Gift Cards
-              </span>
-              <span className="px-4 py-2 bg-white rounded-lg text-gray-700 border border-gray-200">
-                Personalized Notes
-              </span>
-              <span className="px-4 py-2 bg-white rounded-lg text-gray-700 border border-gray-200">
-                Promotional Materials
-              </span>
-              <span className="px-4 py-2 bg-white rounded-lg text-gray-700 border border-gray-200">
-                Holiday Cards
-              </span>
-            </div>
+        <div className="mt-24 border-t border-neutral-200 pt-16 text-center">
+          <h3 className="text-2xl font-display font-light text-neutral-950 mb-4 leading-tight">
+            Personalized Gift Messages
+          </h3>
+          <p className="text-neutral-600 mb-8 leading-relaxed font-light max-w-2xl mx-auto">
+            Add custom notes, gift cards, or promotional inserts to create truly personalized experiences 
+            for each recipient. Perfect for high-value accounts or executive-level outreach.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <span className="px-6 py-3 bg-white rounded-full text-neutral-700 border border-neutral-200 text-sm uppercase tracking-widest font-light">
+              Custom Gift Cards
+            </span>
+            <span className="px-6 py-3 bg-white rounded-full text-neutral-700 border border-neutral-200 text-sm uppercase tracking-widest font-light">
+              Personalized Notes
+            </span>
+            <span className="px-6 py-3 bg-white rounded-full text-neutral-700 border border-neutral-200 text-sm uppercase tracking-widest font-light">
+              Promotional Materials
+            </span>
+            <span className="px-6 py-3 bg-white rounded-full text-neutral-700 border border-neutral-200 text-sm uppercase tracking-widest font-light">
+              Holiday Cards
+            </span>
           </div>
         </div>
       </div>

@@ -37,7 +37,7 @@ export default function ComparisonTable() {
     },
     {
       feature: 'Cost per Touchpoint',
-      yourGift: '$25-35',
+      yourGift: '$35-50 per unit',
       email: '$0.10-1',
       coldCall: '$50-100',
       yourGiftHighlight: false,
@@ -56,10 +56,10 @@ export default function ComparisonTable() {
       <div className="max-w-editorial mx-auto px-8">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
-            Why Physical Gifts Win
+            Why This Works Where Other Channels Stall
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            See how prospecting gifts outperform traditional outreach methods
+            Behavioral advantages that drive different outcomes
           </p>
         </div>
 
@@ -111,6 +111,13 @@ export default function ComparisonTable() {
               </tbody>
             </table>
           </div>
+        </div>
+
+        <div className="mt-16 text-center">
+          <p className="text-base text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
+            The advantage: Repeated passive exposure builds familiarity without pressure, dramatically 
+            increasing the likelihood of a welcome reply when you reach out. It's cognitive economics, not spam.
+          </p>
         </div>
 
         <div className="mt-24 text-center border-t border-neutral-200 pt-16">

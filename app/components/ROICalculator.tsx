@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function ROICalculator() {
   const [prospects, setProspects] = useState(100);
-  const [costPerGift, setCostPerGift] = useState(30);
+  const [costPerGift, setCostPerGift] = useState(40);
   const [replyRate, setReplyRate] = useState(30);
   const [avgDealValue, setAvgDealValue] = useState(10000);
   const [closeRate, setCloseRate] = useState(20);
@@ -21,10 +21,11 @@ export default function ROICalculator() {
       <div className="max-w-editorial mx-auto px-8">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
-            Calculate Your ROI
+            Estimate Your Pipeline Impact
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            See the potential return on investment for your prospecting gift campaign
+            Input your campaign parameters to see projected replies and pipeline impact 
+            based on your deal sizes and conversion assumptions.
           </p>
         </div>
 
@@ -154,8 +155,14 @@ export default function ROICalculator() {
         </div>
 
         <div className="mt-24 text-center border-t border-neutral-200 pt-16">
-          <p className="text-sm text-neutral-600 mb-8 font-light">
-            * Calculations are estimates based on industry averages. Actual results may vary.
+          <p className="text-sm text-neutral-600 mb-4 font-light">
+            Results vary based on targeting, timing, and follow-up quality. These projections assume 
+            proper deployment within your sales motion.
+          </p>
+          <p className="text-xs text-neutral-500 mb-8 font-light italic">
+            * Calculations are estimates based on industry averages. Actual results vary based on 
+            targeting, timing, and follow-up execution. Pilot programs recommended to validate with 
+            your specific audience.
           </p>
           <a
             href="#contact"

@@ -39,7 +39,8 @@ export default function Contact() {
             Get Started Today
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            Request a quote, sample, or speak with our corporate gifting specialists
+            Request a sample, get a custom quote, or speak with our team about integrating prospect 
+            gifting into your outbound strategy
           </p>
         </div>
 
@@ -147,6 +148,14 @@ export default function Contact() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="mt-24 text-center border-t border-neutral-200 pt-16">
+          <p className="text-base text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
+            Typical campaigns: 50-75 jars for pilot programs, scalable to hundreds of prospects 
+            across multiple production cycles. Production takes 2 weeks—we'll help you plan timing 
+            with your sales cadence.
+          </p>
         </div>
       </div>
     </section>

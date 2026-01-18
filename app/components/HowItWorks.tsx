@@ -2,23 +2,23 @@ export default function HowItWorks() {
   const steps = [
     {
       number: '01',
-      title: 'Customize Your Gift',
-      description: 'Choose your branding, logo placement, and value prop messaging. Each chocolate wrapper becomes a mini billboard for your brand.',
+      title: 'Identify Target Accounts',
+      description: 'Identify your target accounts, stalled deals, or prospects who need re-engagement. This works best with precise targeting, not broad blasts.',
     },
     {
       number: '02',
-      title: 'Send to Prospects',
-      description: 'We handle shipping directly to your prospect list. Schedule delivery dates to align with your sales outreach campaigns.',
+      title: 'Plan Timing with Your Outreach',
+      description: 'Schedule delivery to align with your sales cadence. We handle shipping directly to your prospect list, giving you full control over timing. Production takes 2 weeks once your order is confirmed.',
     },
     {
       number: '03',
-      title: 'Win Desk Ad Space',
-      description: 'Your gift sits on their desk, making them see your logo and message multiple times throughout the day. Physical presence beats digital noise.',
+      title: 'Deliver the Touchpoint',
+      description: 'A thoughtfully designed gift arrives and takes its place on their desk. No coordination needed—we handle all logistics and delivery confirmations.',
     },
     {
       number: '04',
-      title: 'Close More Deals',
-      description: 'Enjoy 30%+ reply rates and increased deal velocity. The repeated exposure creates familiarity and goodwill that accelerates sales cycles.',
+      title: 'Follow Up with Purpose',
+      description: 'Reach out after delivery with a genuine check-in. The gift gives you a natural reason to re-engage that doesn\'t feel like a demand for their time.',
     },
   ];
 
@@ -30,7 +30,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            A simple 4-step process to transform your prospecting strategy
+            How prospect gifting fits into your sales motion
           </p>
         </div>
 
@@ -51,6 +51,12 @@ export default function HowItWorks() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-24 text-center border-t border-neutral-200 pt-16">
+          <p className="text-base text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light italic">
+            This is not bulk swag. It's a precise outbound trigger deployed with intention at key moments in your sales process. Quality over quantity always wins.
+          </p>
         </div>
       </div>
     </section>

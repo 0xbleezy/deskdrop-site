@@ -53,7 +53,7 @@ export default function Hero() {
         <div className="max-w-full mx-auto">
           {/* Massive Typography - Full Width */}
           <h1 className="text-7xl md:text-8xl lg:text-9xl font-display font-light text-neutral-950 mb-8 leading-none tracking-tight text-center md:text-left">
-            Win Desk Ad Space
+            Get replies when outreach stops working
           </h1>
           
           {/* Stats directly under headline */}
@@ -75,8 +75,8 @@ export default function Hero() {
           {/* Description */}
           <div className="mb-12">
             <p className="text-lg md:text-xl text-neutral-700 font-light leading-relaxed max-w-2xl">
-              Cut through digital noise with physical touchpoints.<br />
-              A prospecting gift that sits on their desk.
+              The outbound play your prospects notice.<br />
+              A physical touchpoint that breaks through inbox fatigue and earns replies.
             </p>
           </div>
 
@@ -86,13 +86,13 @@ export default function Hero() {
               onClick={scrollToContact}
               className="px-12 py-4 bg-neutral-950 text-white text-sm uppercase tracking-widest font-light hover:bg-neutral-800 transition-colors"
             >
-              Learn More
+              See How It Works
             </button>
             <button
               onClick={scrollToContact}
               className="px-12 py-4 border border-neutral-950 text-neutral-950 text-sm uppercase tracking-widest font-light hover:bg-neutral-50 transition-colors"
             >
-              Request Sample
+              Request Sample Campaign Plan
             </button>
           </div>
         </div>
