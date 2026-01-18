@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0); // Show first FAQ expanded by default
 
   const faqs = [
     {
@@ -38,7 +38,7 @@ export default function FAQ() {
 
   return (
     <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-4xl mx-auto px-8 lg:px-12">
+      <div className="max-w-4xl mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Frequently Asked Questions
@@ -48,7 +48,7 @@ export default function FAQ() {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
             <div
               key={index}

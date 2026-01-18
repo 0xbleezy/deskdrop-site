@@ -1,7 +1,7 @@
 export default function Customization() {
   return (
     <section id="customization" className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-editorial mx-auto px-8 lg:px-12">
+      <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Customization Options
@@ -13,6 +13,14 @@ export default function Customization() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="border-t border-neutral-200 pt-8 text-center">
+            <div className="mb-6 aspect-square max-w-[200px] mx-auto">
+              <div 
+                className="w-full h-full bg-cover bg-center border border-neutral-200"
+                style={{
+                  backgroundImage: "url('/images/prospecting jar on desk.png')"
+                }}
+              ></div>
+            </div>
             <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
               Logo Branding
             </h3>
@@ -22,6 +30,14 @@ export default function Customization() {
           </div>
 
           <div className="border-t border-neutral-200 pt-8 text-center">
+            <div className="mb-6 aspect-square max-w-[200px] mx-auto">
+              <div 
+                className="w-full h-full bg-cover bg-center border border-neutral-200"
+                style={{
+                  backgroundImage: "url('/images/prospecting jar on desk.png')"
+                }}
+              ></div>
+            </div>
             <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
               Custom Messaging
             </h3>
@@ -31,6 +47,14 @@ export default function Customization() {
           </div>
 
           <div className="border-t border-neutral-200 pt-8 text-center">
+            <div className="mb-6 aspect-square max-w-[200px] mx-auto">
+              <div 
+                className="w-full h-full bg-cover bg-center border border-neutral-200"
+                style={{
+                  backgroundImage: "url('/images/prospecting jar on desk.png')"
+                }}
+              ></div>
+            </div>
             <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
               Branded Packaging
             </h3>

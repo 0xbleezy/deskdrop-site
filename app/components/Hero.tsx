@@ -66,7 +66,7 @@ export default function Hero() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://weary-plum-57sim2yjwn.edgeone.app/prospecting%20jar%20on%20desk.png')",
+            backgroundImage: "url('/images/prospecting jar on desk.png')",
             transform: `translateY(${parallaxOffset}px)`,
             transition: 'transform 0.1s ease-out'
           }}
@@ -78,29 +78,29 @@ export default function Hero() {
       <div className="relative z-10 w-full px-8 pb-16 md:pb-24">
         <div className="max-w-full mx-auto">
           {/* Massive Typography - Full Width */}
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-display font-light text-neutral-950 mb-8 leading-none tracking-tight text-center md:text-left">
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-display font-light text-white mb-8 leading-none tracking-tight text-center md:text-left" style={{ color: '#ffffff' }}>
             Get replies when outreach stops working
           </h1>
           
           {/* Stats directly under headline */}
           <div className="flex justify-center md:justify-start gap-12 md:gap-16 mb-12">
             <div className="text-center md:text-left">
-              <div className="text-5xl md:text-6xl font-display font-light text-neutral-950 mb-2">
+              <div className="text-5xl md:text-6xl font-display font-light text-white mb-2">
                 {replyRate}%
               </div>
-              <div className="text-xs text-neutral-600 uppercase tracking-widest font-light">Reply Rate</div>
+              <div className="text-xs text-neutral-200 uppercase tracking-widest font-light">Reply Rate</div>
             </div>
             <div className="text-center md:text-left">
-              <div className="text-5xl md:text-6xl font-display font-light text-neutral-950 mb-2">
+              <div className="text-5xl md:text-6xl font-display font-light text-white mb-2">
                 {exposure}x
               </div>
-              <div className="text-xs text-neutral-600 uppercase tracking-widest font-light">Daily Exposure</div>
+              <div className="text-xs text-neutral-200 uppercase tracking-widest font-light">Daily Exposure</div>
             </div>
           </div>
 
           {/* Description */}
           <div className="mb-12">
-            <p className="text-lg md:text-xl text-neutral-700 font-light leading-relaxed max-w-2xl">
+            <p className="text-lg md:text-xl text-neutral-200 font-light leading-relaxed max-w-2xl">
               The outbound play your prospects notice.<br />
               A physical touchpoint that breaks through inbox fatigue and earns replies.
             </p>
@@ -116,7 +116,7 @@ export default function Hero() {
             </button>
             <button
               onClick={scrollToContact}
-              className="px-12 py-3 border border-neutral-950 text-neutral-950 text-xs uppercase tracking-widest font-light hover:bg-neutral-50 transition-colors"
+              className="px-12 py-3 border border-white text-white text-xs uppercase tracking-widest font-light hover:bg-white hover:text-neutral-950 transition-colors"
             >
               Request Sample Campaign Plan
             </button>

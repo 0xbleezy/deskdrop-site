@@ -4,27 +4,31 @@ export default function UseCases() {
       title: 'Cold or Ignored Outbound',
       description: 'Send a gift before your first outreach to warm cold prospects. The physical touchpoint increases reply rates and meeting acceptance significantly compared to email-only sequences.',
       metrics: ['Up to 40% higher meeting acceptance rates', '2x faster response times', 'Breaks through inbox fatigue'],
+      image: '/images/prospecting jar on desk.png',
     },
     {
       title: 'Stalled High-Value Deals',
       description: 'Reopen conversations with high-value accounts that have gone quiet. Targeted gifts to key decision-makers can rekindle stalled opportunities and reset relationship dynamics.',
       metrics: ['3x engagement rates vs. email re-engagement', '50% faster deal velocity on revived opportunities', 'Reduces "radio silence" response times'],
+      image: '/images/Prospect Gifting.png',
     },
     {
       title: 'Strategic Account Penetration',
       description: 'Perfect for ABM programs targeting multiple stakeholders. Get noticed by decision-makers, influencers, and budget-holders simultaneously, creating coordinated brand presence across the account.',
       metrics: ['Penetrate multi-stakeholder accounts effectively', 'Higher awareness across buying committees', 'Better positioning for enterprise deals'],
+      image: '/images/desk no jar.png',
     },
     {
       title: 'Conference Follow-Up',
       description: 'Stand out after in-person connections. Send a gift to prospects you met at conferences or tradeshows to cut through the digital follow-up noise and reinforce your in-person meeting.',
       metrics: ['60% better follow-up response rates', 'Higher meeting conversion from event leads', 'Bridges online/offline touchpoints'],
+      image: '/images/prospecting jar on desk.png',
     },
   ];
 
   return (
     <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-editorial mx-auto px-8 lg:px-12">
+      <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Use Cases
@@ -40,6 +44,14 @@ export default function UseCases() {
               key={index}
               className="border-t border-neutral-200 pt-8"
             >
+              <div className="mb-6 aspect-[16/9] max-w-full">
+                <div 
+                  className="w-full h-full bg-cover bg-center border border-neutral-200"
+                  style={{
+                    backgroundImage: `url('${useCase.image}')`
+                  }}
+                ></div>
+              </div>
               <div className="mb-6">
                 <h3 className="text-2xl font-display font-light text-neutral-950 mb-2 leading-tight">
                   {useCase.title}

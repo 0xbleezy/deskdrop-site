@@ -1,7 +1,7 @@
 export default function Services() {
   return (
-    <section id="services" className="py-32" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-editorial mx-auto px-8 lg:px-12">
+    <section id="services" className="py-24 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+      <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Outbound Gifting for Revenue Growth
@@ -10,6 +10,16 @@ export default function Services() {
             A strategic outbound motion that drives pipeline results. Premium chocolate gifts 
             designed specifically for sales and marketing teams.
           </p>
+        </div>
+
+        {/* Header Image */}
+        <div className="mb-24 aspect-[21/9] max-w-4xl mx-auto">
+          <div 
+            className="w-full h-full bg-cover bg-center border border-neutral-200"
+            style={{
+              backgroundImage: "url('/images/CLA - Prospect Gfiting.jpg')"
+            }}
+          ></div>
         </div>
 
         {/* Prospect Gifting - Main Focus - Full Width */}

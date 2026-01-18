@@ -17,8 +17,8 @@ export default function ROICalculator() {
   const roas = totalCost > 0 ? totalRevenue / totalCost : 0;
 
   return (
-    <section className="py-24" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-6xl mx-auto px-8 lg:px-12">
+    <section className="py-24 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+      <div className="max-w-6xl mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Estimate Your Pipeline Impact

@@ -1,39 +1,36 @@
 export default function TrustBadges() {
+  const companies = [
+    'gopuff',
+    'CIBC',
+    'Morgan Stanley',
+    'Abbott',
+    'WELLS FARGO',
+    'HINSHAW',
+    'AIROOM',
+    'Dykema',
+    'RIPPLING',
+    'Reed Smith',
+  ];
+
   return (
-    <section className="py-12 bg-white border-y border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">
-            Trusted by Leading Companies
+    <section className="py-24 border-t border-neutral-200 bg-white/50" style={{ backgroundColor: 'transparent' }}>
+      <div className="max-w-6xl mx-auto px-8 lg:px-16 xl:px-20">
+        <div className="text-center mb-16">
+          <p className="text-sm text-neutral-700 uppercase tracking-widest font-light mb-2">
+            Trusted by leading revenue teams
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center opacity-60 hover:opacity-100 transition-opacity">
-          {/* Placeholder company logos - can be replaced with actual logos */}
-          <div className="text-2xl font-bold text-gray-400">TechCorp</div>
-          <div className="text-2xl font-bold text-gray-400">GrowthCo</div>
-          <div className="text-2xl font-bold text-gray-400">Enterprise</div>
-          <div className="text-2xl font-bold text-gray-400">SalesPro</div>
-          <div className="text-2xl font-bold text-gray-400">MarketHub</div>
-          <div className="text-2xl font-bold text-gray-400">BizSuite</div>
-        </div>
-        <div className="mt-8 text-center">
-          <div className="inline-flex items-center gap-6 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">✓</span>
-              <span>1000+ Corporate Clients</span>
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-12 items-center justify-items-center">
+          {companies.map((company, index) => (
+            <div
+              key={index}
+              className="text-neutral-700 text-lg font-light opacity-70 hover:opacity-100 transition-opacity"
+            >
+              {company}
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">✓</span>
-              <span>75+ Years Experience</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">✓</span>
-              <span>Award Winning</span>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
-

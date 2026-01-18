@@ -9,8 +9,8 @@ export default function StarProduct() {
   };
 
   return (
-    <section id="star-product" className="py-32" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-editorial mx-auto px-8 lg:px-12">
+    <section id="star-product" className="py-32 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+      <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
             The Prospecting Gift
@@ -26,7 +26,7 @@ export default function StarProduct() {
             <div 
               className="aspect-[4/3] bg-cover bg-center"
               style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1606312619070-d48b4bdc5e3b?w=1200&q=80')"
+                backgroundImage: "url('/images/prospecting jar on desk.png')"
               }}
             ></div>
           </div>
@@ -36,15 +36,17 @@ export default function StarProduct() {
             <h3 className="text-4xl font-display font-light text-neutral-950 mb-8 leading-tight">
               A Play That Earns Real Attention
             </h3>
-            <p className="text-lg text-neutral-600 mb-12 leading-relaxed font-light">
+            <p className="text-lg text-neutral-600 mb-8 leading-relaxed font-light">
               A physical touchpoint designed to break through inbox fatigue. Unlike email or cold calls, 
               this gift sits on their desk, creating repeated, non-intrusive exposure to your brand every 
               single day.
-              <br /><br />
+            </p>
+            <p className="text-lg text-neutral-600 mb-8 leading-relaxed font-light">
               Each time they reach for a chocolate, they see your logo and value proposition. No spam 
               filters. No ignored calls. Just consistent, welcome brand presence that builds familiarity 
               and goodwill.
-              <br /><br />
+            </p>
+            <p className="text-lg text-neutral-600 mb-12 leading-relaxed font-light">
               This gives your sellers a genuine reason to follow up that recipients actually appreciate, 
               transforming cold outreach into warm conversations.
             </p>

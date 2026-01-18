@@ -7,30 +7,30 @@ export default function ProductGallery() {
 
   const images = [
     {
-      url: 'https://images.unsplash.com/photo-1606312619070-d48b4bdc5e3b?w=1200&q=80',
+      url: '/images/prospecting jar on desk.png',
       alt: 'Prospecting gift on desk',
       title: 'Desk Presence',
     },
     {
-      url: 'https://images.unsplash.com/photo-1606312619070-d48b4bdc5e3b?w=1200&q=80',
-      alt: 'Close-up of branded wrappers',
-      title: 'Branded Wrappers',
+      url: '/images/Prospect Gifting.png',
+      alt: 'Prospect gifting presentation',
+      title: 'Prospect Gifting',
     },
     {
-      url: 'https://images.unsplash.com/photo-1606312619070-d48b4bdc5e3b?w=1200&q=80',
-      alt: 'Product in office setting',
+      url: '/images/desk no jar.png',
+      alt: 'Office desk setting',
       title: 'Office Setting',
     },
     {
-      url: 'https://images.unsplash.com/photo-1606312619070-d48b4bdc5e3b?w=1200&q=80',
-      alt: 'Custom packaging',
-      title: 'Custom Packaging',
+      url: '/images/prospecting jar on desk.png',
+      alt: 'Prospecting gift close-up',
+      title: 'The Gift',
     },
   ];
 
   return (
     <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-6xl mx-auto px-8 lg:px-12">
+      <div className="max-w-6xl mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             See It In Action

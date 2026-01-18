@@ -37,7 +37,7 @@ export default function Navigation() {
           : 'bg-[#f9f8fa]/80'
       }`}
     >
-      <div className="max-w-editorial mx-auto px-8 lg:px-12">
+      <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="flex justify-end items-center h-14">
           <div className="hidden md:flex space-x-12">
             <button
