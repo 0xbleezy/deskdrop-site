@@ -43,7 +43,7 @@ export default function ROICalculator() {
                   type="number"
                   value={prospects}
                   onChange={(e) => setProspects(Math.max(1, Number(e.target.value) || 0))}
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-lg"
+                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-2xl"
                   min="1"
                 />
               </div>
@@ -55,7 +55,7 @@ export default function ROICalculator() {
                   type="number"
                   value={costPerGift}
                   onChange={(e) => setCostPerGift(Math.max(1, Number(e.target.value) || 0))}
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-lg"
+                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-2xl"
                   min="1"
                 />
               </div>
@@ -70,7 +70,7 @@ export default function ROICalculator() {
                     const val = Number(e.target.value) || 0;
                     setReplyRate(Math.max(0, Math.min(100, val)));
                   }}
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-lg"
+                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-2xl"
                   min="0"
                   max="100"
                 />
@@ -84,7 +84,7 @@ export default function ROICalculator() {
                   type="number"
                   value={avgDealValue}
                   onChange={(e) => setAvgDealValue(Math.max(1, Number(e.target.value) || 0))}
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-lg"
+                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-2xl"
                   min="1"
                 />
               </div>
@@ -99,7 +99,7 @@ export default function ROICalculator() {
                     const val = Number(e.target.value) || 0;
                     setCloseRate(Math.max(0, Math.min(100, val)));
                   }}
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-lg"
+                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-2xl"
                   min="0"
                   max="100"
                 />
@@ -114,37 +114,37 @@ export default function ROICalculator() {
             </h3>
             <div className="space-y-8">
               <div className="border-b border-neutral-200 pb-6">
-                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">Total Campaign Cost</div>
-                <div className="text-5xl font-display font-light text-neutral-950">${totalCost.toLocaleString()}</div>
+                <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-2">Total Campaign Cost</div>
+                <div className="text-3xl font-display font-light text-neutral-950">${totalCost.toLocaleString()}</div>
               </div>
               <div className="border-b border-neutral-200 pb-6">
-                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">Expected Replies</div>
-                <div className="text-5xl font-display font-light text-neutral-950 mb-2">{replies}</div>
+                <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-2">Expected Replies</div>
+                <div className="text-3xl font-display font-light text-neutral-950 mb-2">{replies}</div>
                 <div className="text-sm text-neutral-600 font-light">
                   ({replyRate}% of {prospects} prospects)
                 </div>
               </div>
               <div className="border-b border-neutral-200 pb-6">
-                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">Projected Closed Deals</div>
-                <div className="text-5xl font-display font-light text-neutral-950 mb-2">{closedDeals}</div>
+                <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-2">Projected Closed Deals</div>
+                <div className="text-3xl font-display font-light text-neutral-950 mb-2">{closedDeals}</div>
                 <div className="text-sm text-neutral-600 font-light">
                   ({closeRate}% of {replies} replies)
                 </div>
               </div>
               <div className="border-b border-neutral-200 pb-6">
-                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">Total Revenue</div>
-                <div className="text-5xl font-display font-light text-neutral-950">${totalRevenue.toLocaleString()}</div>
+                <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-2">Total Revenue</div>
+                <div className="text-3xl font-display font-light text-neutral-950">${totalRevenue.toLocaleString()}</div>
               </div>
               <div className="grid grid-cols-2 gap-8 pt-6">
                 <div>
-                  <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">ROI</div>
-                  <div className="text-4xl font-display font-light text-neutral-950">
+                  <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-2">ROI</div>
+                  <div className="text-8xl font-display font-bold text-neutral-950">
                     {roi.toFixed(0)}%
                   </div>
                 </div>
                 <div>
-                  <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">ROAS</div>
-                  <div className="text-4xl font-display font-light text-neutral-950">
+                  <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-2">ROAS</div>
+                  <div className="text-8xl font-display font-bold text-neutral-950">
                     {roas.toFixed(1)}x
                   </div>
                 </div>
