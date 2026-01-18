@@ -90,7 +90,7 @@ export default function Hero() {
             </button>
             <button
               onClick={scrollToContact}
-              className="px-12 py-4 border border-neutral-950 text-neutral-950 text-sm uppercase tracking-widest font-light hover:bg-neutral-50 transition-colors"
+              className="px-12 py-3 border border-neutral-950 text-neutral-950 text-xs uppercase tracking-widest font-light hover:bg-neutral-50 transition-colors"
             >
               Request Sample Campaign Plan
             </button>

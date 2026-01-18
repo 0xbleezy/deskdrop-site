@@ -16,8 +16,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Chocolate Corporate Gifting | Prospect Gifting Solutions",
-  description: "Win desk ad space with our prospecting gift. Cut through digital noise with physical touchpoints. 30%+ reply rate. Perfect for account-based marketing and sales strategy.",
+  title: "Get Replies When Outreach Stops Working | Prospect Gifting Solutions",
+  description: "The outbound play your prospects notice. Physical touchpoint that breaks through inbox fatigue and earns replies. 30%+ reply rate. Perfect for ABM strategies and sales teams.",
 };
 
 export default function RootLayout({

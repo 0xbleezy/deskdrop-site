@@ -1,7 +1,7 @@
 export default function Customization() {
   return (
-    <section id="customization" className="py-20" style={{ backgroundColor: '#f9f8fa' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="customization" className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
+      <div className="max-w-editorial mx-auto px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Customization Options
@@ -23,7 +23,7 @@ export default function Customization() {
 
           <div className="border-t border-neutral-200 pt-8 text-center">
             <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
-              Value Proposition Messaging
+              Custom Messaging
             </h3>
             <p className="text-neutral-600 leading-relaxed font-light">
               Custom messaging on wrappers that reinforces your key value props. Each wrapper features your logo and messaging for consistent brand reinforcement.
@@ -35,7 +35,7 @@ export default function Customization() {
               Branded Packaging
             </h3>
             <p className="text-neutral-600 leading-relaxed font-light">
-              Custom jar and presentation that matches your brand. Professional first impression that sets the tone for the relationship.
+              Premium packaging and presentation. Professional first impression that sets the tone for the relationship.
             </p>
           </div>
 

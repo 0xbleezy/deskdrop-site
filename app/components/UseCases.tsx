@@ -12,7 +12,7 @@ export default function UseCases() {
     },
     {
       title: 'Strategic Account Penetration',
-      description: 'Perfect for ABM programs targeting multiple stakeholders. Get noticed by decision-makers, influencers, and budget-holders simultaneously—creating coordinated brand presence across the account.',
+      description: 'Perfect for ABM programs targeting multiple stakeholders. Get noticed by decision-makers, influencers, and budget-holders simultaneously, creating coordinated brand presence across the account.',
       metrics: ['Penetrate multi-stakeholder accounts effectively', 'Higher awareness across buying committees', 'Better positioning for enterprise deals'],
     },
     {
@@ -23,8 +23,8 @@ export default function UseCases() {
   ];
 
   return (
-    <section className="py-20" style={{ backgroundColor: '#f9f8fa' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
+      <div className="max-w-editorial mx-auto px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Use Cases

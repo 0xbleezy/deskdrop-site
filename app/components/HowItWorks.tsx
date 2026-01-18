@@ -3,17 +3,17 @@ export default function HowItWorks() {
     {
       number: '01',
       title: 'Identify Target Accounts',
-      description: 'Identify your target accounts, stalled deals, or prospects who need re-engagement. This works best with precise targeting, not broad blasts.',
+      description: 'Identify your target accounts, stalled deals, or prospects who need re-engagement. Works for both targeted campaigns and broader outreach programs.',
     },
     {
       number: '02',
       title: 'Plan Timing with Your Outreach',
-      description: 'Schedule delivery to align with your sales cadence. We handle shipping directly to your prospect list, giving you full control over timing. Production takes 2 weeks once your order is confirmed.',
+      description: 'Choose your timing. We maintain inventory in our warehouse, ready to ship same-day or scheduled delivery. Perfect for planned campaigns or on-demand sends when opportunities arise. For custom production runs, allow 2 weeks.',
     },
     {
       number: '03',
       title: 'Deliver the Touchpoint',
-      description: 'A thoughtfully designed gift arrives and takes its place on their desk. No coordination needed—we handle all logistics and delivery confirmations.',
+      description: 'A thoughtfully designed gift arrives and takes its place on their desk. No coordination needed. We handle all logistics and delivery confirmations.',
     },
     {
       number: '04',

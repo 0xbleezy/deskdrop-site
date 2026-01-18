@@ -38,7 +38,7 @@ export default function StarProduct() {
             </h3>
             <p className="text-lg text-neutral-600 mb-12 leading-relaxed font-light">
               A physical touchpoint designed to break through inbox fatigue. Unlike email or cold calls, 
-              this gift sits on their desk—creating repeated, non-intrusive exposure to your brand every 
+              this gift sits on their desk, creating repeated, non-intrusive exposure to your brand every 
               single day.
               <br /><br />
               Each time they reach for a chocolate, they see your logo and value proposition. No spam 
@@ -73,7 +73,7 @@ export default function StarProduct() {
               </div>
               <div>
                 <h4 className="text-lg font-light text-neutral-950 mb-2">Integrates with Your ABM Strategy</h4>
-                <p className="text-base text-neutral-600 leading-relaxed font-light">Deploy at key moments in your account penetration plan—targeting decision-makers with precision</p>
+                <p className="text-base text-neutral-600 leading-relaxed font-light">Deploy at key moments in your account penetration plan, targeting decision-makers with precision</p>
               </div>
               <div>
                 <h4 className="text-lg font-light text-neutral-950 mb-2">Accelerates Deal Velocity</h4>
@@ -105,7 +105,7 @@ export default function StarProduct() {
             Fully Customizable
           </h3>
           <p className="text-base text-neutral-600 text-center mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-            Each chocolate wrapper features your logo and value prop messaging. 
+            Each chocolate wrapper features your logo and messaging. 
             Create a branded experience that reinforces your message every time they reach for a chocolate.
           </p>
           <div className="grid md:grid-cols-3 gap-12 text-center">
@@ -119,7 +119,7 @@ export default function StarProduct() {
             </div>
             <div>
               <h4 className="text-sm font-light text-neutral-950 mb-2 uppercase tracking-widest">Packaging</h4>
-              <p className="text-sm text-neutral-600 leading-relaxed font-light">Branded jar and presentation</p>
+              <p className="text-sm text-neutral-600 leading-relaxed font-light">Premium jar and presentation</p>
             </div>
           </div>
         </div>

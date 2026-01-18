@@ -3,16 +3,16 @@
 import { useState } from 'react';
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
     {
       question: 'What\'s the minimum order for a pilot program?',
-      answer: 'We produce in packs of 1,440 chocolates, which can be configured across three jar sizes (small, medium, or large). A typical pilot program uses our medium or large configurations, providing 50-75 jars to test with your target accounts. You can also mix sizes within your order to match different prospect tiers.',
+      answer: 'Our minimum custom production run starts at 50 jars. We offer three jar sizes (small, medium, or large), with the large size being our most popular for prospecting campaigns. Typical pilot programs range from 50-75 jars, perfect for testing with your target accounts. You can also mix sizes within your order to match different prospect tiers.',
     },
     {
       question: 'How quickly can I deploy this in my sales motion?',
-      answer: 'Production takes 2 weeks from order confirmation. Once production completes, we ship directly to your prospect list. Plan your campaign timing accordingly—we recommend coordinating with your sales cadence to ensure delivery aligns with your outreach sequences.',
+      answer: 'Production takes 2 weeks from order confirmation. Once production completes, we ship directly to your prospect list. Plan your campaign timing accordingly. We recommend coordinating with your sales cadence to ensure delivery aligns with your outreach sequences.',
     },
     {
       question: 'What kind of ROI can I expect?',
@@ -20,28 +20,24 @@ export default function FAQ() {
     },
     {
       question: 'Can I test different messaging across my prospect list?',
-      answer: 'Each order features consistent branding—your logo and value proposition messaging across all wrappers. This creates uniform brand presence. If you want to test different messages, we can discuss splitting orders or running sequential campaigns.',
+      answer: 'Each order features consistent branding with your logo and value proposition messaging across all wrappers. This creates uniform brand presence. If you want to test different messages, we can discuss splitting orders or running sequential campaigns.',
     },
     {
       question: 'What happens if prospects don\'t respond immediately?',
-      answer: 'The gift continues working. It sits on their desk creating repeated brand exposure—every time they reach for a chocolate, they see your logo. Many clients report prospects reaching out weeks or months later, mentioning they kept seeing your brand. It\'s an investment that compounds over time.',
-    },
-    {
-      question: 'How does this integrate with my existing sales tech stack?',
-      answer: 'This is a physical touchpoint, not a software integration. It works alongside your CRM and sales tools—you coordinate delivery timing with your outreach cadences. Perfect for adding a physical dimension to your digital sales motion.',
+      answer: 'The gift continues working. It sits on their desk creating repeated brand exposure. Every time they reach for a chocolate, they see your logo. Many clients report prospects reaching out weeks or months later, mentioning they kept seeing your brand. It\'s an investment that compounds over time.',
     },
     {
       question: 'Do you offer samples for sales leadership to evaluate?',
-      answer: 'Yes, we can send non-personalized samples so you can evaluate quality, packaging, and presentation. Request samples through our contact form. Once you\'re ready to order, we\'ll handle full customization with your logo and messaging.',
+      answer: 'Yes, we can send samples so you can evaluate quality, packaging, and presentation. Request samples through our contact form. Once you\'re ready to order, we\'ll handle full customization with your logo and messaging.',
     },
     {
       question: 'What if I need to scale across hundreds of prospects?',
-      answer: 'Our production model scales efficiently—each pack is 1,440 chocolates. We can coordinate multiple packs and ship directly to your entire prospect list. Many clients run campaigns across large account lists with coordinated delivery dates.',
+      answer: 'Our production model scales efficiently for campaigns of any size. We can coordinate large production runs and ship directly to your entire prospect list. Many clients run campaigns across hundreds of prospects with coordinated delivery dates aligned to their sales cadences.',
     },
   ];
 
   return (
-    <section className="py-20" style={{ backgroundColor: '#f9f8fa' }}>
+    <section className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">

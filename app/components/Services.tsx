@@ -4,7 +4,7 @@ export default function Services() {
       <div className="max-w-editorial mx-auto px-8">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
-            Prospect Gifting for Revenue Growth
+            Outbound Gifting for Revenue Growth
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
             A strategic outbound motion that drives pipeline results. Premium chocolate gifts 
@@ -12,16 +12,16 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-16">
-          {/* Prospect Gifting - Main Focus */}
-          <div className="border-b border-neutral-200 pb-8">
-            <h3 className="text-3xl font-display font-light text-neutral-950 mb-6">
-              Prospect Gifting
-            </h3>
-            <p className="text-base text-neutral-600 mb-8 leading-relaxed font-light">
-              The only outbound channel that works when email stops getting replies. 
-              Built for ABM strategies, cold outreach, and stalled deal re-engagement.
-            </p>
+        {/* Prospect Gifting - Main Focus - Full Width */}
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-4xl font-display font-light text-neutral-950 mb-6 text-center">
+            Prospect Gifting
+          </h3>
+          <p className="text-lg text-neutral-600 mb-10 leading-relaxed font-light text-center max-w-2xl mx-auto">
+            The only outbound channel that works when email stops getting replies. 
+            Built for ABM strategies, cold outreach, and stalled deal re-engagement.
+          </p>
+          <div className="grid md:grid-cols-2 gap-8">
             <ul className="space-y-4 text-neutral-700">
               <li className="flex items-start font-light">
                 <span className="text-neutral-400 mr-4">—</span>
@@ -31,6 +31,8 @@ export default function Services() {
                 <span className="text-neutral-400 mr-4">—</span>
                 <span className="leading-relaxed">2-3x faster deal velocity</span>
               </li>
+            </ul>
+            <ul className="space-y-4 text-neutral-700">
               <li className="flex items-start font-light">
                 <span className="text-neutral-400 mr-4">—</span>
                 <span className="leading-relaxed">Perfect for targeted account penetration</span>
@@ -38,56 +40,6 @@ export default function Services() {
               <li className="flex items-start font-light">
                 <span className="text-neutral-400 mr-4">—</span>
                 <span className="leading-relaxed">Integrates seamlessly with your sales cadence</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Employee Gifts */}
-          <div className="border-b border-neutral-200 pb-8">
-            <h3 className="text-3xl font-display font-light text-neutral-950 mb-6">
-              Employee Gifts
-            </h3>
-            <p className="text-base text-neutral-600 mb-8 leading-relaxed font-light">
-              Show appreciation with premium chocolate gifts for retention, anniversaries, 
-              and special achievements.
-            </p>
-            <ul className="space-y-4 text-neutral-700">
-              <li className="flex items-start font-light">
-                <span className="text-neutral-400 mr-4">—</span>
-                <span className="leading-relaxed">Retention programs</span>
-              </li>
-              <li className="flex items-start font-light">
-                <span className="text-neutral-400 mr-4">—</span>
-                <span className="leading-relaxed">Anniversary celebrations</span>
-              </li>
-              <li className="flex items-start font-light">
-                <span className="text-neutral-400 mr-4">—</span>
-                <span className="leading-relaxed">Recognition rewards</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Event Gifting */}
-          <div className="border-b border-neutral-200 pb-8">
-            <h3 className="text-3xl font-display font-light text-neutral-950 mb-6">
-              Event Gifting
-            </h3>
-            <p className="text-base text-neutral-600 mb-8 leading-relaxed font-light">
-              Perfect for tradeshows, conferences, and corporate events. Make a memorable 
-              impression with branded chocolate gifts.
-            </p>
-            <ul className="space-y-4 text-neutral-700">
-              <li className="flex items-start font-light">
-                <span className="text-neutral-400 mr-4">—</span>
-                <span className="leading-relaxed">Tradeshows & conferences</span>
-              </li>
-              <li className="flex items-start font-light">
-                <span className="text-neutral-400 mr-4">—</span>
-                <span className="leading-relaxed">Corporate events</span>
-              </li>
-              <li className="flex items-start font-light">
-                <span className="text-neutral-400 mr-4">—</span>
-                <span className="leading-relaxed">Branded packaging</span>
               </li>
             </ul>
           </div>

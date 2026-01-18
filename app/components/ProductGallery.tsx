@@ -29,21 +29,21 @@ export default function ProductGallery() {
   ];
 
   return (
-    <section className="py-20" style={{ backgroundColor: '#f9f8fa' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
+      <div className="max-w-editorial mx-auto px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-chocolate-600 mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             See It In Action
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our prospecting gift from every angle
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
+            The physical presence that earns attention on decision-makers' desks
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Main Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-luxury-lg aspect-[4/3]">
+            <div className="relative border border-neutral-200 aspect-[4/3] overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center transition-opacity duration-500"
                 style={{
@@ -54,7 +54,7 @@ export default function ProductGallery() {
               </div>
             </div>
             <div className="mt-4 text-center">
-              <p className="text-lg font-semibold text-chocolate-700">
+              <p className="text-base font-light text-neutral-950">
                 {images[selectedImage].title}
               </p>
             </div>
@@ -66,10 +66,10 @@ export default function ProductGallery() {
               <button
                 key={index}
                 onClick={() => setSelectedImage(index)}
-                className={`relative rounded-xl overflow-hidden shadow-md aspect-square transition-all duration-300 ${
+                className={`relative border border-neutral-200 aspect-square transition-all duration-300 ${
                   selectedImage === index
-                    ? 'ring-4 ring-gold-500 scale-105'
-                    : 'hover:scale-102 opacity-75 hover:opacity-100'
+                    ? 'border-neutral-950 scale-105'
+                    : 'hover:border-neutral-400 opacity-75 hover:opacity-100'
                 }`}
               >
                 <div
@@ -91,7 +91,7 @@ export default function ProductGallery() {
 
         {/* Lifestyle Shots Grid */}
         <div className="mt-16 grid md:grid-cols-3 gap-6">
-          <div className="relative rounded-xl overflow-hidden shadow-luxury aspect-[4/3]">
+          <div className="relative border border-neutral-200 aspect-[4/3] overflow-hidden">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -99,10 +99,10 @@ export default function ProductGallery() {
               }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-              <p className="text-white font-semibold text-lg">Modern Office</p>
+              <p className="text-white font-light text-lg">Modern Office</p>
             </div>
           </div>
-          <div className="relative rounded-xl overflow-hidden shadow-luxury aspect-[4/3]">
+          <div className="relative border border-neutral-200 aspect-[4/3] overflow-hidden">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -110,10 +110,10 @@ export default function ProductGallery() {
               }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-              <p className="text-white font-semibold text-lg">Executive Desk</p>
+              <p className="text-white font-light text-lg">Executive Desk</p>
             </div>
           </div>
-          <div className="relative rounded-xl overflow-hidden shadow-luxury aspect-[4/3]">
+          <div className="relative border border-neutral-200 aspect-[4/3] overflow-hidden">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -121,7 +121,7 @@ export default function ProductGallery() {
               }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-              <p className="text-white font-semibold text-lg">Home Office</p>
+              <p className="text-white font-light text-lg">Home Office</p>
             </div>
           </div>
         </div>

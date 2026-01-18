@@ -11,17 +11,58 @@ export default function Contact() {
     message: '',
   });
 
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+  });
+
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
+    // Clear error when user starts typing
+    if (errors[name as keyof typeof errors]) {
+      setErrors({
+        ...errors,
+        [name]: '',
+      });
+    }
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate required fields
+    const newErrors = {
+      name: formData.name.trim() ? '' : 'Name is required',
+      email: formData.email.trim() ? (validateEmail(formData.email) ? '' : 'Please enter a valid email address') : 'Email is required',
+    };
+
+    setErrors(newErrors);
+
+    // If there are errors, don't submit
+    if (newErrors.name || newErrors.email) {
+      return;
+    }
+
     console.log('Form submitted:', formData);
     alert('Thank you for your inquiry! We will contact you soon.');
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      phone: '',
+      message: '',
+    });
   };
 
   const focusForm = () => {
@@ -61,9 +102,13 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  required
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light"
+                  className={`w-full px-0 py-3 border-0 border-b bg-transparent text-neutral-950 font-light focus:ring-0 focus:border-neutral-950 ${
+                    errors.name ? 'border-red-400' : 'border-neutral-300'
+                  }`}
                 />
+                {errors.name && (
+                  <p className="text-xs text-red-400 mt-2 font-light">{errors.name}</p>
+                )}
               </div>
               <div>
                 <label htmlFor="email" className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
@@ -75,9 +120,13 @@ export default function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  required
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light"
+                  className={`w-full px-0 py-3 border-0 border-b bg-transparent text-neutral-950 font-light focus:ring-0 focus:border-neutral-950 ${
+                    errors.email ? 'border-red-400' : 'border-neutral-300'
+                  }`}
                 />
+                {errors.email && (
+                  <p className="text-xs text-red-400 mt-2 font-light">{errors.email}</p>
+                )}
               </div>
               <div>
                 <label htmlFor="company" className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
@@ -136,15 +185,11 @@ export default function Contact() {
             <div className="space-y-10">
               <div>
                 <h4 className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">Phone</h4>
-                <p className="text-base text-neutral-950 font-light">(310) 826-3380</p>
+                <p className="text-base text-neutral-950 font-light">(630) 793-0331</p>
               </div>
               <div>
                 <h4 className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">Email</h4>
-                <p className="text-base text-neutral-950 font-light">support@chocolategifting.com</p>
-              </div>
-              <div>
-                <h4 className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-2">Business Hours</h4>
-                <p className="text-base text-neutral-950 font-light">Monday - Friday: 9:00 AM - 6:00 PM PST</p>
+                <p className="text-base text-neutral-950 font-light">gifting@ncchocolatier.com</p>
               </div>
             </div>
           </div>
@@ -152,9 +197,7 @@ export default function Contact() {
 
         <div className="mt-24 text-center border-t border-neutral-200 pt-16">
           <p className="text-base text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            Typical campaigns: 50-75 jars for pilot programs, scalable to hundreds of prospects 
-            across multiple production cycles. Production takes 2 weeks—we'll help you plan timing 
-            with your sales cadence.
+            Typical campaigns: Minimum of 50 jars (large size recommended), scalable to hundreds of prospects. Production takes 2 weeks. We'll help you plan timing with your sales cadence.
           </p>
         </div>
       </div>
