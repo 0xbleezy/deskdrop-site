@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen" style={{ background: 'linear-gradient(180deg, #f9f8fa 0%, #faf9fb 100%)' }}>
       <Hero />
       <Services />
       <StarProduct />

@@ -9,8 +9,8 @@ export default function StarProduct() {
   };
 
   return (
-    <section id="star-product" className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
-      <div className="max-w-editorial mx-auto px-8">
+    <section id="star-product" className="py-32" style={{ backgroundColor: 'transparent' }}>
+      <div className="max-w-editorial mx-auto px-8 lg:px-12">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
             The Prospecting Gift

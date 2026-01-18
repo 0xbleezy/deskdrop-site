@@ -29,8 +29,8 @@ export default function ProductGallery() {
   ];
 
   return (
-    <section className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
-      <div className="max-w-editorial mx-auto px-8">
+    <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+      <div className="max-w-6xl mx-auto px-8 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             See It In Action
@@ -86,43 +86,6 @@ export default function ProductGallery() {
                 </div>
               </button>
             ))}
-          </div>
-        </div>
-
-        {/* Lifestyle Shots Grid */}
-        <div className="mt-16 grid md:grid-cols-3 gap-6">
-          <div className="relative border border-neutral-200 aspect-[4/3] overflow-hidden">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1606312619070-d48b4bdc5e3b?w=800&q=80')",
-              }}
-            ></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-              <p className="text-white font-light text-lg">Modern Office</p>
-            </div>
-          </div>
-          <div className="relative border border-neutral-200 aspect-[4/3] overflow-hidden">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1606312619070-d48b4bdc5e3b?w=800&q=80')",
-              }}
-            ></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-              <p className="text-white font-light text-lg">Executive Desk</p>
-            </div>
-          </div>
-          <div className="relative border border-neutral-200 aspect-[4/3] overflow-hidden">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1606312619070-d48b4bdc5e3b?w=800&q=80')",
-              }}
-            ></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-              <p className="text-white font-light text-lg">Home Office</p>
-            </div>
           </div>
         </div>
       </div>

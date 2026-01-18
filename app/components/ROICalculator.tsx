@@ -17,8 +17,8 @@ export default function ROICalculator() {
   const roas = totalCost > 0 ? totalRevenue / totalCost : 0;
 
   return (
-    <section className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
-      <div className="max-w-editorial mx-auto px-8">
+    <section className="py-24" style={{ backgroundColor: 'transparent' }}>
+      <div className="max-w-6xl mx-auto px-8 lg:px-12">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Estimate Your Pipeline Impact
@@ -142,16 +142,16 @@ export default function ROICalculator() {
 
         {/* ROI/ROAS - Full Width Section */}
         <div className="mt-24 border-t border-neutral-200 pt-20">
-          <div className="grid grid-cols-2 gap-16 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 gap-8 md:gap-16 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-4">ROI</div>
-              <div className="text-8xl font-display font-bold text-neutral-950">
+              <div className="text-5xl md:text-6xl lg:text-8xl font-display font-bold text-neutral-950">
                 {roi.toFixed(0)}%
               </div>
             </div>
             <div className="text-center">
               <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-4">ROAS</div>
-              <div className="text-8xl font-display font-bold text-neutral-950">
+              <div className="text-5xl md:text-6xl lg:text-8xl font-display font-bold text-neutral-950">
                 {roas.toFixed(1)}x
               </div>
             </div>

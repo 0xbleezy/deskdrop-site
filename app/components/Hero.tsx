@@ -1,10 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export default function Hero() {
   const [replyRate, setReplyRate] = useState(0);
   const [exposure, setExposure] = useState(0);
+  const [parallaxOffset, setParallaxOffset] = useState(0);
+  const heroRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const animateCounter = (setter: (val: number) => void, target: number) => {
@@ -28,6 +30,28 @@ export default function Hero() {
     animateCounter(setExposure, 12);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!heroRef.current) return;
+      
+      const rect = heroRef.current.getBoundingClientRect();
+      const heroHeight = rect.height;
+      const scrollProgress = Math.max(0, Math.min(1, -rect.top / heroHeight));
+      
+      // Subtle parallax: image moves at 60% of scroll speed
+      const parallaxSpeed = 0.6;
+      const maxOffset = heroHeight * 0.2; // Max 20% of hero height
+      const offset = scrollProgress * maxOffset * parallaxSpeed;
+      
+      setParallaxOffset(offset);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Initial call
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -36,13 +60,15 @@ export default function Hero() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-end justify-center overflow-hidden" style={{ backgroundColor: '#f9f8fa' }}>
+    <section ref={heroRef} id="hero" className="relative min-h-screen flex items-end justify-center overflow-hidden pt-14 md:pt-0" style={{ backgroundColor: 'transparent' }}>
       {/* Full Viewport Hero Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://weary-plum-57sim2yjwn.edgeone.app/prospecting%20jar%20on%20desk.png')"
+            backgroundImage: "url('https://weary-plum-57sim2yjwn.edgeone.app/prospecting%20jar%20on%20desk.png')",
+            transform: `translateY(${parallaxOffset}px)`,
+            transition: 'transform 0.1s ease-out'
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-white/20 to-transparent"></div>

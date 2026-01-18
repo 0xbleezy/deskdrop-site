@@ -52,8 +52,8 @@ export default function ComparisonTable() {
   ];
 
   return (
-    <section className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
-      <div className="max-w-editorial mx-auto px-8">
+    <section className="py-24" style={{ backgroundColor: 'transparent' }}>
+      <div className="max-w-6xl mx-auto px-8 lg:px-12">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Why This Works Where Other Channels Stall
@@ -68,17 +68,19 @@ export default function ComparisonTable() {
             <table className="w-full">
               <thead>
                 <tr className="border-b border-neutral-200">
-                  <th className="px-6 py-4 text-left text-xs font-light text-neutral-950 uppercase tracking-widest">
+                  <th className="px-3 md:px-6 py-2 md:py-4 text-left text-[10px] md:text-xs font-light text-neutral-950 uppercase tracking-widest">
                     Feature
                   </th>
-                  <th className="px-6 py-4 text-center text-xs font-light text-neutral-950 uppercase tracking-widest bg-neutral-50">
-                    Your Gift
+                  <th className="px-3 md:px-6 py-2 md:py-4 text-center text-[10px] md:text-xs font-light text-neutral-950 uppercase tracking-widest bg-neutral-50">
+                    <span className="md:hidden">Gift</span>
+                    <span className="hidden md:inline">Your Gift</span>
                   </th>
-                  <th className="px-6 py-4 text-center text-xs font-light text-neutral-600 uppercase tracking-widest">
+                  <th className="px-3 md:px-6 py-2 md:py-4 text-center text-[10px] md:text-xs font-light text-neutral-600 uppercase tracking-widest">
                     Email
                   </th>
-                  <th className="px-6 py-4 text-center text-xs font-light text-neutral-600 uppercase tracking-widest">
-                    Cold Call
+                  <th className="px-3 md:px-6 py-2 md:py-4 text-center text-[10px] md:text-xs font-light text-neutral-600 uppercase tracking-widest">
+                    <span className="md:hidden">Call</span>
+                    <span className="hidden md:inline">Cold Call</span>
                   </th>
                 </tr>
               </thead>
@@ -90,20 +92,20 @@ export default function ComparisonTable() {
                       index % 2 === 0 ? 'bg-white' : 'bg-neutral-50'
                     }`}
                   >
-                    <td className="px-6 py-4 text-sm font-light text-neutral-950">
+                    <td className="px-3 md:px-6 py-2 md:py-4 text-xs md:text-sm font-light text-neutral-950">
                       {item.feature}
                     </td>
-                    <td className={`px-6 py-4 text-center text-sm font-light ${
+                    <td className={`px-3 md:px-6 py-2 md:py-4 text-center text-xs md:text-sm font-light ${
                       item.yourGiftHighlight
                         ? 'text-neutral-950 bg-neutral-50'
                         : 'text-neutral-700'
                     }`}>
                       {item.yourGift}
                     </td>
-                    <td className="px-6 py-4 text-center text-sm text-neutral-600 font-light">
+                    <td className="px-3 md:px-6 py-2 md:py-4 text-center text-xs md:text-sm text-neutral-600 font-light">
                       {item.email}
                     </td>
-                    <td className="px-6 py-4 text-center text-sm text-neutral-600 font-light">
+                    <td className="px-3 md:px-6 py-2 md:py-4 text-center text-xs md:text-sm text-neutral-600 font-light">
                       {item.coldCall}
                     </td>
                   </tr>

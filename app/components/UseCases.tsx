@@ -23,8 +23,8 @@ export default function UseCases() {
   ];
 
   return (
-    <section className="py-32" style={{ backgroundColor: '#f9f8fa' }}>
-      <div className="max-w-editorial mx-auto px-8">
+    <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+      <div className="max-w-editorial mx-auto px-8 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Use Cases
