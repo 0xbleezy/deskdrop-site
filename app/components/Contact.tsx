@@ -76,11 +76,11 @@ export default function Contact() {
     <section id="contact" className="py-32" style={{ backgroundColor: 'transparent' }}>
       <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-24">
-          <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Get Started Today
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            Request a sample, get a custom quote, or speak with our team about integrating prospect 
+            Request a sample, get a quote, or speak with our team about incorporating prospect 
             gifting into your outbound strategy
           </p>
         </div>

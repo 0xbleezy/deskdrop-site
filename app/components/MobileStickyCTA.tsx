@@ -10,15 +10,14 @@ export default function MobileStickyCTA() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
-      <div className="bg-neutral-950 text-white p-4 border-t border-neutral-200">
+      <div className="bg-neutral-900 text-white p-4 border-t border-neutral-800">
         <button
           onClick={scrollToContact}
-          className="w-full px-6 py-4 bg-white text-neutral-950 text-sm uppercase tracking-widest font-light hover:bg-neutral-50 transition-colors"
+          className="w-full px-6 py-4 bg-white text-neutral-900 text-sm font-light hover:bg-neutral-100 transition-colors rounded"
         >
-          Request a Sample
+          Let's Chat
         </button>
       </div>
     </div>
   );
 }
-

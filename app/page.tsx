@@ -1,9 +1,9 @@
 import Hero from './components/Hero';
-import Services from './components/Services';
-import StarProduct from './components/StarProduct';
 import TrustBadges from './components/TrustBadges';
-import HowItWorks from './components/HowItWorks';
+import StarProduct from './components/StarProduct';
+import Services from './components/Services';
 import ProductGallery from './components/ProductGallery';
+import HowItWorks from './components/HowItWorks';
 import UseCases from './components/UseCases';
 import ComparisonTable from './components/ComparisonTable';
 import ROICalculator from './components/ROICalculator';
@@ -17,13 +17,12 @@ export default function Home() {
       <Hero />
       <TrustBadges />
       <StarProduct />
-      <Services />
+      <Customization />
       <ProductGallery />
       <HowItWorks />
       <UseCases />
       <ComparisonTable />
       <ROICalculator />
-      <Customization />
       <FAQ />
       <Contact />
     </main>

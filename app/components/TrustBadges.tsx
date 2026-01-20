@@ -13,18 +13,18 @@ export default function TrustBadges() {
   ];
 
   return (
-    <section className="py-24 border-t border-neutral-200 bg-white/50" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-6xl mx-auto px-8 lg:px-16 xl:px-20">
-        <div className="text-center mb-16">
-          <p className="text-sm text-neutral-700 uppercase tracking-widest font-light mb-2">
-            Trusted by leading revenue teams
+    <section className="py-16" style={{ backgroundColor: '#e6f7f9' }}>
+      <div className="max-w-7xl mx-auto px-8 lg:px-16 xl:px-20">
+        <div className="text-center mb-12">
+          <p className="text-base text-neutral-600 mb-8 font-light">
+            Trusted by
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-12 items-center justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-12 items-center justify-items-center opacity-60">
           {companies.map((company, index) => (
             <div
               key={index}
-              className="text-neutral-700 text-lg font-light opacity-70 hover:opacity-100 transition-opacity"
+              className="text-neutral-700 text-lg font-light hover:opacity-100 transition-opacity"
             >
               {company}
             </div>

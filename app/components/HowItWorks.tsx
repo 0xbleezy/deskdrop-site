@@ -2,27 +2,27 @@ export default function HowItWorks() {
   const steps = [
     {
       number: '01',
-      title: 'Identify Target Accounts',
+      title: 'Identify Targets',
       description: 'Identify your target accounts, stalled deals, or prospects who need re-engagement. Works for both targeted campaigns and broader outreach programs.',
-      image: '/images/desk no jar.png',
+      image: '/images/identify target accounts.png',
     },
     {
       number: '02',
-      title: 'Plan Timing with Your Outreach',
-      description: 'Choose your timing. We maintain inventory in our warehouse, ready to ship same-day or scheduled delivery. Perfect for planned campaigns or on-demand sends when opportunities arise. For custom production runs, allow 2 weeks.',
-      image: '/images/Prospect Gifting.png',
+      title: 'Plan Your Outreach',
+      description: 'Choose your timing. We maintain inventory in our warehouse, ready to ship same-day or scheduled delivery. Perfect for planned campaigns or on-demand sends when opportunities arise.',
+      image: '/images/Plan Your Outreach.png',
     },
     {
       number: '03',
       title: 'Deliver the Touchpoint',
       description: 'A thoughtfully designed gift arrives and takes its place on their desk. No coordination needed. We handle all logistics and delivery confirmations.',
-      image: '/images/prospecting jar on desk.png',
+      image: '/images/Deliver the Touchpoint.png',
     },
     {
       number: '04',
       title: 'Follow Up with Purpose',
       description: 'Reach out after delivery with a genuine check-in. The gift gives you a natural reason to re-engage that doesn\'t feel like a demand for their time.',
-      image: '/images/prospecting jar on desk.png',
+      image: '/images/follow up with purpose.png',
     },
   ];
 
@@ -30,7 +30,7 @@ export default function HowItWorks() {
     <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
       <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-24">
-          <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
             How It Works
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
@@ -63,12 +63,6 @@ export default function HowItWorks() {
               </p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-24 text-center border-t border-neutral-200 pt-16">
-          <p className="text-base text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light italic">
-            This is not bulk swag. It's a precise outbound trigger deployed with intention at key moments in your sales process. Quality over quantity always wins.
-          </p>
         </div>
       </div>
     </section>

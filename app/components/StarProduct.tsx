@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function StarProduct() {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -12,8 +14,8 @@ export default function StarProduct() {
     <section id="star-product" className="py-32 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
       <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-24">
-          <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
-            The Prospecting Gift
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
+            The Outbound Gift
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
             Your competitive advantage in outbound sales and ABM programs
@@ -22,13 +24,15 @@ export default function StarProduct() {
 
         <div className="grid lg:grid-cols-2 gap-20 items-center mb-24">
           {/* Left - Image */}
-          <div className="relative">
-            <div 
-              className="aspect-[4/3] bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/images/prospecting jar on desk.png')"
-              }}
-            ></div>
+          <div className="relative w-full">
+            <Image
+              src="/images/The Prospecting Gift.png"
+              alt="The Outbound Gift"
+              width={800}
+              height={1200}
+              className="w-full h-auto object-contain"
+              priority
+            />
           </div>
 
           {/* Right - Content */}
@@ -58,7 +62,7 @@ export default function StarProduct() {
                 <div className="text-xs text-neutral-500 uppercase tracking-widest font-light">Reply Rate</div>
               </div>
               <div>
-                <div className="text-5xl font-display font-light text-neutral-950 mb-2">12x</div>
+                <div className="text-5xl font-display font-light text-neutral-950 mb-2">25x+</div>
                 <div className="text-xs text-neutral-500 uppercase tracking-widest font-light">Exposure</div>
               </div>
             </div>
@@ -97,31 +101,6 @@ export default function StarProduct() {
               >
                 Get Started
               </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Customization - Minimal */}
-        <div className="border-t border-neutral-200 pt-16">
-          <h3 className="text-3xl font-display font-light text-neutral-950 mb-8 text-center">
-            Fully Customizable
-          </h3>
-          <p className="text-base text-neutral-600 text-center mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-            Each chocolate wrapper features your logo and messaging. 
-            Create a branded experience that reinforces your message every time they reach for a chocolate.
-          </p>
-          <div className="grid md:grid-cols-3 gap-12 text-center">
-            <div>
-              <h4 className="text-sm font-light text-neutral-950 mb-2 uppercase tracking-widest">Logo Branding</h4>
-              <p className="text-sm text-neutral-600 leading-relaxed font-light">Your logo on every wrapper</p>
-            </div>
-            <div>
-              <h4 className="text-sm font-light text-neutral-950 mb-2 uppercase tracking-widest">Value Props</h4>
-              <p className="text-sm text-neutral-600 leading-relaxed font-light">Custom messaging on wrappers</p>
-            </div>
-            <div>
-              <h4 className="text-sm font-light text-neutral-950 mb-2 uppercase tracking-widest">Packaging</h4>
-              <p className="text-sm text-neutral-600 leading-relaxed font-light">Premium jar and presentation</p>
             </div>
           </div>
         </div>

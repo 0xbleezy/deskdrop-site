@@ -1,71 +1,60 @@
 export default function Testimonials() {
+  const testimonials = [
+    {
+      quote: 'We leverage prospect gifting to thank customers for participating in our reference program... our sales team uses it to help source leads... we use it to incentivize customers to complete reviews and surveys... we use it for EVERYTHING.',
+      author: 'Ray Rhodes',
+      title: 'Co-Founder',
+      company: 'UserEvidence',
+    },
+    {
+      quote: 'Our marketing and sales playbooks include gift sends, one-off sends from AMs and AEs, employee appreciation, and direct mail campaigns. 40% of leads who receive a gift through our program end up converting to pipeline.',
+      author: 'Mikaela Karcher',
+      title: 'Field Marketing',
+      company: 'Deal Support',
+    },
+    {
+      quote: 'There are so many ways to use prospect gifting – customer gifting, prospecting, event follow-up, and employee engagement, just to name a few. Everyone can find a way to win.',
+      author: 'Alice Stern',
+      title: 'Senior Marketing Manager',
+      company: '',
+    },
+    {
+      quote: 'Prospect gifting helps speed up my sales cycle and I love it. Allows me to break the ice with purpose. Gifting should mean something. By using our solution I can curate appreciation easily.',
+      author: 'Willie Little',
+      title: 'Account Executive',
+      company: '',
+    },
+  ];
+
   return (
-    <section id="about" className="py-32 bg-white">
-      <div className="max-w-editorial mx-auto px-8">
-        <div className="text-center mb-24">
-          <h2 className="text-6xl md:text-7xl font-display font-light text-neutral-950 mb-8 leading-tight">
-            Trusted by Leading Companies
+    <section className="py-24" style={{ backgroundColor: '#f9f8fa' }}>
+      <div className="max-w-7xl mx-auto px-8 lg:px-16 xl:px-20">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-light text-neutral-900 mb-8 leading-tight">
+            Hear from our customers
           </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            See what our clients say about our corporate gifting solutions
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-16 mb-24">
-          <div className="border-t border-neutral-200 pt-8">
-            <p className="text-base text-neutral-700 mb-8 leading-relaxed font-light italic">
-              "The prospecting gift has become an essential part of our account-based marketing strategy. 
-              The 30%+ reply rate speaks for itself. Our sales team loves how it creates meaningful touchpoints."
-            </p>
-            <div>
-              <div className="text-sm font-light text-neutral-950">Sarah Johnson</div>
-              <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mt-1">VP of Sales, TechCorp</div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="bg-white p-8 rounded border border-neutral-200 hover:shadow-md transition-shadow"
+            >
+              <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light italic">
+                "{testimonial.quote}"
+              </p>
+              <div>
+                <p className="text-base font-medium text-neutral-900">
+                  {testimonial.author}
+                </p>
+                <p className="text-sm text-neutral-600 font-light">
+                  {testimonial.title}
+                  {testimonial.company && `, ${testimonial.company}`}
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div className="border-t border-neutral-200 pt-8">
-            <p className="text-base text-neutral-700 mb-8 leading-relaxed font-light italic">
-              "We've seen a significant increase in deal velocity since incorporating these gifts into 
-              our outreach. The physical presence on prospects' desks makes all the difference."
-            </p>
-            <div>
-              <div className="text-sm font-light text-neutral-950">Michael Chen</div>
-              <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mt-1">Marketing Director, GrowthCo</div>
-            </div>
-          </div>
-
-          <div className="border-t border-neutral-200 pt-8">
-            <p className="text-base text-neutral-700 mb-8 leading-relaxed font-light italic">
-              "The customization options are fantastic. We can brand each wrapper with our value props, 
-              and the quality of the chocolates is exceptional. Our clients are always impressed."
-            </p>
-            <div>
-              <div className="text-sm font-light text-neutral-950">Emily Rodriguez</div>
-              <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mt-1">Account Manager, Enterprise Solutions</div>
-            </div>
-          </div>
-        </div>
-
-        {/* Trust Indicators - Minimal */}
-        <div className="border-t border-neutral-200 pt-16">
-          <div className="grid md:grid-cols-4 gap-12 text-center">
-            <div>
-              <div className="text-5xl font-display font-light text-neutral-950 mb-3">75+</div>
-              <div className="text-xs text-neutral-500 uppercase tracking-widest font-light">Years of Experience</div>
-            </div>
-            <div>
-              <div className="text-5xl font-display font-light text-neutral-950 mb-3">1000+</div>
-              <div className="text-xs text-neutral-500 uppercase tracking-widest font-light">Corporate Clients</div>
-            </div>
-            <div>
-              <div className="text-5xl font-display font-light text-neutral-950 mb-3">30%+</div>
-              <div className="text-xs text-neutral-500 uppercase tracking-widest font-light">Average Reply Rate</div>
-            </div>
-            <div>
-              <div className="text-5xl font-display font-light text-neutral-950 mb-3">250+</div>
-              <div className="text-xs text-neutral-500 uppercase tracking-widest font-light">Gift Options</div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

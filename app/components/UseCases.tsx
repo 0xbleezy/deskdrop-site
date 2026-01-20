@@ -44,14 +44,6 @@ export default function UseCases() {
               key={index}
               className="border-t border-neutral-200 pt-8"
             >
-              <div className="mb-6 aspect-[16/9] max-w-full">
-                <div 
-                  className="w-full h-full bg-cover bg-center border border-neutral-200"
-                  style={{
-                    backgroundImage: `url('${useCase.image}')`
-                  }}
-                ></div>
-              </div>
               <div className="mb-6">
                 <h3 className="text-2xl font-display font-light text-neutral-950 mb-2 leading-tight">
                   {useCase.title}

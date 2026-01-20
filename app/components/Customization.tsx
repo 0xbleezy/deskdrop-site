@@ -4,20 +4,20 @@ export default function Customization() {
       <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
-            Customization Options
+            Fully Customizable
           </h2>
           <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
             Every detail designed to reinforce your brand and value proposition
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           <div className="border-t border-neutral-200 pt-8 text-center">
             <div className="mb-6 aspect-square max-w-[200px] mx-auto">
               <div 
                 className="w-full h-full bg-cover bg-center border border-neutral-200"
                 style={{
-                  backgroundImage: "url('/images/prospecting jar on desk.png')"
+                  backgroundImage: "url('/images/logo branding.png')"
                 }}
               ></div>
             </div>
@@ -34,7 +34,7 @@ export default function Customization() {
               <div 
                 className="w-full h-full bg-cover bg-center border border-neutral-200"
                 style={{
-                  backgroundImage: "url('/images/prospecting jar on desk.png')"
+                  backgroundImage: "url('/images/custom messaging.png')"
                 }}
               ></div>
             </div>
@@ -51,24 +51,15 @@ export default function Customization() {
               <div 
                 className="w-full h-full bg-cover bg-center border border-neutral-200"
                 style={{
-                  backgroundImage: "url('/images/prospecting jar on desk.png')"
+                  backgroundImage: "url('/images/premium packaging.png')"
                 }}
               ></div>
             </div>
             <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
-              Branded Packaging
+              Premium Packaging
             </h3>
             <p className="text-neutral-600 leading-relaxed font-light">
               Premium packaging and presentation. Professional first impression that sets the tone for the relationship.
-            </p>
-          </div>
-
-          <div className="border-t border-neutral-200 pt-8 text-center">
-            <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
-              Volume Pricing
-            </h3>
-            <p className="text-neutral-600 leading-relaxed font-light">
-              Competitive pricing for bulk orders. Volume discounts make it easier to scale across your entire prospect list.
             </p>
           </div>
         </div>

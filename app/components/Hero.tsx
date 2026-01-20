@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
   const [replyRate, setReplyRate] = useState(0);
@@ -27,28 +28,23 @@ export default function Hero() {
     };
 
     animateCounter(setReplyRate, 30);
-    animateCounter(setExposure, 12);
+    animateCounter(setExposure, 25);
   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       if (!heroRef.current) return;
-      
       const rect = heroRef.current.getBoundingClientRect();
       const heroHeight = rect.height;
       const scrollProgress = Math.max(0, Math.min(1, -rect.top / heroHeight));
-      
-      // Subtle parallax: image moves at 60% of scroll speed
-      const parallaxSpeed = 0.6;
-      const maxOffset = heroHeight * 0.2; // Max 20% of hero height
+      const parallaxSpeed = 0.3;
+      const maxOffset = heroHeight * 0.2;
       const offset = scrollProgress * maxOffset * parallaxSpeed;
-      
       setParallaxOffset(offset);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // Initial call
-    
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -60,66 +56,63 @@ export default function Hero() {
   };
 
   return (
-    <section ref={heroRef} id="hero" className="relative min-h-screen flex items-end justify-center overflow-hidden pt-14 md:pt-0" style={{ backgroundColor: 'transparent' }}>
-      {/* Full Viewport Hero Image */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/images/prospecting jar on desk.png')",
-            transform: `translateY(${parallaxOffset}px)`,
-            transition: 'transform 0.1s ease-out'
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-white/20 to-transparent"></div>
-        </div>
-      </div>
-
-      <div className="relative z-10 w-full px-8 pb-16 md:pb-24">
-        <div className="max-w-full mx-auto">
-          {/* Massive Typography - Full Width */}
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-display font-light text-white mb-8 leading-none tracking-tight text-center md:text-left" style={{ color: '#ffffff' }}>
-            Get replies when outreach stops working
-          </h1>
-          
-          {/* Stats directly under headline */}
-          <div className="flex justify-center md:justify-start gap-12 md:gap-16 mb-12">
-            <div className="text-center md:text-left">
-              <div className="text-5xl md:text-6xl font-display font-light text-white mb-2">
-                {replyRate}%
+    <section 
+      ref={heroRef} 
+      id="hero" 
+      className="relative min-h-[90vh] flex items-center overflow-hidden pt-16 md:pt-0"
+      style={{
+        backgroundImage: "url('/images/background.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 xl:px-10 w-full">
+        <div className="py-12 md:py-16">
+          {/* Text Content */}
+          <div>
+            <h1 className="text-4xl md:text-4xl lg:text-4xl xl:text-4xl font-display font-light text-white mb-6 leading-[1.1] tracking-tight" style={{ color: '#ffffff' }}>
+              Get replies when outreach stops working
+            </h1>
+            
+            {/* Stats directly under headline */}
+            <div className="flex gap-12 mb-10">
+              <div>
+                <div className="text-5xl md:text-6xl font-display font-light text-white mb-2">
+                  {replyRate}%
+                </div>
+                <div className="text-xs text-white/80 uppercase tracking-widest font-light">REPLY RATE</div>
               </div>
-              <div className="text-xs text-neutral-200 uppercase tracking-widest font-light">Reply Rate</div>
-            </div>
-            <div className="text-center md:text-left">
-              <div className="text-5xl md:text-6xl font-display font-light text-white mb-2">
-                {exposure}x
+              <div>
+                <div className="text-5xl md:text-6xl font-display font-light text-white mb-2">
+                  {exposure}x
+                </div>
+                <div className="text-xs text-white/80 uppercase tracking-widest font-light">EXPOSURE</div>
               </div>
-              <div className="text-xs text-neutral-200 uppercase tracking-widest font-light">Daily Exposure</div>
             </div>
-          </div>
 
-          {/* Description */}
-          <div className="mb-12">
-            <p className="text-lg md:text-xl text-neutral-200 font-light leading-relaxed max-w-2xl">
+            <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed font-light max-w-2xl">
               The outbound play your prospects notice.<br />
               A physical touchpoint that breaks through inbox fatigue and earns replies.
             </p>
-          </div>
 
-          {/* Minimal CTAs - Full Width */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <button
-              onClick={scrollToContact}
-              className="px-12 py-4 bg-neutral-950 text-white text-sm uppercase tracking-widest font-light hover:bg-neutral-800 transition-colors"
-            >
-              See How It Works
-            </button>
-            <button
-              onClick={scrollToContact}
-              className="px-12 py-3 border border-white text-white text-xs uppercase tracking-widest font-light hover:bg-white hover:text-neutral-950 transition-colors"
-            >
-              Request Sample Campaign Plan
-            </button>
+            <div className="flex gap-4">
+              <button
+                onClick={scrollToContact}
+                className="px-8 py-4 bg-white text-neutral-700 text-base font-light rounded hover:bg-neutral-50 transition-colors text-center whitespace-nowrap"
+              >
+                SEE HOW IT WORKS
+              </button>
+              <button
+                onClick={scrollToContact}
+                className="px-8 py-4 border border-white text-white text-base font-light rounded hover:bg-white/10 transition-colors text-center whitespace-nowrap bg-white/0"
+              >
+                REQUEST SAMPLE CAMPAIGN PLAN
+              </button>
+            </div>
           </div>
         </div>
       </div>
