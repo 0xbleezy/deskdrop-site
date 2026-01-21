@@ -70,12 +70,12 @@ export default function Hero() {
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-black/40"></div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 xl:px-10 w-full">
-        <div className="py-12 md:py-16">
+      <div className="relative z-10 max-w-editorial mx-auto px-8 lg:px-16 xl:px-20 w-full">
+        <div className="pt-12 pb-12 md:pt-16 md:pb-16">
           {/* Text Content */}
           <div>
             <h1 className="text-4xl md:text-4xl lg:text-4xl xl:text-4xl font-display font-light text-white mb-6 leading-[1.1] tracking-tight" style={{ color: '#ffffff' }}>
-              Get replies when outreach stops working
+              Get replies when outreach<br />stops working
             </h1>
             
             {/* Stats directly under headline */}
@@ -99,7 +99,7 @@ export default function Hero() {
               A physical touchpoint that breaks through inbox fatigue and earns replies.
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <button
                 onClick={scrollToContact}
                 className="px-8 py-4 bg-white text-neutral-700 text-base font-light rounded hover:bg-neutral-50 transition-colors text-center whitespace-nowrap"

@@ -169,36 +169,12 @@ export default function Navigation() {
               )}
             </div>
 
-            {/* Resources Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => handleDropdownToggle('resources')}
-                className="text-xs text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
-              >
-                <span>Resources</span>
-                <span className="text-neutral-400">▼</span>
-              </button>
-              {openDropdown === 'resources' && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-neutral-200 shadow-lg py-4">
-                  <Link href="/resources/blog" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
-                    <div className="font-medium text-sm">Blog</div>
-                  </Link>
-                  <Link href="/resources/customers" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
-                    <div className="font-medium text-sm">Customers</div>
-                  </Link>
-                  <Link href="/resources/help" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
-                    <div className="font-medium text-sm">Help Center</div>
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            <button
-              onClick={() => scrollToSection('contact')}
+            <Link
+              href="/pricing"
               className="text-xs text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
             >
               Pricing
-            </button>
+            </Link>
           </div>
 
           {/* Desktop CTAs */}
@@ -249,12 +225,12 @@ export default function Navigation() {
               <Link href="/use-case/revenue" className="px-4 py-3 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left">
                 Revenue
               </Link>
-              <button
-                onClick={handleContactClick}
-                className="px-4 py-3 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left"
+              <Link
+                href="/pricing"
+                className="px-4 py-3 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block"
               >
                 Pricing
-              </button>
+              </Link>
               <button
                 onClick={handleContactClick}
                 className="px-4 py-3 text-xs text-white font-display font-light tracking-widest uppercase text-left"
