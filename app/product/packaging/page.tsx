@@ -6,11 +6,11 @@ export default function PackagingPage() {
       {/* Hero */}
       <section className="py-32 pt-40" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-8 lg:px-16 xl:px-20">
-          <div className="max-w-4xl">
+          <div className="max-w-3xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6">
               Product
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-900 mb-8 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-2xl xl:text-3xl font-display font-light text-neutral-900 mb-8 leading-tight">
               Premium Packaging{' '}
               <br />
               That Makes an Impact
@@ -97,7 +97,7 @@ export default function PackagingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24" style={{ backgroundColor: '#e6f7f9' }}>
+      <section className="py-24" style={{ backgroundColor: '#f5f3f0' }}>
         <div className="max-w-4xl mx-auto px-8 lg:px-16 xl:px-20 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-light text-neutral-900 mb-8 leading-tight">
             See the quality yourself

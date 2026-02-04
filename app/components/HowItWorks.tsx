@@ -1,4 +1,9 @@
+'use client';
+
+import { useScrollReveal } from '../hooks/useScrollReveal';
+
 export default function HowItWorks() {
+  const { ref, isVisible } = useScrollReveal();
   const steps = [
     {
       number: '01',
@@ -27,9 +32,13 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
-        <div className="text-center mb-24">
+    <section 
+      ref={ref as any}
+      className={`py-16 sm:py-20 border-t border-neutral-200 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
+      style={{ backgroundColor: 'transparent' }}
+    >
+      <div className="max-w-editorial mx-auto px-6 sm:px-8 lg:px-16 xl:px-20">
+        <div className="text-center mb-12 sm:mb-24">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
             How It Works
           </h2>
@@ -38,7 +47,7 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-16">
           {steps.map((step, index) => (
             <div
               key={index}

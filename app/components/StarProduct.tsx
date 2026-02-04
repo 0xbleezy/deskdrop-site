@@ -1,8 +1,10 @@
 'use client';
 
 import Image from 'next/image';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export default function StarProduct() {
+  const { ref, isVisible } = useScrollReveal();
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -11,7 +13,12 @@ export default function StarProduct() {
   };
 
   return (
-    <section id="star-product" className="py-32 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+    <section 
+      ref={ref as any}
+      id="star-product" 
+      className={`py-32 border-t border-neutral-200 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
+      style={{ backgroundColor: 'transparent' }}
+    >
       <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
@@ -22,7 +29,7 @@ export default function StarProduct() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center mb-24">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
           {/* Left - Image */}
           <div className="relative w-full">
             <Image

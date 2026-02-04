@@ -1,4 +1,9 @@
+'use client';
+
+import { useScrollReveal } from '../hooks/useScrollReveal';
+
 export default function UseCases() {
+  const { ref, isVisible } = useScrollReveal();
   const useCases = [
     {
       title: 'Cold or Ignored Outbound',
@@ -27,7 +32,11 @@ export default function UseCases() {
   ];
 
   return (
-    <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+    <section 
+      ref={ref as any}
+      className={`py-20 border-t border-neutral-200 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
+      style={{ backgroundColor: 'transparent' }}
+    >
       <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">

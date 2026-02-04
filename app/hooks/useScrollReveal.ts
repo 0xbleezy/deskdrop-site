@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 
 export function useScrollReveal() {
   const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

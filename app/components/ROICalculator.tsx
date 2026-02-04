@@ -163,7 +163,7 @@ export default function ROICalculator() {
             href="#contact"
             className="inline-block px-12 py-4 bg-neutral-950 text-white text-sm uppercase tracking-widest font-light hover:bg-neutral-800 transition-colors"
           >
-            Get Started with Your Campaign
+            Get Started
           </a>
         </div>
       </div>

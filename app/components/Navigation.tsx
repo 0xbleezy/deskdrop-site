@@ -88,6 +88,13 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
+            <Link
+              href="/how-it-works"
+              className="text-xs text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
+            >
+              How It Works
+            </Link>
+
             {/* By Role Dropdown */}
             <div className="relative">
               <button
@@ -98,16 +105,31 @@ export default function Navigation() {
                 <span className="text-neutral-400">▼</span>
               </button>
               {openDropdown === 'role' && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-neutral-200 shadow-lg py-4">
-                  <Link href="/use-case/marketing" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
+                <div 
+                  className="absolute top-full left-0 mt-2 w-64 bg-white border border-neutral-200 shadow-lg py-4"
+                  onMouseLeave={() => setOpenDropdown(null)}
+                >
+                  <Link 
+                    href="/use-case/marketing" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light"
+                  >
                     <div className="font-medium text-sm">Marketing</div>
                     <div className="text-xs text-neutral-600 mt-1">Gifting to enhance brand awareness and ABM campaigns</div>
                   </Link>
-                  <Link href="/use-case/sales" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
+                  <Link 
+                    href="/use-case/sales" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light"
+                  >
                     <div className="font-medium text-sm">Sales</div>
                     <div className="text-xs text-neutral-600 mt-1">Gifting to book meetings and reach the signature line faster</div>
                   </Link>
-                  <Link href="/use-case/revenue" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
+                  <Link 
+                    href="/use-case/revenue" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light"
+                  >
                     <div className="font-medium text-sm">Revenue</div>
                     <div className="text-xs text-neutral-600 mt-1">Gifting to accelerate pipeline and increase deal velocity</div>
                   </Link>
@@ -125,17 +147,36 @@ export default function Navigation() {
                 <span className="text-neutral-400">▼</span>
               </button>
               {openDropdown === 'product' && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-neutral-200 shadow-lg py-4">
-                  <Link href="/product/features" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
+                <div 
+                  className="absolute top-full left-0 mt-2 w-64 bg-white border border-neutral-200 shadow-lg py-4"
+                  onMouseLeave={() => setOpenDropdown(null)}
+                >
+                  <Link 
+                    href="/product/features" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light"
+                  >
                     <div className="font-medium text-sm">Features</div>
                   </Link>
-                  <Link href="/product/gifts" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
+                  <Link 
+                    href="/product/gifts" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light"
+                  >
                     <div className="font-medium text-sm">Gifts</div>
                   </Link>
-                  <Link href="/product/customization" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
+                  <Link 
+                    href="/product/customization" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light"
+                  >
                     <div className="font-medium text-sm">Customization</div>
                   </Link>
-                  <Link href="/product/packaging" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
+                  <Link 
+                    href="/product/packaging" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light"
+                  >
                     <div className="font-medium text-sm">Packaging</div>
                   </Link>
                 </div>
@@ -152,16 +193,31 @@ export default function Navigation() {
                 <span className="text-neutral-400">▼</span>
               </button>
               {openDropdown === 'solutions' && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-neutral-200 shadow-lg py-4">
-                  <Link href="/solutions/prospect-gifting" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
+                <div 
+                  className="absolute top-full left-0 mt-2 w-64 bg-white border border-neutral-200 shadow-lg py-4"
+                  onMouseLeave={() => setOpenDropdown(null)}
+                >
+                  <Link 
+                    href="/solutions/prospect-gifting" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light"
+                  >
                     <div className="font-medium text-sm">Prospect Gifting</div>
                     <div className="text-xs text-neutral-600 mt-1">Automate and integrate your gifting programs</div>
                   </Link>
-                  <Link href="/solutions/abm" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
+                  <Link 
+                    href="/solutions/abm" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light"
+                  >
                     <div className="font-medium text-sm">ABM Gifting</div>
                     <div className="text-xs text-neutral-600 mt-1">Execute on your ABM strategy at scale</div>
                   </Link>
-                  <Link href="/solutions/custom" className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light">
+                  <Link 
+                    href="/solutions/custom" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-neutral-50 text-neutral-900 font-display font-light"
+                  >
                     <div className="font-medium text-sm">Custom Solutions</div>
                     <div className="text-xs text-neutral-600 mt-1">Tailored gifting solutions for your business</div>
                   </Link>
@@ -216,24 +272,32 @@ export default function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden border-t border-neutral-800 bg-neutral-900/98">
             <div className="flex flex-col py-4 space-y-1">
-              <Link href="/use-case/marketing" className="px-4 py-3 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left">
+              <Link
+                href="/how-it-works"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block"
+              >
+                How It Works
+              </Link>
+              <Link href="/use-case/marketing" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
                 Marketing
               </Link>
-              <Link href="/use-case/sales" className="px-4 py-3 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left">
+              <Link href="/use-case/sales" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
                 Sales
               </Link>
-              <Link href="/use-case/revenue" className="px-4 py-3 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left">
+              <Link href="/use-case/revenue" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
                 Revenue
               </Link>
               <Link
                 href="/pricing"
-                className="px-4 py-3 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block"
               >
                 Pricing
               </Link>
               <button
                 onClick={handleContactClick}
-                className="px-4 py-3 text-xs text-white font-display font-light tracking-widest uppercase text-left"
+                className="px-4 py-4 text-xs text-white font-display font-light tracking-widest uppercase text-left w-full"
               >
                 Let's Chat
               </button>

@@ -1,15 +1,13 @@
 import Hero from './components/Hero';
 import TrustBadges from './components/TrustBadges';
 import StarProduct from './components/StarProduct';
-import Services from './components/Services';
-import ProductGallery from './components/ProductGallery';
-import HowItWorks from './components/HowItWorks';
 import UseCases from './components/UseCases';
 import ComparisonTable from './components/ComparisonTable';
 import ROICalculator from './components/ROICalculator';
-import Customization from './components/Customization';
-import FAQ from './components/FAQ';
+import CustomizationTeaser from './components/CustomizationTeaser';
+import FAQPreview from './components/FAQPreview';
 import Contact from './components/Contact';
+import MobileStickyCTA from './components/MobileStickyCTA';
 
 export default function Home() {
   return (
@@ -17,14 +15,13 @@ export default function Home() {
       <Hero />
       <TrustBadges />
       <StarProduct />
-      <Customization />
-      <ProductGallery />
-      <HowItWorks />
+      <CustomizationTeaser />
       <UseCases />
       <ComparisonTable />
       <ROICalculator />
-      <FAQ />
+      <FAQPreview />
       <Contact />
+      <MobileStickyCTA />
     </main>
   );
 }

@@ -82,3 +82,30 @@ h3 {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Hide HubSpot form descriptions */
+.hs-form-frame .hs-form-description,
+.hs-form-frame .hs-form-description p,
+.hs-form-frame .submitted-message {
+  display: none !important;
+}
+
+/* Infinite scrolling marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}

@@ -79,7 +79,7 @@ export default function Hero() {
             </h1>
             
             {/* Stats directly under headline */}
-            <div className="flex gap-12 mb-10">
+            <div className="flex gap-8 sm:gap-12 mb-10">
               <div>
                 <div className="text-5xl md:text-6xl font-display font-light text-white mb-2">
                   {replyRate}%
@@ -95,8 +95,7 @@ export default function Hero() {
             </div>
 
             <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed font-light max-w-2xl">
-              The outbound play your prospects notice.<br />
-              A physical touchpoint that breaks through inbox fatigue and earns replies.
+              The outbound play your prospects notice.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4">
@@ -110,7 +109,7 @@ export default function Hero() {
                 onClick={scrollToContact}
                 className="px-8 py-4 border border-white text-white text-base font-light rounded hover:bg-white/10 transition-colors text-center whitespace-nowrap bg-white/0"
               >
-                REQUEST SAMPLE CAMPAIGN PLAN
+                REQUEST SAMPLE
               </button>
             </div>
           </div>

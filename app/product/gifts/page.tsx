@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ProductGallery from '../../components/ProductGallery';
 
 export default function GiftsPage() {
   return (
@@ -6,11 +7,11 @@ export default function GiftsPage() {
       {/* Hero */}
       <section className="py-32 pt-40" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-8 lg:px-16 xl:px-20">
-          <div className="max-w-4xl">
+          <div className="max-w-3xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6">
               Product
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-900 mb-8 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-2xl xl:text-3xl font-display font-light text-neutral-900 mb-8 leading-tight">
               The Outbound Gift
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
@@ -34,9 +35,6 @@ export default function GiftsPage() {
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
                 Small
               </div>
-              <h3 className="text-3xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                8 oz Jar
-              </h3>
               <div className="aspect-[4/3] mb-6 bg-cover bg-center border border-neutral-200 rounded"
                 style={{ backgroundImage: "url('/images/prospecting jar on desk.png')" }}
               ></div>
@@ -56,9 +54,6 @@ export default function GiftsPage() {
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
                 Medium
               </div>
-              <h3 className="text-3xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                12 oz Jar
-              </h3>
               <div className="aspect-[4/3] mb-6 bg-cover bg-center border border-neutral-200 rounded"
                 style={{ backgroundImage: "url('/images/prospecting jar on desk.png')" }}
               ></div>
@@ -78,9 +73,6 @@ export default function GiftsPage() {
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
                 Large
               </div>
-              <h3 className="text-3xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                19 oz Jar
-              </h3>
               <div className="aspect-[4/3] mb-6 bg-cover bg-center border border-neutral-200 rounded"
                 style={{ backgroundImage: "url('/images/prospecting jar on desk.png')" }}
               ></div>
@@ -109,6 +101,9 @@ export default function GiftsPage() {
           </div>
         </div>
       </section>
+
+      {/* Product Gallery */}
+      <ProductGallery />
 
       {/* Benefits */}
       <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
@@ -156,7 +151,7 @@ export default function GiftsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24" style={{ backgroundColor: '#e6f7f9' }}>
+      <section className="py-24" style={{ backgroundColor: '#f5f3f0' }}>
         <div className="max-w-4xl mx-auto px-8 lg:px-16 xl:px-20 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-light text-neutral-900 mb-8 leading-tight">
             Ready to see the impact?

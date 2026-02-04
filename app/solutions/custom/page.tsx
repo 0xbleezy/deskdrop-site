@@ -101,7 +101,7 @@ export default function CustomPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24" style={{ backgroundColor: '#e6f7f9' }}>
+      <section className="py-24" style={{ backgroundColor: '#f5f3f0' }}>
         <div className="max-w-4xl mx-auto px-8 lg:px-16 xl:px-20 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-light text-neutral-900 mb-8 leading-tight">
             Ready to create a custom solution?
