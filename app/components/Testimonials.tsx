@@ -28,7 +28,7 @@ export default function Testimonials() {
 
   return (
     <section className="py-24" style={{ backgroundColor: '#f9f8fa' }}>
-      <div className="max-w-7xl mx-auto px-8 lg:px-16 xl:px-20">
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-light text-neutral-900 mb-8 leading-tight">
             Hear from our customers

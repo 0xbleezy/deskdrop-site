@@ -53,7 +53,7 @@ export default function ComparisonTable() {
 
   return (
     <section className="py-24 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-6xl mx-auto px-8 lg:px-16 xl:px-20">
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
         <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Why This Works Where Other Channels Stall

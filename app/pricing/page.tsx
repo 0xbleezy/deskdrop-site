@@ -43,7 +43,7 @@ export default function PricingPage() {
     <main className="min-h-screen" style={{ backgroundColor: '#f9f8fa' }}>
       {/* Hero */}
       <section className="py-20 pt-32 sm:py-32 sm:pt-40" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8 xl:px-10">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="max-w-7xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6 font-display">
               Pricing
@@ -60,7 +60,7 @@ export default function PricingPage() {
 
       {/* Single Campaign Pricing */}
       <section className="py-16 sm:py-24 border-t border-neutral-200" style={{ backgroundColor: '#f9f8fa' }}>
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8 xl:px-10">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4 leading-tight">
               Single Campaign Pricing
@@ -172,7 +172,7 @@ export default function PricingPage() {
 
       {/* Monthly Pricing */}
       <section className="py-16 sm:py-24 border-t border-neutral-200" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8 xl:px-10">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4 leading-tight">
               Monthly Pricing
@@ -437,7 +437,7 @@ export default function PricingPage() {
 
       {/* FAQ Section */}
       <section className="py-16 sm:py-24 border-t border-neutral-200" style={{ backgroundColor: '#f9f8fa' }}>
-        <div className="max-w-editorial mx-auto px-6 sm:px-8 lg:px-8 xl:px-10">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4 leading-tight">
               Pricing FAQ
@@ -495,7 +495,7 @@ export default function PricingPage() {
 
       {/* CTA Section */}
       <section className="py-16 sm:py-24 border-t border-neutral-200" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-editorial mx-auto px-6 sm:px-8 lg:px-8 xl:px-10 text-center">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Ready to get started?
           </h2>

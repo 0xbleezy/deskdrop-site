@@ -57,7 +57,7 @@ const config: Config = {
         '160': '40rem',
       },
       maxWidth: {
-        'editorial': '1200px',
+        // editorial removed — now using max-w-7xl (1280px) sitewide via Container
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

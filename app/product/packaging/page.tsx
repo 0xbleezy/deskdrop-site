@@ -5,7 +5,7 @@ export default function PackagingPage() {
     <main className="min-h-screen" style={{ backgroundColor: '#f9f8fa' }}>
       {/* Hero */}
       <section className="py-32 pt-40" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-7xl mx-auto px-8 lg:px-16 xl:px-20">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="max-w-7xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6">
               Product
@@ -22,7 +22,7 @@ export default function PackagingPage() {
 
       {/* Features */}
       <section className="py-24" style={{ backgroundColor: '#f9f8fa' }}>
-        <div className="max-w-7xl mx-auto px-8 lg:px-16 xl:px-20">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="grid md:grid-cols-2 gap-16 mb-24">
             <div>
               <div className="aspect-[4/3] mb-8 bg-cover bg-center border border-neutral-200 rounded"
@@ -66,7 +66,7 @@ export default function PackagingPage() {
 
       {/* Presentation */}
       <section className="py-24" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-7xl mx-auto px-8 lg:px-16 xl:px-20">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-light text-neutral-900 mb-16 leading-tight text-center">
             Professional Presentation
           </h2>
@@ -95,7 +95,7 @@ export default function PackagingPage() {
 
       {/* CTA */}
       <section className="py-24" style={{ backgroundColor: '#f5f3f0' }}>
-        <div className="max-w-4xl mx-auto px-8 lg:px-16 xl:px-20 text-center">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center">
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-light text-neutral-900 mb-8 leading-tight">
             See the quality yourself
           </h2>

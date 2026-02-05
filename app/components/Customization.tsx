@@ -1,7 +1,7 @@
 export default function Customization() {
   return (
     <section id="customization" className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-editorial mx-auto px-8 lg:px-16 xl:px-20">
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Fully Customizable

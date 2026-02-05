@@ -5,7 +5,7 @@ import Script from 'next/script';
 export default function Contact() {
   return (
     <section id="contact" className="py-16 sm:py-32" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-editorial mx-auto px-6 sm:px-8 lg:px-16 xl:px-20">
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
         <div className="text-center mb-12 sm:mb-24">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Get Started Today

@@ -19,7 +19,7 @@ export default function TrustBadges() {
 
   return (
     <section className="py-16 overflow-hidden" style={{ backgroundColor: '#f5f3f0' }}>
-      <div className="text-center mb-12">
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center mb-12">
         <p className="text-base text-neutral-600 font-semibold">
           Trusted by teams like
         </p>

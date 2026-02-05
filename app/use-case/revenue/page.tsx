@@ -7,7 +7,7 @@ export default function RevenuePage() {
     <main className="min-h-screen" style={{ backgroundColor: '#f9f8fa' }}>
       {/* Hero */}
       <section className="py-20 pt-32 sm:py-32 sm:pt-40" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 xl:px-20">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="max-w-7xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6">
               Revenue
@@ -39,7 +39,7 @@ export default function RevenuePage() {
 
       {/* Benefits */}
       <section className="py-16 sm:py-24" style={{ backgroundColor: '#f9f8fa' }}>
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 xl:px-20">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
@@ -74,7 +74,7 @@ export default function RevenuePage() {
 
       {/* Use Cases */}
       <section className="py-16 sm:py-24" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 xl:px-20">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-light text-neutral-900 mb-16 leading-tight">
             Use cases for revenue teams
           </h2>
@@ -139,7 +139,7 @@ export default function RevenuePage() {
 
       {/* CTA */}
       <section className="py-16 sm:py-24" style={{ backgroundColor: '#f5f3f0' }}>
-        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-16 xl:px-20 text-center">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center">
           <h2 className="text-5xl md:text-6xl font-display font-light text-neutral-900 mb-8 leading-tight">
             Ready to accelerate revenue?
           </h2>
