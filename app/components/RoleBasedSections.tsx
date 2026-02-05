@@ -36,7 +36,7 @@ export default function RoleBasedSections() {
             <Link
               key={index}
               href={role.link}
-              className="bg-neutral-50 p-8 rounded hover:shadow-md transition-shadow border border-neutral-200"
+              className="glass-card p-8 rounded hover:shadow-lg transition-shadow"
             >
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
                 {role.title}

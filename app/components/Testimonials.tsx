@@ -39,7 +39,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded border border-neutral-200 hover:shadow-md transition-shadow"
+              className="glass-card p-8 rounded hover:shadow-lg transition-shadow"
             >
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light italic">
                 "{testimonial.quote}"

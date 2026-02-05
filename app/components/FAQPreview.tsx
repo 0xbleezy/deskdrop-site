@@ -66,7 +66,7 @@ export default function FAQPreview() {
         <div className="text-center border-t border-neutral-200 pt-12">
           <Link
             href="/resources/help"
-            className="inline-block px-8 py-3 border border-neutral-950 text-neutral-950 text-xs uppercase tracking-widest font-light hover:bg-neutral-50 transition-colors"
+            className="glass-button-outline inline-block px-8 py-3 text-neutral-950 text-xs uppercase tracking-widest font-light transition-colors"
           >
             View All FAQs
           </Link>

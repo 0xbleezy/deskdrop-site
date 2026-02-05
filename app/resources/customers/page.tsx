@@ -53,7 +53,7 @@ export default function CustomersPage() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded border border-neutral-200 hover:shadow-md transition-shadow"
+                className="glass-card p-8 rounded hover:shadow-lg transition-shadow"
               >
                 <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light italic">
                   "{testimonial.quote}"
@@ -84,7 +84,7 @@ export default function CustomersPage() {
           </p>
           <Link
             href="/#contact"
-            className="inline-block px-8 py-4 bg-neutral-900 text-white text-base font-light rounded hover:bg-neutral-800 transition-colors"
+            className="glass-button inline-block px-8 py-4 text-white text-base font-light rounded transition-all"
           >
             Get Started
           </Link>

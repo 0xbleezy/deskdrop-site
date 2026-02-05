@@ -38,7 +38,7 @@ export default function EnterpriseSolutions() {
             <Link
               key={index}
               href={solution.link}
-              className="bg-neutral-50 p-8 rounded hover:shadow-md transition-shadow border border-neutral-200"
+              className="glass-card p-8 rounded hover:shadow-lg transition-shadow"
             >
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-3">
                 {solution.tagline}

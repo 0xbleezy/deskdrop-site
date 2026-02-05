@@ -101,13 +101,13 @@ export default function Hero() {
             <div className="flex flex-col md:flex-row gap-4">
               <button
                 onClick={scrollToContact}
-                className="px-8 py-4 bg-white text-neutral-700 text-base font-light rounded hover:bg-neutral-50 transition-colors text-center whitespace-nowrap"
+                className="glass-button-light px-8 py-4 text-neutral-700 text-base font-light rounded transition-all text-center whitespace-nowrap"
               >
                 SEE HOW IT WORKS
               </button>
               <button
                 onClick={scrollToContact}
-                className="px-8 py-4 border border-white text-white text-base font-light rounded hover:bg-white/10 transition-colors text-center whitespace-nowrap bg-white/0"
+                className="glass-button-outline px-8 py-4 text-white text-base font-light rounded transition-all text-center whitespace-nowrap"
               >
                 REQUEST A SAMPLE
               </button>

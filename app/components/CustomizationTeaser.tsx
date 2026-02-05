@@ -68,7 +68,7 @@ export default function CustomizationTeaser() {
         <div className="text-center">
           <Link
             href="/product/customization"
-            className="inline-block px-8 py-3 border border-neutral-950 text-neutral-950 text-xs uppercase tracking-widest font-light hover:bg-neutral-50 transition-colors"
+            className="glass-button-outline inline-block px-8 py-3 text-neutral-950 text-xs uppercase tracking-widest font-light transition-colors"
           >
             See All Customization Options
           </Link>

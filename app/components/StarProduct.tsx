@@ -98,13 +98,13 @@ export default function StarProduct() {
             <div className="flex flex-wrap gap-4">
               <button
                 onClick={scrollToContact}
-                className="px-8 py-3 bg-neutral-950 text-white text-xs uppercase tracking-widest font-light hover:bg-neutral-800 transition-colors"
+                className="glass-button px-8 py-3 text-white text-xs uppercase tracking-widest font-light transition-colors"
               >
                 Contact Us
               </button>
               <button
                 onClick={scrollToContact}
-                className="px-8 py-3 border border-neutral-950 text-neutral-950 text-xs uppercase tracking-widest font-light hover:bg-neutral-50 transition-colors"
+                className="glass-button-outline px-8 py-3 text-neutral-950 text-xs uppercase tracking-widest font-light transition-colors"
               >
                 Get Started
               </button>

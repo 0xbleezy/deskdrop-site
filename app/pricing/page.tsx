@@ -72,7 +72,7 @@ export default function PricingPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Small */}
-            <div className="bg-white p-6 sm:p-8 rounded border border-neutral-200 hover:shadow-md transition-shadow">
+            <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow">
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
                 Small
               </div>
@@ -94,14 +94,14 @@ export default function PricingPage() {
               </p>
               <button
                 onClick={scrollToContact}
-                className="w-full px-6 py-3 bg-neutral-950 text-white text-xs uppercase tracking-widest font-display font-light rounded hover:bg-neutral-800 transition-colors"
+                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
               >
                 Get Started
               </button>
             </div>
 
             {/* Medium */}
-            <div className="bg-white p-6 sm:p-8 rounded border-2 border-neutral-950 hover:shadow-md transition-shadow">
+            <div className="glass-card p-6 sm:p-8 rounded ring-2 ring-neutral-950 hover:shadow-lg transition-shadow">
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
                 Medium
               </div>
@@ -126,14 +126,14 @@ export default function PricingPage() {
               </p>
               <button
                 onClick={scrollToContact}
-                className="w-full px-6 py-3 bg-neutral-950 text-white text-xs uppercase tracking-widest font-display font-light rounded hover:bg-neutral-800 transition-colors"
+                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
               >
                 Get Started
               </button>
             </div>
 
             {/* Large */}
-            <div className="bg-white p-6 sm:p-8 rounded border border-neutral-200 hover:shadow-md transition-shadow">
+            <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow">
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
                 Large
               </div>
@@ -155,7 +155,7 @@ export default function PricingPage() {
               </p>
               <button
                 onClick={scrollToContact}
-                className="w-full px-6 py-3 bg-neutral-950 text-white text-xs uppercase tracking-widest font-display font-light rounded hover:bg-neutral-800 transition-colors"
+                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
               >
                 Get Started
               </button>
@@ -187,7 +187,7 @@ export default function PricingPage() {
             {(() => {
               const pricing = calculatePrice('small', smallQuantity);
               return (
-                <div className="bg-white p-6 sm:p-8 rounded border border-neutral-200 hover:shadow-md transition-shadow">
+                <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow">
                   <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
                     Small
                   </div>
@@ -255,7 +255,7 @@ export default function PricingPage() {
 
                   <button
                     onClick={scrollToContact}
-                    className="w-full px-6 py-3 bg-neutral-950 text-white text-xs uppercase tracking-widest font-display font-light rounded hover:bg-neutral-800 transition-colors"
+                    className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
                   >
                     Get Started
                   </button>
@@ -267,7 +267,7 @@ export default function PricingPage() {
             {(() => {
               const pricing = calculatePrice('medium', mediumQuantity);
               return (
-                <div className="bg-white p-6 sm:p-8 rounded border-2 border-neutral-950 hover:shadow-md transition-shadow">
+                <div className="glass-card p-6 sm:p-8 rounded ring-2 ring-neutral-950 hover:shadow-lg transition-shadow">
                   <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-2 font-display">
                     Medium
                   </div>
@@ -338,7 +338,7 @@ export default function PricingPage() {
 
                   <button
                     onClick={scrollToContact}
-                    className="w-full px-6 py-3 bg-neutral-950 text-white text-xs uppercase tracking-widest font-display font-light rounded hover:bg-neutral-800 transition-colors"
+                    className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
                   >
                     Get Started
                   </button>
@@ -350,7 +350,7 @@ export default function PricingPage() {
             {(() => {
               const pricing = calculatePrice('large', largeQuantity);
               return (
-                <div className="bg-white p-6 sm:p-8 rounded border border-neutral-200 hover:shadow-md transition-shadow">
+                <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow">
                   <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
                     Large
                   </div>
@@ -418,7 +418,7 @@ export default function PricingPage() {
 
                   <button
                     onClick={scrollToContact}
-                    className="w-full px-6 py-3 bg-neutral-950 text-white text-xs uppercase tracking-widest font-display font-light rounded hover:bg-neutral-800 transition-colors"
+                    className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
                   >
                     Get Started
                   </button>
@@ -505,13 +505,13 @@ export default function PricingPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button
               onClick={scrollToContact}
-              className="w-full sm:w-auto px-8 py-4 bg-neutral-900 text-white text-base font-light rounded hover:bg-neutral-800 transition-colors inline-block text-center font-display"
+              className="glass-button w-full sm:w-auto px-8 py-4 text-white text-base font-light rounded transition-all inline-block text-center font-display"
             >
               Request a Sample
             </button>
             <button
               onClick={scrollToContact}
-              className="w-full sm:w-auto px-8 py-4 border border-neutral-950 text-neutral-950 text-base font-light rounded hover:bg-neutral-50 transition-colors inline-block text-center font-display"
+              className="glass-button-light w-full sm:w-auto px-8 py-4 text-neutral-950 text-base font-light rounded transition-all inline-block text-center font-display border border-neutral-200"
             >
               Contact Sales
             </button>

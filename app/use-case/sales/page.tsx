@@ -22,7 +22,7 @@ export default function SalesPage() {
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <Link
                 href="/#contact"
-                className="w-full sm:w-auto px-8 py-4 bg-neutral-900 text-white text-base font-light rounded hover:bg-neutral-800 transition-colors inline-block text-center"
+                className="glass-button w-full sm:w-auto px-8 py-4 text-white text-base font-light rounded transition-all inline-block text-center"
               >
                 Get Started
               </Link>
@@ -158,7 +158,7 @@ export default function SalesPage() {
           </p>
           <Link
             href="/#contact"
-            className="px-8 py-4 bg-neutral-900 text-white text-base font-light rounded hover:bg-neutral-800 transition-colors inline-block text-center"
+            className="glass-button px-8 py-4 text-white text-base font-light rounded transition-all inline-block text-center"
           >
             Get Started
           </Link>

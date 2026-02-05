@@ -31,7 +31,7 @@ export default function GiftsPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Small */}
-            <div className="bg-white p-8 rounded border border-neutral-200 hover:shadow-md transition-shadow">
+            <div className="glass-card p-8 rounded hover:shadow-lg transition-shadow">
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
                 Small
               </div>
@@ -50,7 +50,7 @@ export default function GiftsPage() {
             </div>
 
             {/* Medium */}
-            <div className="bg-white p-8 rounded border border-neutral-200 hover:shadow-md transition-shadow">
+            <div className="glass-card p-8 rounded hover:shadow-lg transition-shadow">
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
                 Medium
               </div>
@@ -69,7 +69,7 @@ export default function GiftsPage() {
             </div>
 
             {/* Large */}
-            <div className="bg-white p-8 rounded border border-neutral-200 hover:shadow-md transition-shadow">
+            <div className="glass-card p-8 rounded hover:shadow-lg transition-shadow">
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
                 Large
               </div>
@@ -94,7 +94,7 @@ export default function GiftsPage() {
             </p>
             <Link
               href="/#contact"
-              className="inline-block px-8 py-4 bg-neutral-900 text-white text-base font-light rounded hover:bg-neutral-800 transition-colors"
+              className="glass-button inline-block px-8 py-4 text-white text-base font-light rounded transition-all"
             >
               Get a Quote
             </Link>
@@ -161,7 +161,7 @@ export default function GiftsPage() {
           </p>
           <Link
             href="/#contact"
-            className="inline-block px-8 py-4 bg-neutral-900 text-white text-base font-light rounded hover:bg-neutral-800 transition-colors"
+            className="glass-button inline-block px-8 py-4 text-white text-base font-light rounded transition-all"
           >
             Request Samples
           </Link>

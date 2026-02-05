@@ -84,7 +84,7 @@ export default function FAQ() {
           </p>
           <a
             href="#contact"
-            className="inline-block px-12 py-4 bg-neutral-950 text-white text-sm uppercase tracking-widest font-light hover:bg-neutral-800 transition-colors"
+            className="glass-button inline-block px-12 py-4 text-white text-sm uppercase tracking-widest font-light transition-colors"
           >
             Contact Us
           </a>

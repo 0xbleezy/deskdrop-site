@@ -161,7 +161,7 @@ export default function ROICalculator() {
         <div className="mt-24 text-center border-t border-neutral-200 pt-16">
           <a
             href="#contact"
-            className="inline-block px-12 py-4 bg-neutral-950 text-white text-sm uppercase tracking-widest font-light hover:bg-neutral-800 transition-colors"
+            className="glass-button inline-block px-12 py-4 text-white text-sm uppercase tracking-widest font-light transition-colors"
           >
             Get Started
           </a>

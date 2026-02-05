@@ -55,7 +55,7 @@ export default function HelpPage() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded border border-neutral-200"
+                className="glass-card p-8 rounded"
               >
                 <h3 className="text-xl font-display font-light text-neutral-900 mb-4 leading-tight">
                   {faq.question}
@@ -80,7 +80,7 @@ export default function HelpPage() {
           </p>
           <Link
             href="/#contact"
-            className="inline-block px-8 py-4 bg-neutral-900 text-white text-base font-light rounded hover:bg-neutral-800 transition-colors"
+            className="glass-button inline-block px-8 py-4 text-white text-base font-light rounded transition-all"
           >
             Contact Us
           </Link>

@@ -237,13 +237,13 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={handleContactClick}
-              className="px-4 py-2 border border-neutral-700 text-neutral-200 text-xs font-display font-light tracking-widest uppercase rounded hover:bg-neutral-800 transition-colors"
+              className="glass-button-outline px-4 py-2 text-neutral-200 text-xs font-display font-light tracking-widest uppercase rounded transition-all"
             >
               Let's Chat
             </button>
             <button
               onClick={handleContactClick}
-              className="px-4 py-2 bg-white text-neutral-900 text-xs font-display font-light tracking-widest uppercase rounded hover:bg-neutral-100 transition-colors"
+              className="glass-button-light px-4 py-2 text-neutral-900 text-xs font-display font-light tracking-widest uppercase rounded transition-all"
             >
               REQUEST A SAMPLE
             </button>

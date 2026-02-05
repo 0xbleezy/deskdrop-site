@@ -99,7 +99,7 @@ export default function FeaturesPage() {
           </p>
           <Link
             href="/#contact"
-            className="inline-block px-8 py-4 bg-neutral-900 text-white text-base font-light rounded hover:bg-neutral-800 transition-colors"
+            className="glass-button inline-block px-8 py-4 text-white text-base font-light rounded transition-all"
           >
             Get Started
           </Link>
