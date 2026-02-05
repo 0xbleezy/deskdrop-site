@@ -73,9 +73,9 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
         isHomePage
           ? isScrolled
-            ? 'bg-neutral-900/98 backdrop-blur-sm border-b border-neutral-800 shadow-sm'
+            ? 'glass-nav'
             : 'bg-transparent'
-          : 'bg-neutral-900/98 backdrop-blur-sm border-b border-neutral-800 shadow-sm'
+          : 'glass-nav'
       }`}
     >
       <div className="max-w-7xl mx-auto px-8 lg:px-16 xl:px-20">
@@ -270,7 +270,7 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-neutral-800 bg-neutral-900/98">
+          <div className="md:hidden border-t border-neutral-800/50 glass-nav-mobile">
             <div className="flex flex-col py-4 space-y-1">
               <Link
                 href="/how-it-works"

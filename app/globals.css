@@ -217,3 +217,21 @@ h3 {
     rgba(0, 0, 0, 0.2)
     rgba(255, 255, 255, 0.2);
 }
+
+/* Glassmorphism navigation bar */
+.glass-nav {
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0.85), rgba(23, 23, 23, 0.75));
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.15),
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.glass-nav-mobile {
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0.92), rgba(23, 23, 23, 0.88));
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
