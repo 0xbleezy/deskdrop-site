@@ -8,19 +8,16 @@ export default function SalesPage() {
       {/* Hero */}
       <section className="py-20 pt-32 sm:py-32 sm:pt-40" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 xl:px-20">
-          <div className="max-w-3xl">
+          <div className="max-w-7xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6">
               Sales
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-2xl xl:text-3xl font-display font-light text-neutral-900 mb-8 leading-tight">
-              Book more meetings{' '}
-              <br />
-              and close faster
+            <h1 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 leading-tight">
+              Book more meetings<br className="hidden md:inline" /> and close faster
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
-              Break through inbox fatigue and get responses when outreach stops working. Personalized gifting 
-              creates genuine touchpoints that earn replies, book meetings, and accelerate deals to the 
-              signature line.
+              When email and LinkedIn stop working, a physical gift cuts through. We handle production 
+              and shipping—plus share the follow-up sequence that turns attention into replies.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <Link
@@ -71,6 +68,15 @@ export default function SalesPage() {
                 your pipeline faster, reducing time to close and increasing win rates.
               </p>
             </div>
+          </div>
+
+          {/* Sequence Add-on */}
+          <div className="mt-12 border-l-4 border-neutral-950 pl-6 py-4 bg-white rounded-r">
+            <p className="text-base text-neutral-700 leading-relaxed font-light">
+              <span className="font-medium">What happens after the gift arrives?</span> We'll share the 
+              outreach sequence we've A/B tested to turn attention into replies—the same playbook that's 
+              booked meetings with leaders at Rippling, Loro Piana, Richard Mille, and other enterprise teams.
+            </p>
           </div>
         </div>
       </section>

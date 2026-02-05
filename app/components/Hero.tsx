@@ -59,7 +59,7 @@ export default function Hero() {
     <section 
       ref={heroRef} 
       id="hero" 
-      className="relative min-h-[90vh] flex items-center overflow-hidden pt-16 md:pt-0"
+      className="relative min-h-screen flex items-start sm:items-center overflow-hidden pt-12 md:pt-0"
       style={{
         backgroundImage: "url('/images/background.png')",
         backgroundSize: 'cover',
@@ -71,11 +71,11 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40"></div>
       
       <div className="relative z-10 max-w-editorial mx-auto px-8 lg:px-16 xl:px-20 w-full">
-        <div className="pt-12 pb-12 md:pt-16 md:pb-16">
+        <div className="pt-6 pb-12 md:pt-16 md:pb-16">
           {/* Text Content */}
           <div>
-            <h1 className="text-4xl md:text-4xl lg:text-4xl xl:text-4xl font-display font-light text-white mb-6 leading-[1.1] tracking-tight" style={{ color: '#ffffff' }}>
-              Get replies when outreach<br />stops working
+            <h1 className="text-3xl md:text-4xl font-display font-light !text-white mb-6 leading-[1.1] tracking-tight">
+              Get replies when outreach<br className="hidden md:inline" /> stops working
             </h1>
             
             {/* Stats directly under headline */}
@@ -109,7 +109,7 @@ export default function Hero() {
                 onClick={scrollToContact}
                 className="px-8 py-4 border border-white text-white text-base font-light rounded hover:bg-white/10 transition-colors text-center whitespace-nowrap bg-white/0"
               >
-                REQUEST SAMPLE
+                REQUEST A SAMPLE
               </button>
             </div>
           </div>

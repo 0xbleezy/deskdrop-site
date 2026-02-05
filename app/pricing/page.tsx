@@ -44,12 +44,12 @@ export default function PricingPage() {
       {/* Hero */}
       <section className="py-20 pt-32 sm:py-32 sm:pt-40" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8 xl:px-10">
-          <div className="max-w-4xl">
+          <div className="max-w-7xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6 font-display">
               Pricing
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-900 mb-8 leading-tight">
-              Simple, transparent pricing
+            <h1 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 leading-tight">
+              Simple, transparent<br className="hidden md:inline" /> pricing
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
               Choose between one-time campaigns or monthly recurring programs. All pricing includes shipping and custom branding.

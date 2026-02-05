@@ -8,19 +8,16 @@ export default function RevenuePage() {
       {/* Hero */}
       <section className="py-20 pt-32 sm:py-32 sm:pt-40" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 xl:px-20">
-          <div className="max-w-3xl">
+          <div className="max-w-7xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6">
               Revenue
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-2xl xl:text-3xl font-display font-light text-neutral-900 mb-8 leading-tight">
-              Accelerate pipeline{' '}
-              <br />
-              and increase velocity
+            <h1 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 leading-tight">
+              Accelerate pipeline<br className="hidden md:inline" /> and increase velocity
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
               Drive revenue growth with strategic gifting that accelerates pipeline, increases deal velocity, 
-              and supports your go-to-market motion. Measure ROI and optimize your revenue operations with 
-              data-driven insights.
+              and supports your go-to-market motion.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <Link

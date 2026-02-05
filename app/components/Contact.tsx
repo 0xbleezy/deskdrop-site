@@ -47,11 +47,6 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="mt-12 sm:mt-24 text-center border-t border-neutral-200 pt-8 sm:pt-16">
-          <p className="text-base text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            Typical campaigns: Minimum of 50 jars (large size recommended), scalable to hundreds of prospects. Production takes 2 weeks. We'll help you plan timing with your sales cadence.
-          </p>
-        </div>
       </div>
     </section>
   );

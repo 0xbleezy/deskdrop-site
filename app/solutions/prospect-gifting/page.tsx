@@ -6,18 +6,16 @@ export default function ProspectGiftingPage() {
       {/* Hero */}
       <section className="py-32 pt-40" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-8 lg:px-16 xl:px-20">
-          <div className="max-w-4xl">
+          <div className="max-w-7xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6">
               Solutions
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-900 mb-8 leading-tight">
-              Prospect Gifting{' '}
-              <br />
-              Solution
+            <h1 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 leading-tight">
+              Prospect Gifting<br className="hidden md:inline" /> Solution
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
-              Automate and execute your prospect gifting programs with a scalable solution. 
-              Create personalized touchpoints that break through inbox fatigue and earn genuine responses.
+              Send gifts that get noticed. Follow up with a sequence that gets replies. We handle 
+              production, shipping, and give you the playbook to convert attention into meetings.
             </p>
           </div>
         </div>
@@ -54,6 +52,15 @@ export default function ProspectGiftingPage() {
                 delivery confirmations included.
               </p>
             </div>
+          </div>
+
+          {/* Sequence Add-on */}
+          <div className="mt-12 border-l-4 border-neutral-950 pl-6 py-4 bg-white rounded-r">
+            <p className="text-base text-neutral-700 leading-relaxed font-light">
+              <span className="font-medium">What happens after the gift arrives?</span> We'll share the 
+              outreach sequence we've A/B tested to turn attention into replies—the same playbook that's 
+              booked meetings with leaders at Rippling, Loro Piana, Richard Mille, and other enterprise teams.
+            </p>
           </div>
         </div>
       </section>

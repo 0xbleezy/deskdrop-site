@@ -8,19 +8,16 @@ export default function MarketingPage() {
       {/* Hero */}
       <section className="py-20 pt-32 sm:py-32 sm:pt-40" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 xl:px-20">
-          <div className="max-w-3xl">
+          <div className="max-w-7xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6">
               Marketing
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-2xl xl:text-3xl font-display font-light text-neutral-900 mb-8 leading-tight">
-              Personalize your ABM{' '}
-              <br />
-              strategy at scale
+            <h1 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 leading-tight">
+              Personalize your ABM<br className="hidden md:inline" /> strategy at scale
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
               Generate more leads, build brand awareness, and nurture target accounts with personalized gifting 
-              that cuts through digital noise. Execute on your ABM strategy with physical touchpoints that 
-              create meaningful connections.
+              that cuts through digital noise.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <Link
