@@ -31,6 +31,7 @@ export default function MobileStickyCTA() {
       <button
         onClick={scrollToContact}
         className="glass-button w-full px-6 py-4 text-white text-sm uppercase tracking-widest font-light transition-all"
+        style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.08) 0%, transparent 50%, rgba(255,255,255,0.03) 100%), linear-gradient(145deg, hsl(0 0% 12% / 0.45), hsl(0 0% 6% / 0.4))' }}
       >
         Request a Sample
       </button>
