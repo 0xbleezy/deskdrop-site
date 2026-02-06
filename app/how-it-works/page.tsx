@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 export default function HowItWorksPage() {
   return (
-    <main className="min-h-screen" style={{ backgroundColor: '#f9f8fa' }}>
+    <main className="min-h-screen bg-page">
       {/* Hero */}
-      <section className="py-20 pt-32 sm:py-32 sm:pt-40" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-20 pt-32 sm:py-32 sm:pt-40 bg-white">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
-          <div className="max-w-4xl">
+          <div className="max-w-3xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6 font-display">
               How It Works
             </div>
@@ -40,7 +40,7 @@ export default function HowItWorksPage() {
       <HowItWorks />
 
       {/* Sequence Add-on */}
-      <section className="py-16 sm:py-24" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-16 sm:py-24 bg-white">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="border-l-4 border-neutral-950 pl-6 py-4 bg-neutral-50 rounded-r">
             <p className="text-base text-neutral-700 leading-relaxed font-light">
@@ -53,7 +53,7 @@ export default function HowItWorksPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-24 border-t border-neutral-200" style={{ backgroundColor: '#f9f8fa' }}>
+      <section className="py-16 sm:py-24 border-t border-neutral-100 bg-page">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Ready to get started?

@@ -37,13 +37,13 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+    <section className="py-20 border-t border-neutral-100" >
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-neutral-600 font-light">
+          <p className="text-lg text-neutral-600 font-light">
             Everything marketing, sales, and revenue leaders need to know
           </p>
         </div>
@@ -52,10 +52,12 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-t border-neutral-200 overflow-hidden"
+              className="border-t border-neutral-100 overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-full-answer-${index}`}
                 className="w-full px-0 py-6 text-left flex items-center justify-between hover:opacity-70 transition-opacity"
               >
                 <span className="text-lg font-light text-neutral-950 pr-8">
@@ -68,7 +70,7 @@ export default function FAQ() {
                 </span>
               </button>
               {openIndex === index && (
-                <div className="px-0 pb-6 pt-0">
+                <div id={`faq-full-answer-${index}`} role="region" className="px-0 pb-6 pt-0">
                   <p className="text-neutral-600 leading-relaxed font-light">
                     {faq.answer}
                   </p>
@@ -78,7 +80,7 @@ export default function FAQ() {
           ))}
         </div>
 
-        <div className="mt-12 text-center border-t border-neutral-200 pt-12">
+        <div className="mt-12 text-center border-t border-neutral-100 pt-12">
           <p className="text-neutral-600 mb-4 font-light">
             Still have questions?
           </p>

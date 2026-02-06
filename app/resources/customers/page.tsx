@@ -27,11 +27,11 @@ export default function CustomersPage() {
   ];
 
   return (
-    <main className="min-h-screen" style={{ backgroundColor: '#f9f8fa' }}>
+    <main className="min-h-screen bg-page">
       {/* Hero */}
-      <section className="py-32 pt-40" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-32 pt-40 bg-white">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
-          <div className="max-w-4xl">
+          <div className="max-w-3xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6">
               Resources
             </div>
@@ -47,7 +47,7 @@ export default function CustomersPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24" style={{ backgroundColor: '#f9f8fa' }}>
+      <section className="py-24 bg-page">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
@@ -74,12 +74,12 @@ export default function CustomersPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24" style={{ backgroundColor: '#f5f3f0' }}>
+      <section className="py-24 bg-warm">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center">
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-light text-neutral-900 mb-8 leading-tight">
             Ready to join our customers?
           </h2>
-          <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light">
+          <p className="text-lg text-neutral-700 mb-10 leading-relaxed font-light">
             See how prospect gifting can help you drive revenue and build stronger relationships.
           </p>
           <Link

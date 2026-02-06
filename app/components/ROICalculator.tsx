@@ -1,170 +1,196 @@
 'use client';
 
 import { useState } from 'react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
-export default function ROICalculator() {
-  const [prospects, setProspects] = useState(100);
-  const [costPerGift, setCostPerGift] = useState(40);
-  const [meetingRate, setMeetingRate] = useState(14);
-  const [avgDealValue, setAvgDealValue] = useState(15000);
-  const [closeRate, setCloseRate] = useState(25);
+const DEFAULTS = {
+  prospects: 100,
+  avgDealValue: 15000,
+  jarType: 'desk' as 'scale' | 'desk' | 'office',
+};
 
-  const totalCost = prospects * costPerGift;
-  const meetings = Math.round(prospects * (meetingRate / 100));
-  const closedDeals = Math.round(meetings * (closeRate / 100));
-  const totalRevenue = closedDeals * avgDealValue;
-  const roi = totalCost > 0 ? ((totalRevenue - totalCost) / totalCost) * 100 : 0;
-  const roas = totalCost > 0 ? totalRevenue / totalCost : 0;
+const JAR_PRICES = {
+  scale: 35,
+  desk: 40,
+  office: 50,
+};
+
+const JAR_LABELS = {
+  scale: 'Scale',
+  desk: 'Desk',
+  office: 'Office',
+};
+
+// Fixed assumptions (not user-editable)
+const MEETING_RATE = 0.14;
+const CLOSE_RATE = 0.18;
+
+// Stepper button classes — glass style matching site
+const stepperBtnClass =
+  'w-10 h-10 rounded-lg glass-button-outline-on-light transition-all flex items-center justify-center text-neutral-600';
+
+function Stepper({
+  label,
+  value,
+  onChange,
+  min = 1,
+  max = 999999,
+  step = 1,
+  prefix = '',
+}: {
+  label: string;
+  value: number;
+  onChange: (v: number) => void;
+  min?: number;
+  max?: number;
+  step?: number;
+  prefix?: string;
+}) {
+  const decrement = () => onChange(Math.max(min, value - step));
+  const increment = () => onChange(Math.min(max, value + step));
 
   return (
-    <section className="py-24 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+    <div className="glass-card p-5">
+      <label className="block text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">
+        {label}
+      </label>
+      <div className="flex items-center justify-between gap-4">
+        <button onClick={decrement} className={stepperBtnClass} aria-label={`Decrease ${label}`}>
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M20 12H4" />
+          </svg>
+        </button>
+        <div className="flex-1 text-center">
+          <span className="text-2xl font-light text-neutral-950">
+            {prefix}{value.toLocaleString()}
+          </span>
+        </div>
+        <button onClick={increment} className={stepperBtnClass} aria-label={`Increase ${label}`}>
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function JarSelector({
+  value,
+  onChange,
+}: {
+  value: 'scale' | 'desk' | 'office';
+  onChange: (v: 'scale' | 'desk' | 'office') => void;
+}) {
+  const options: Array<'scale' | 'desk' | 'office'> = ['scale', 'desk', 'office'];
+
+  return (
+    <div className="glass-card p-5">
+      <label className="block text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">
+        Jar Type
+      </label>
+      <div className="grid grid-cols-3 gap-2">
+        {options.map((option) => (
+          <button
+            key={option}
+            onClick={() => onChange(option)}
+            className={`py-3 px-2 rounded-lg text-center transition-all ${
+              value === option
+                ? 'bg-neutral-900 text-white border border-neutral-800'
+                : 'glass-button-outline-on-light text-neutral-600'
+            }`}
+          >
+            <div className="text-sm font-light">{JAR_LABELS[option]}</div>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default function ROICalculator() {
+  const { ref, isVisible } = useScrollReveal();
+  const [prospects, setProspects] = useState(DEFAULTS.prospects);
+  const [avgDealValue, setAvgDealValue] = useState(DEFAULTS.avgDealValue);
+  const [jarType, setJarType] = useState<'scale' | 'desk' | 'office'>(DEFAULTS.jarType);
+
+  const costPerGift = JAR_PRICES[jarType];
+  const totalCost = prospects * costPerGift;
+  const meetings = Math.round(prospects * MEETING_RATE);
+  const closedDeals = Math.round(meetings * CLOSE_RATE);
+  const totalRevenue = closedDeals * avgDealValue;
+
+  return (
+    <section ref={ref as any} className={`py-16 sm:py-24 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
+        <div className="text-center mb-12">
+          <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">ROI Calculator</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-light text-neutral-950">
             Estimate Your Pipeline Impact
           </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            Input your campaign parameters to see projected meetings and pipeline impact 
-            based on your deal sizes and conversion assumptions.
-          </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-20">
-          {/* Inputs */}
-          <div className="border-t border-neutral-200 pt-12">
-            <h3 className="text-2xl font-display font-light text-neutral-950 mb-12">
-              Campaign Parameters
-            </h3>
-            <div className="space-y-8">
-              <div>
-                <label className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
-                  Number of Prospects
-                </label>
-                <input
-                  type="number"
-                  value={prospects}
-                  onChange={(e) => setProspects(Math.max(1, Number(e.target.value) || 0))}
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-2xl"
-                  min="1"
-                />
-              </div>
-              <div>
-                <label className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
-                  Cost per Gift ($)
-                </label>
-                <input
-                  type="number"
-                  value={costPerGift}
-                  onChange={(e) => setCostPerGift(Math.max(1, Number(e.target.value) || 0))}
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-2xl"
-                  min="1"
-                />
-              </div>
-              <div>
-                <label className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
-                  Expected Meeting Rate (%)
-                </label>
-                <input
-                  type="number"
-                  value={meetingRate}
-                  onChange={(e) => {
-                    const val = Number(e.target.value) || 0;
-                    setMeetingRate(Math.max(0, Math.min(100, val)));
-                  }}
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-2xl"
-                  min="0"
-                  max="100"
-                />
-                <p className="text-xs text-neutral-500 mt-2 font-light">Industry average: 12-15%</p>
-              </div>
-              <div>
-                <label className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
-                  Average Deal Value ($)
-                </label>
-                <input
-                  type="number"
-                  value={avgDealValue}
-                  onChange={(e) => setAvgDealValue(Math.max(1, Number(e.target.value) || 0))}
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-2xl"
-                  min="1"
-                />
-              </div>
-              <div>
-                <label className="block text-xs text-neutral-600 mb-3 uppercase tracking-widest font-light">
-                  Close Rate from Meetings (%)
-                </label>
-                <input
-                  type="number"
-                  value={closeRate}
-                  onChange={(e) => {
-                    const val = Number(e.target.value) || 0;
-                    setCloseRate(Math.max(0, Math.min(100, val)));
-                  }}
-                  className="w-full px-0 py-3 border-0 border-b border-neutral-300 focus:ring-0 focus:border-neutral-950 bg-transparent text-neutral-950 font-light text-2xl"
-                  min="0"
-                  max="100"
-                />
-              </div>
+        {/* Main GlassCard container */}
+        <div className="glass-card p-6 sm:p-8 lg:p-10">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+            {/* Left: Inputs */}
+            <div className="h-full flex flex-col space-y-4">
+              <Stepper
+                label="Number of Prospects"
+                value={prospects}
+                onChange={setProspects}
+                min={1}
+                step={10}
+              />
+              <JarSelector
+                value={jarType}
+                onChange={setJarType}
+              />
+              <Stepper
+                label="Average Deal Size"
+                value={avgDealValue}
+                onChange={setAvgDealValue}
+                min={1000}
+                step={1000}
+                prefix="$"
+              />
             </div>
-          </div>
 
-          {/* Results */}
-          <div className="border-t border-neutral-200 pt-12">
-            <h3 className="text-2xl font-display font-light text-neutral-950 mb-12">
-              Projected Results
-            </h3>
-            <div className="space-y-8">
-              <div className="border-b border-neutral-200 pb-6">
-                <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-2">Total Campaign Cost</div>
-                <div className="text-2xl font-display font-light text-neutral-950">${totalCost.toLocaleString()}</div>
-              </div>
-              <div className="border-b border-neutral-200 pb-6">
-                <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-2">Expected Meetings</div>
-                <div className="text-2xl font-display font-light text-neutral-950 mb-2">{meetings}</div>
-                <div className="text-sm text-neutral-600 font-light">
-                  ({meetingRate}% of {prospects} prospects)
+            {/* Right: Results */}
+            <div className="h-full flex flex-col">
+              <div className="glass-card p-6 bg-white/40 flex-1 flex flex-col">
+                {/* Key metrics grid */}
+                <div className="grid grid-cols-2 gap-6 flex-1">
+                  <div className="text-center">
+                    <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-1">Total Cost</div>
+                    <div className="text-3xl font-light text-neutral-950">${totalCost.toLocaleString()}</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-1">Expected Meetings</div>
+                    <div className="text-3xl font-light text-neutral-950">{meetings}</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-1">Projected Deals</div>
+                    <div className="text-3xl font-light text-neutral-950">{closedDeals}</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-1">Total Revenue</div>
+                    <div className="text-3xl font-light text-neutral-950">${totalRevenue.toLocaleString()}</div>
+                  </div>
+                </div>
+
+                {/* CTA pinned to bottom */}
+                <div className="mt-auto pt-6 border-t border-black/5 text-center">
+                  <a
+                    href="#contact"
+                    className="glass-button inline-block px-10 py-4 text-white text-xs uppercase tracking-widest font-light transition-colors"
+                  >
+                    Get Started
+                  </a>
                 </div>
               </div>
-              <div className="border-b border-neutral-200 pb-6">
-                <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-2">Projected Closed Deals</div>
-                <div className="text-2xl font-display font-light text-neutral-950 mb-2">{closedDeals}</div>
-                <div className="text-sm text-neutral-600 font-light">
-                  ({closeRate}% of {meetings} meetings)
-                </div>
-              </div>
-              <div className="border-b border-neutral-200 pb-6">
-                <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-2">Total Revenue</div>
-                <div className="text-2xl font-display font-light text-neutral-950">${totalRevenue.toLocaleString()}</div>
-              </div>
             </div>
           </div>
-        </div>
-
-        {/* ROI/ROAS - Full Width Section */}
-        <div className="mt-24 border-t border-neutral-200 pt-20">
-          <div className="grid grid-cols-2 gap-8 md:gap-16 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-4">ROI</div>
-              <div className="text-5xl md:text-6xl lg:text-8xl font-display font-bold text-neutral-950">
-                {roi.toFixed(0)}%
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-xs text-neutral-600 uppercase tracking-widest font-light mb-4">ROAS</div>
-              <div className="text-5xl md:text-6xl lg:text-8xl font-display font-bold text-neutral-950">
-                {roas.toFixed(1)}x
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-24 text-center border-t border-neutral-200 pt-16">
-          <a
-            href="#contact"
-            className="glass-button inline-block px-12 py-4 text-white text-sm uppercase tracking-widest font-light transition-colors"
-          >
-            Get Started
-          </a>
         </div>
       </div>
     </section>

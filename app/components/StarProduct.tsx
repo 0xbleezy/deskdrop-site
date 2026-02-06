@@ -16,100 +16,79 @@ export default function StarProduct() {
     <section 
       ref={ref as any}
       id="star-product" 
-      className={`py-32 border-t border-neutral-200 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
-      style={{ backgroundColor: 'transparent' }}
+      className={`py-16 sm:py-24 lg:py-32 overflow-hidden fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
     >
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
-            The Outbound Gift
-          </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
-            Your competitive advantage in outbound sales and ABM programs
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
-          {/* Left - Image */}
-          <div className="relative w-full">
+      {/* Two-column editorial layout — image bleeds left, text constrained right */}
+      <div className="lg:grid lg:grid-cols-2 items-center">
+        
+        {/* Left — Oversized jar, bleeds off left viewport edge on desktop */}
+        <div className="hidden lg:block relative lg:px-0 lg:mb-0">
+          <div className="lg:-ml-[18vw] relative">
+            {/* Subtle radial glow behind jar for grounding */}
+            <div className="absolute inset-0 bg-radial-gradient pointer-events-none" />
             <Image
               src="/images/The Prospecting Gift.png"
-              alt="The Outbound Gift"
+              alt="Custom branded chocolate gift jar — a physical desk touchpoint"
               width={800}
               height={1200}
-              className="w-full h-auto object-contain"
+              className="relative w-full h-auto object-contain lg:scale-[1.3] transition-transform duration-500"
               priority
             />
           </div>
+        </div>
 
-          {/* Right - Content */}
-          <div>
-            <h3 className="text-4xl font-display font-light text-neutral-950 mb-8 leading-tight">
-              A Play That Earns Real Attention
-            </h3>
-            <p className="text-lg text-neutral-600 mb-8 leading-relaxed font-light">
-              A physical touchpoint designed to break through inbox fatigue. Unlike email or cold calls, 
-              this gift sits on their desk, creating repeated, non-intrusive exposure to your brand every 
-              single day.
-            </p>
-            <p className="text-lg text-neutral-600 mb-8 leading-relaxed font-light">
-              Each time they reach for a chocolate, they see your logo and value proposition. No spam 
-              filters. No ignored calls. Just consistent, welcome brand presence that builds familiarity 
-              and goodwill.
-            </p>
-            <p className="text-lg text-neutral-600 mb-12 leading-relaxed font-light">
-              This gives your sellers a genuine reason to follow up that recipients actually appreciate, 
-              transforming cold outreach into warm conversations.
-            </p>
+        {/* Right — Constrained editorial text column */}
+        <div className="px-4 sm:px-6 lg:pl-4 lg:pr-[7vw] lg:max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-6">The Product</p>
+          
+          <h2 className="!text-3xl md:!text-4xl lg:!text-[2.75rem] font-display font-light text-neutral-950 mb-4 !leading-[1.15] tracking-tight">
+            A Brand Moment That Lives on Their Desk
+          </h2>
+          
+          <p className="text-xl text-neutral-500 font-light mb-8 leading-relaxed">
+            Sales is an attention game. This gets attention.
+          </p>
 
-            {/* Minimal Stats */}
-            <div className="grid grid-cols-2 gap-8 mb-12 border-t border-neutral-200 pt-8">
-              <div>
-                <div className="text-5xl font-display font-light text-neutral-950 mb-2">30%+</div>
-                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light">Reply Rate</div>
-              </div>
-              <div>
-                <div className="text-5xl font-display font-light text-neutral-950 mb-2">25x+</div>
-                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light">Exposure</div>
-              </div>
-            </div>
-
-            {/* Value Propositions - Minimal */}
-            <div className="space-y-6 mb-12">
-              <div>
-                <h4 className="text-lg font-light text-neutral-950 mb-2">Wins Attention Without Interruption</h4>
-                <p className="text-base text-neutral-600 leading-relaxed font-light">Unlike email and cold calls, this creates passive brand exposure that builds familiarity over time</p>
-              </div>
-              <div>
-                <h4 className="text-lg font-light text-neutral-950 mb-2">Reopens Stalled Conversations</h4>
-                <p className="text-base text-neutral-600 leading-relaxed font-light">The perfect reason to re-engage decision-makers who've gone quiet on your outreach attempts</p>
-              </div>
-              <div>
-                <h4 className="text-lg font-light text-neutral-950 mb-2">Integrates with Your ABM Strategy</h4>
-                <p className="text-base text-neutral-600 leading-relaxed font-light">Deploy at key moments in your account penetration plan, targeting decision-makers with precision</p>
-              </div>
-              <div>
-                <h4 className="text-lg font-light text-neutral-950 mb-2">Accelerates Deal Velocity</h4>
-                <p className="text-base text-neutral-600 leading-relaxed font-light">Creates goodwill that reduces sales resistance and speeds up sales cycles significantly</p>
-              </div>
-            </div>
-
-            {/* Minimal CTAs */}
-            <div className="flex flex-wrap gap-4">
-              <button
-                onClick={scrollToContact}
-                className="glass-button px-8 py-3 text-white text-xs uppercase tracking-widest font-light transition-colors"
-              >
-                Contact Us
-              </button>
-              <button
-                onClick={scrollToContact}
-                className="glass-button-outline px-8 py-3 text-neutral-950 text-xs uppercase tracking-widest font-light transition-colors"
-              >
-                Get Started
-              </button>
-            </div>
+          {/* Mobile-only product image — sits between conviction line and body copy */}
+          <div className="lg:hidden flex justify-center my-10">
+            <Image
+              src="/images/The Prospecting Gift.png"
+              alt="Custom branded chocolate gift jar"
+              width={800}
+              height={1200}
+              className="w-[80%] h-auto object-contain"
+              priority
+            />
           </div>
+          
+          <p className="text-lg text-neutral-600 font-light mb-8 leading-relaxed">
+            A physical desk drop designed to break through inbox fatigue. Unlike email or cold calls, 
+            this gift stays visible, creating daily brand exposure without interruption.
+          </p>
+
+          {/* Value bullets — tight, skimmable */}
+          <ul className="space-y-4 mb-10 inline-block text-left">
+            <li className="flex items-start gap-3">
+              <span className="mt-[0.55rem] w-1.5 h-1.5 rounded-full bg-neutral-300 flex-shrink-0" />
+              <span className="text-base text-neutral-600 font-light leading-relaxed">Sits on their desk, not in spam</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-[0.55rem] w-1.5 h-1.5 rounded-full bg-neutral-300 flex-shrink-0" />
+              <span className="text-base text-neutral-600 font-light leading-relaxed">Builds daily brand familiarity</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-[0.55rem] w-1.5 h-1.5 rounded-full bg-neutral-300 flex-shrink-0" />
+              <span className="text-base text-neutral-600 font-light leading-relaxed">Creates a natural, appreciated follow-up</span>
+            </li>
+          </ul>
+
+          {/* Single primary CTA */}
+          <button
+            onClick={scrollToContact}
+            className="glass-button px-10 py-4 text-white text-xs uppercase tracking-widest font-light transition-colors"
+          >
+            Request a Sample
+          </button>
         </div>
       </div>
     </section>

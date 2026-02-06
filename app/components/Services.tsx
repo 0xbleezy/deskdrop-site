@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section id="services" className="py-24 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+    <section id="services" className="py-24 border-t border-neutral-100" >
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
         <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">

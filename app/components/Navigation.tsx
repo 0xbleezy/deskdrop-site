@@ -104,11 +104,10 @@ export default function Navigation() {
                 <span>By Role</span>
                 <span className="text-neutral-400">▼</span>
               </button>
-              {openDropdown === 'role' && (
-                <div 
-                  className="absolute top-full left-0 mt-2 w-64 glass-dropdown rounded-lg py-4"
-                  onMouseLeave={() => setOpenDropdown(null)}
-                >
+              <div 
+                className={`absolute top-full left-0 mt-2 w-64 glass-dropdown rounded-lg py-4 ${openDropdown === 'role' ? 'open' : ''}`}
+                onMouseLeave={() => setOpenDropdown(null)}
+              >
                   <Link 
                     href="/use-case/marketing" 
                     onClick={() => setOpenDropdown(null)}
@@ -133,8 +132,7 @@ export default function Navigation() {
                     <div className="font-medium text-sm">Revenue</div>
                     <div className="text-xs text-neutral-400 mt-1">Gifting to accelerate pipeline and increase deal velocity</div>
                   </Link>
-                </div>
-              )}
+              </div>
             </div>
 
             {/* Product Dropdown */}
@@ -146,18 +144,10 @@ export default function Navigation() {
                 <span>Product</span>
                 <span className="text-neutral-400">▼</span>
               </button>
-              {openDropdown === 'product' && (
-                <div 
-                  className="absolute top-full left-0 mt-2 w-64 glass-dropdown rounded-lg py-4"
-                  onMouseLeave={() => setOpenDropdown(null)}
-                >
-                  <Link 
-                    href="/product/features" 
-                    onClick={() => setOpenDropdown(null)}
-                    className="block px-4 py-2 hover:bg-white/10 text-neutral-200 font-display font-light"
-                  >
-                    <div className="font-medium text-sm">Features</div>
-                  </Link>
+              <div 
+                className={`absolute top-full left-0 mt-2 w-64 glass-dropdown rounded-lg py-4 ${openDropdown === 'product' ? 'open' : ''}`}
+                onMouseLeave={() => setOpenDropdown(null)}
+              >
                   <Link 
                     href="/product/gifts" 
                     onClick={() => setOpenDropdown(null)}
@@ -172,15 +162,7 @@ export default function Navigation() {
                   >
                     <div className="font-medium text-sm">Customization</div>
                   </Link>
-                  <Link 
-                    href="/product/packaging" 
-                    onClick={() => setOpenDropdown(null)}
-                    className="block px-4 py-2 hover:bg-white/10 text-neutral-200 font-display font-light"
-                  >
-                    <div className="font-medium text-sm">Packaging</div>
-                  </Link>
-                </div>
-              )}
+              </div>
             </div>
 
             {/* Solutions Dropdown */}
@@ -192,11 +174,10 @@ export default function Navigation() {
                 <span>Solutions</span>
                 <span className="text-neutral-400">▼</span>
               </button>
-              {openDropdown === 'solutions' && (
-                <div 
-                  className="absolute top-full left-0 mt-2 w-64 glass-dropdown rounded-lg py-4"
-                  onMouseLeave={() => setOpenDropdown(null)}
-                >
+              <div 
+                className={`absolute top-full left-0 mt-2 w-64 glass-dropdown rounded-lg py-4 ${openDropdown === 'solutions' ? 'open' : ''}`}
+                onMouseLeave={() => setOpenDropdown(null)}
+              >
                   <Link 
                     href="/solutions/prospect-gifting" 
                     onClick={() => setOpenDropdown(null)}
@@ -221,8 +202,7 @@ export default function Navigation() {
                     <div className="font-medium text-sm">Custom Solutions</div>
                     <div className="text-xs text-neutral-400 mt-1">Tailored gifting solutions for your business</div>
                   </Link>
-                </div>
-              )}
+              </div>
             </div>
 
             <Link
@@ -269,8 +249,7 @@ export default function Navigation() {
         </div>
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-neutral-800/50 glass-nav-mobile">
+        <div className={`md:hidden border-t border-neutral-800/50 glass-nav-mobile mobile-menu-panel ${isMobileMenuOpen ? 'open' : ''}`}>
             <div className="flex flex-col py-4 space-y-1">
               <Link
                 href="/how-it-works"
@@ -303,7 +282,6 @@ export default function Navigation() {
               </button>
             </div>
           </div>
-        )}
       </div>
     </nav>
   );

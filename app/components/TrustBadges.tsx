@@ -1,4 +1,9 @@
+'use client';
+
+import { useScrollReveal } from '../hooks/useScrollReveal';
+
 export default function TrustBadges() {
+  const { ref, isVisible } = useScrollReveal();
   const logos = [
     '/images/Trusted by/Abbott.png',
     '/images/Trusted by/Airoom.png',
@@ -18,7 +23,7 @@ export default function TrustBadges() {
   ];
 
   return (
-    <section className="py-16 overflow-hidden" style={{ backgroundColor: '#f5f3f0' }}>
+    <section ref={ref as any} className={`py-12 sm:py-16 overflow-hidden bg-warm fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center mb-12">
         <p className="text-base text-neutral-600 font-semibold">
           Trusted by teams like

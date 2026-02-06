@@ -40,11 +40,11 @@ export default function PricingPage() {
   };
 
   return (
-    <main className="min-h-screen" style={{ backgroundColor: '#f9f8fa' }}>
+    <main className="min-h-screen bg-page">
       {/* Hero */}
-      <section className="py-20 pt-32 sm:py-32 sm:pt-40" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-20 pt-32 sm:py-32 sm:pt-40 bg-white">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
-          <div className="max-w-7xl">
+          <div className="max-w-3xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6 font-display">
               Pricing
             </div>
@@ -59,103 +59,125 @@ export default function PricingPage() {
       </section>
 
       {/* Single Campaign Pricing */}
-      <section className="py-16 sm:py-24 border-t border-neutral-200" style={{ backgroundColor: '#f9f8fa' }}>
+      <section className="py-16 sm:py-24 border-t border-neutral-100 bg-page">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4 leading-tight">
-              Single Campaign Pricing
-            </h2>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
+          <div className="text-center mb-12">
+            <p className="text-xl md:text-2xl font-medium text-neutral-700 max-w-3xl mx-auto leading-relaxed">
               Perfect for one-time campaigns, pilot programs, or testing your outbound strategy
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Small */}
-            <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow">
-              <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
-                Small
+          <div className="grid md:grid-cols-3 gap-8 items-stretch">
+            {/* Scale */}
+            <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow flex flex-col h-full">
+              <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
+                Scale
               </div>
               <div className="text-4xl font-display font-light text-neutral-950 mb-1">
                 $4,375
               </div>
               <div className="text-sm text-neutral-500 mb-6 font-light">
-                $35 per touchpoint
+                For 125 prospects
               </div>
-              <ul className="space-y-3 text-base text-neutral-700 font-light mb-8">
-                <li>• 125 touchpoints per order</li>
-                <li>• ~12 pieces</li>
-                <li>• Custom branding included</li>
-                <li>• Shipping included</li>
-                <li>• 2-week production time</li>
-              </ul>
-              <p className="text-sm text-neutral-600 font-light mb-6">
-                Perfect for testing campaigns or smaller prospect lists.
-              </p>
+
+              <div className="mb-6">
+                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">What&apos;s included</div>
+                <ul className="space-y-2 text-sm text-neutral-700 font-light">
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Custom branded chocolate desk drops</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Delivered directly to each prospect</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Fully managed fulfillment</li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">Best for</div>
+                <ul className="space-y-2 text-sm text-neutral-700 font-light">
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Scaling outbound across larger prospect lists</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Testing prospect gifting at volume</li>
+                </ul>
+              </div>
+
               <button
                 onClick={scrollToContact}
-                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
+                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-light rounded transition-all mt-auto"
               >
                 Get Started
               </button>
             </div>
 
-            {/* Medium */}
-            <div className="glass-card p-6 sm:p-8 rounded ring-2 ring-neutral-950 hover:shadow-lg transition-shadow">
-              <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
-                Medium
+            {/* Desk — Most Popular */}
+            <div className="glass-card p-6 sm:p-8 rounded ring-2 ring-neutral-950 hover:shadow-lg transition-shadow flex flex-col h-full relative">
+              <div className="absolute top-4 right-4 bg-neutral-950 text-white text-xs uppercase tracking-widest px-3 py-1 rounded-full font-light">
+                Most popular
               </div>
-              <div className="inline-block px-3 py-1 bg-neutral-950 text-white text-xs uppercase tracking-widest font-display font-light mb-4">
-                Most Popular
+
+              <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
+                Desk
               </div>
               <div className="text-4xl font-display font-light text-neutral-950 mb-1">
                 $3,000
               </div>
               <div className="text-sm text-neutral-500 mb-6 font-light">
-                $40 per touchpoint
+                For 75 prospects
               </div>
-              <ul className="space-y-3 text-base text-neutral-700 font-light mb-8">
-                <li>• 75 touchpoints per order</li>
-                <li>• ~20 pieces</li>
-                <li>• Custom branding included</li>
-                <li>• Shipping included</li>
-                <li>• 2-week production time</li>
-              </ul>
-              <p className="text-sm text-neutral-600 font-light mb-6">
-                Ideal balance of impact and cost for most campaigns.
-              </p>
+
+              <div className="mb-6">
+                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">What&apos;s included</div>
+                <ul className="space-y-2 text-sm text-neutral-700 font-light">
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Custom branded chocolate desk drops</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Delivered directly to each prospect</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Fully managed fulfillment</li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">Best for</div>
+                <ul className="space-y-2 text-sm text-neutral-700 font-light">
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Most outbound and ABM motions</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Best balance of reach and impact</li>
+                </ul>
+              </div>
+
               <button
                 onClick={scrollToContact}
-                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
+                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-light rounded transition-all mt-auto"
               >
                 Get Started
               </button>
             </div>
 
-            {/* Large */}
-            <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow">
-              <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
-                Large
+            {/* Office */}
+            <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow flex flex-col h-full">
+              <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
+                Office
               </div>
               <div className="text-4xl font-display font-light text-neutral-950 mb-1">
                 $2,500
               </div>
               <div className="text-sm text-neutral-500 mb-6 font-light">
-                $50 per touchpoint
+                For 50 high-value prospects
               </div>
-              <ul className="space-y-3 text-base text-neutral-700 font-light mb-8">
-                <li>• 50 touchpoints per order</li>
-                <li>• ~30 pieces</li>
-                <li>• Custom branding included</li>
-                <li>• Shipping included</li>
-                <li>• 2-week production time</li>
-              </ul>
-              <p className="text-sm text-neutral-600 font-light mb-6">
-                Maximum impact for high-value accounts and key decision makers.
-              </p>
+
+              <div className="mb-6">
+                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">What&apos;s included</div>
+                <ul className="space-y-2 text-sm text-neutral-700 font-light">
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Premium custom branded office drops</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Delivered directly to company offices or shared workspaces</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Fully managed fulfillment</li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">Best for</div>
+                <ul className="space-y-2 text-sm text-neutral-700 font-light">
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Strategic accounts</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Executive-level deal acceleration</li>
+                </ul>
+              </div>
+
               <button
                 onClick={scrollToContact}
-                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
+                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-light rounded transition-all mt-auto"
               >
                 Get Started
               </button>
@@ -171,7 +193,7 @@ export default function PricingPage() {
       </section>
 
       {/* Monthly Pricing */}
-      <section className="py-16 sm:py-24 border-t border-neutral-200" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-16 sm:py-24 border-t border-neutral-100 bg-white">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4 leading-tight">
@@ -183,22 +205,19 @@ export default function PricingPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Small Slider */}
+            {/* Scale Slider */}
             {(() => {
               const pricing = calculatePrice('small', smallQuantity);
               return (
                 <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow">
                   <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
-                    Small
-                  </div>
-                  <div className="text-sm text-neutral-500 mb-6 font-light">
-                    ~12 pieces per touchpoint
+                    Scale
                   </div>
                   
                   {/* Slider */}
                   <div className="mb-6">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-neutral-600 font-light">Touchpoints/Month</span>
+                      <span className="text-sm text-neutral-600 font-light">Prospects/Month</span>
                       <span className="text-2xl font-display font-light text-neutral-950">{smallQuantity}</span>
                     </div>
                     <input
@@ -229,9 +248,9 @@ export default function PricingPage() {
                   </div>
 
                   {/* Pricing Display */}
-                  <div className="border-t border-neutral-200 pt-6 mb-6">
+                  <div className="border-t border-neutral-100 pt-6 mb-6">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-neutral-600 font-light">Per touchpoint</span>
+                      <span className="text-sm text-neutral-600 font-light">Per prospect</span>
                       <span className="text-lg font-display font-light text-neutral-950">
                         ${pricing.perTouchpoint.toFixed(2)}
                         {pricing.discount > 0 && (
@@ -263,25 +282,22 @@ export default function PricingPage() {
               );
             })()}
 
-            {/* Medium Slider */}
+            {/* Desk Slider */}
             {(() => {
               const pricing = calculatePrice('medium', mediumQuantity);
               return (
-                <div className="glass-card p-6 sm:p-8 rounded ring-2 ring-neutral-950 hover:shadow-lg transition-shadow">
-                  <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-2 font-display">
-                    Medium
+                <div className="glass-card p-6 sm:p-8 rounded ring-2 ring-neutral-950 hover:shadow-lg transition-shadow relative">
+                  <div className="absolute top-4 right-4 bg-neutral-950 text-white text-xs uppercase tracking-widest px-3 py-1 rounded-full font-light">
+                    Most popular
                   </div>
-                  <div className="inline-block px-3 py-1 bg-neutral-950 text-white text-xs uppercase tracking-widest font-display font-light mb-4">
-                    Most Popular
-                  </div>
-                  <div className="text-sm text-neutral-500 mb-6 font-light">
-                    ~20 pieces per touchpoint
+                  <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
+                    Desk
                   </div>
                   
                   {/* Slider */}
                   <div className="mb-6">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-neutral-600 font-light">Touchpoints/Month</span>
+                      <span className="text-sm text-neutral-600 font-light">Prospects/Month</span>
                       <span className="text-2xl font-display font-light text-neutral-950">{mediumQuantity}</span>
                     </div>
                     <input
@@ -312,9 +328,9 @@ export default function PricingPage() {
                   </div>
 
                   {/* Pricing Display */}
-                  <div className="border-t border-neutral-200 pt-6 mb-6">
+                  <div className="border-t border-neutral-100 pt-6 mb-6">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-neutral-600 font-light">Per touchpoint</span>
+                      <span className="text-sm text-neutral-600 font-light">Per prospect</span>
                       <span className="text-lg font-display font-light text-neutral-950">
                         ${pricing.perTouchpoint.toFixed(2)}
                         {pricing.discount > 0 && (
@@ -346,22 +362,19 @@ export default function PricingPage() {
               );
             })()}
 
-            {/* Large Slider */}
+            {/* Office Slider */}
             {(() => {
               const pricing = calculatePrice('large', largeQuantity);
               return (
                 <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow">
                   <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
-                    Large
-                  </div>
-                  <div className="text-sm text-neutral-500 mb-6 font-light">
-                    ~30 pieces per touchpoint
+                    Office
                   </div>
                   
                   {/* Slider */}
                   <div className="mb-6">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-neutral-600 font-light">Touchpoints/Month</span>
+                      <span className="text-sm text-neutral-600 font-light">Prospects/Month</span>
                       <span className="text-2xl font-display font-light text-neutral-950">{largeQuantity}</span>
                     </div>
                     <input
@@ -392,9 +405,9 @@ export default function PricingPage() {
                   </div>
 
                   {/* Pricing Display */}
-                  <div className="border-t border-neutral-200 pt-6 mb-6">
+                  <div className="border-t border-neutral-100 pt-6 mb-6">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-neutral-600 font-light">Per touchpoint</span>
+                      <span className="text-sm text-neutral-600 font-light">Per prospect</span>
                       <span className="text-lg font-display font-light text-neutral-950">
                         ${pricing.perTouchpoint.toFixed(2)}
                         {pricing.discount > 0 && (
@@ -436,7 +449,7 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 sm:py-24 border-t border-neutral-200" style={{ backgroundColor: '#f9f8fa' }}>
+      <section className="py-16 sm:py-24 border-t border-neutral-100 bg-page">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4 leading-tight">
@@ -445,7 +458,7 @@ export default function PricingPage() {
           </div>
 
           <div className="space-y-8 max-w-3xl mx-auto">
-            <div className="border-t border-neutral-200 pt-8">
+            <div className="border-t border-neutral-100 pt-8">
               <h3 className="text-xl font-display font-light text-neutral-950 mb-4 leading-tight">
                 Can I mix jar sizes in my order?
               </h3>
@@ -454,7 +467,7 @@ export default function PricingPage() {
               </p>
             </div>
 
-            <div className="border-t border-neutral-200 pt-8">
+            <div className="border-t border-neutral-100 pt-8">
               <h3 className="text-xl font-display font-light text-neutral-950 mb-4 leading-tight">
                 What's included in the pricing?
               </h3>
@@ -463,7 +476,7 @@ export default function PricingPage() {
               </p>
             </div>
 
-            <div className="border-t border-neutral-200 pt-8">
+            <div className="border-t border-neutral-100 pt-8">
               <h3 className="text-xl font-display font-light text-neutral-950 mb-4 leading-tight">
                 How long does production take?
               </h3>
@@ -472,7 +485,7 @@ export default function PricingPage() {
               </p>
             </div>
 
-            <div className="border-t border-neutral-200 pt-8">
+            <div className="border-t border-neutral-100 pt-8">
               <h3 className="text-xl font-display font-light text-neutral-950 mb-4 leading-tight">
                 Can I change my monthly plan?
               </h3>
@@ -481,9 +494,9 @@ export default function PricingPage() {
               </p>
             </div>
 
-            <div className="border-t border-neutral-200 pt-8">
+            <div className="border-t border-neutral-100 pt-8">
               <h3 className="text-xl font-display font-light text-neutral-950 mb-4 leading-tight">
-                What if I need more than 500 touchpoints per month?
+                What if I need more than 500 prospects per month?
               </h3>
               <p className="text-base text-neutral-600 leading-relaxed font-light">
                 Contact us for custom enterprise pricing. We work with companies sending thousands of gifts per month and can create a tailored solution for your needs.
@@ -494,7 +507,7 @@ export default function PricingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-24 border-t border-neutral-200" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-16 sm:py-24 border-t border-neutral-100 bg-white">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Ready to get started?

@@ -1,12 +1,10 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 
 export default function Hero() {
   const [replyRate, setReplyRate] = useState(0);
   const [exposure, setExposure] = useState(0);
-  const [parallaxOffset, setParallaxOffset] = useState(0);
   const heroRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -31,23 +29,6 @@ export default function Hero() {
     animateCounter(setExposure, 25);
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!heroRef.current) return;
-      const rect = heroRef.current.getBoundingClientRect();
-      const heroHeight = rect.height;
-      const scrollProgress = Math.max(0, Math.min(1, -rect.top / heroHeight));
-      const parallaxSpeed = 0.3;
-      const maxOffset = heroHeight * 0.2;
-      const offset = scrollProgress * maxOffset * parallaxSpeed;
-      setParallaxOffset(offset);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -64,7 +45,8 @@ export default function Hero() {
         backgroundImage: "url('/images/background.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: '#2a1f1a'
       }}
     >
       {/* Dark overlay for text readability */}
@@ -75,9 +57,23 @@ export default function Hero() {
           {/* Text Content */}
           <div>
             <h1 className="text-3xl md:text-4xl font-display font-light !text-white mb-6 leading-[1.1] tracking-tight">
-              Get replies when outreach<br className="hidden md:inline" /> stops working
+              Get replies when outreach stops working
             </h1>
-            
+
+            {/* Conviction line — all breakpoints */}
+            <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed mb-6 md:mb-0">
+              Sales is an attention game. This gets attention.
+            </p>
+
+            {/* Mobile-only product image with extra breathing room */}
+            <div className="md:hidden flex justify-center my-10">
+              <img
+                src="/images/The Prospecting Gift.png"
+                alt="Custom branded chocolate gift jar"
+                className="w-[80%] h-auto object-contain"
+              />
+            </div>
+
             {/* Stats directly under headline */}
             <div className="flex gap-8 sm:gap-12 mb-10">
               <div>
@@ -98,18 +94,18 @@ export default function Hero() {
               The outbound play your prospects notice.
             </p>
 
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToContact}
-                className="glass-button-light px-8 py-4 text-neutral-700 text-base font-light rounded transition-all text-center whitespace-nowrap"
+                className="bg-white/90 hover:bg-white text-black border border-black/10 shadow-sm px-10 py-4 text-sm uppercase tracking-widest font-light rounded-lg transition-all text-center whitespace-nowrap"
               >
-                SEE HOW IT WORKS
+                Request a Sample
               </button>
               <button
                 onClick={scrollToContact}
-                className="glass-button-outline px-8 py-4 text-white text-base font-light rounded transition-all text-center whitespace-nowrap"
+                className="bg-white/15 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-8 py-3.5 text-sm uppercase tracking-widest font-light rounded-lg transition-all text-center whitespace-nowrap"
               >
-                REQUEST A SAMPLE
+                See How It Works
               </button>
             </div>
           </div>

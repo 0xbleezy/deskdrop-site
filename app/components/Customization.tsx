@@ -1,18 +1,18 @@
 export default function Customization() {
   return (
-    <section id="customization" className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+    <section id="customization" className="py-20 border-t border-neutral-100" >
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Fully Customizable
           </h2>
-          <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
             Every detail designed to reinforce your brand and value proposition
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-          <div className="border-t border-neutral-200 pt-8 text-center">
+          <div className="border-t border-neutral-100 pt-8 text-center">
             <div className="mb-6 aspect-square max-w-[200px] mx-auto">
               <div 
                 className="w-full h-full bg-cover bg-center border border-neutral-200"
@@ -29,7 +29,7 @@ export default function Customization() {
             </p>
           </div>
 
-          <div className="border-t border-neutral-200 pt-8 text-center">
+          <div className="border-t border-neutral-100 pt-8 text-center">
             <div className="mb-6 aspect-square max-w-[200px] mx-auto">
               <div 
                 className="w-full h-full bg-cover bg-center border border-neutral-200"
@@ -46,7 +46,7 @@ export default function Customization() {
             </p>
           </div>
 
-          <div className="border-t border-neutral-200 pt-8 text-center">
+          <div className="border-t border-neutral-100 pt-8 text-center">
             <div className="mb-6 aspect-square max-w-[200px] mx-auto">
               <div 
                 className="w-full h-full bg-cover bg-center border border-neutral-200"
@@ -64,7 +64,7 @@ export default function Customization() {
           </div>
         </div>
 
-        <div className="mt-24 border-t border-neutral-200 pt-16 text-center">
+        <div className="mt-24 border-t border-neutral-100 pt-16 text-center">
           <h3 className="text-2xl font-display font-light text-neutral-950 mb-4 leading-tight">
             Personalized Gift Messages
           </h3>

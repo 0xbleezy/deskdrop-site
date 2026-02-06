@@ -2,74 +2,103 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export default function FAQPreview() {
+  const { ref: sectionRef, isVisible } = useScrollReveal();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const topFaqs = [
     {
       question: 'What\'s the minimum order for a pilot program?',
-      answer: 'Our minimum custom production run starts at 50 jars. We offer three jar sizes (small, medium, or large), with the large size being our most popular for prospecting campaigns. Typical pilot programs range from 50-75 jars, perfect for testing with your target accounts.',
+      bullets: [
+        'Minimum of 50 jars for a custom pilot',
+        'Most teams start with 50–75 jars',
+        'Three sizes available, with medium jars performing best for prospecting',
+      ],
     },
     {
       question: 'How quickly can I deploy this in my sales motion?',
-      answer: 'Production takes 2 weeks from order confirmation. Once production completes, we ship directly to your prospect list. Plan your campaign timing accordingly. We recommend coordinating with your sales cadence to ensure delivery aligns with your outreach sequences.',
+      bullets: [
+        '2-week production from confirmation',
+        'Ships directly to your prospect list',
+        'Timed to coordinate with your outreach cadence',
+      ],
     },
     {
       question: 'What kind of ROI can I expect?',
-      answer: 'Our clients see 30%+ reply rates, which is 10-15x higher than email campaigns (2-3%) or cold calls (1-2%). Combined with 2-3x faster deal velocity, most campaigns pay for themselves with the first closed deal. Use our ROI calculator above to model your specific scenario.',
+      bullets: [
+        '30%+ reply rates (10–15x higher than email)',
+        '2–3x faster deal velocity on engaged accounts',
+        'Most campaigns pay for themselves with one closed deal',
+      ],
     },
   ];
 
   return (
-    <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+    <section ref={sectionRef as any} className={`py-16 sm:py-24 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-xl text-neutral-600 font-light">
-            Everything marketing, sales, and revenue leaders need to know
-          </p>
-        </div>
+        {/* GlassCard wrapper */}
+        <div className="glass-card p-8 sm:p-12">
+          <div className="text-center mb-10">
+            <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">FAQ</p>
+            <h2 className="text-3xl md:text-4xl font-display font-light text-neutral-950">
+              Frequently Asked Questions
+            </h2>
+          </div>
 
-        <div className="space-y-4 max-w-3xl mx-auto mb-12">
-          {topFaqs.map((faq, index) => (
-            <div
-              key={index}
-              className="border-t border-neutral-200 overflow-hidden"
-            >
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-0 py-6 text-left flex items-center justify-between hover:opacity-70 transition-opacity"
+          <div className="space-y-0">
+            {topFaqs.map((faq, index) => (
+              <div
+                key={index}
+                className={`${index > 0 ? 'border-t border-black/5' : ''}`}
               >
-                <span className="text-lg font-light text-neutral-950 pr-8">
-                  {faq.question}
-                </span>
-                <span className={`text-xl text-neutral-400 transition-transform flex-shrink-0 ${
-                  openIndex === index ? 'rotate-180' : ''
-                }`}>
-                  ▼
-                </span>
-              </button>
-              {openIndex === index && (
-                <div className="px-0 pb-6 pt-0">
-                  <p className="text-neutral-600 leading-relaxed font-light">
-                    {faq.answer}
-                  </p>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+                <button
+                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  aria-expanded={openIndex === index}
+                  aria-controls={`faq-answer-${index}`}
+                  className="w-full px-4 py-5 text-left flex items-center justify-between hover:bg-black/[0.02] transition-colors rounded-lg -mx-4"
+                >
+                  <span className="text-xl font-light text-neutral-950 pr-6">
+                    {faq.question}
+                  </span>
+                  <svg
+                    className={`w-4 h-4 text-neutral-400 flex-shrink-0 transition-transform duration-200 ${
+                      openIndex === index ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={1.5}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {openIndex === index && (
+                  <div id={`faq-answer-${index}`} role="region" className="px-4 pb-5 pt-0 -mx-4">
+                    <ul className="space-y-3">
+                      {faq.bullets.map((bullet, i) => (
+                        <li key={i} className="flex items-start gap-3 text-black/70 font-light leading-relaxed">
+                          <span className="w-1 h-1 rounded-full bg-neutral-300 mt-2.5 flex-shrink-0" />
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
 
-        <div className="text-center border-t border-neutral-200 pt-12">
-          <Link
-            href="/resources/help"
-            className="glass-button-outline inline-block px-8 py-3 text-neutral-950 text-xs uppercase tracking-widest font-light transition-colors"
-          >
-            View All FAQs
-          </Link>
+          {/* CTA */}
+          <div className="mt-10 pt-8 border-t border-black/5 text-center">
+            <Link
+              href="/resources/help"
+              className="glass-button inline-block px-8 py-3 text-white text-xs uppercase tracking-widest font-light transition-colors"
+            >
+              View All FAQs
+            </Link>
+          </div>
         </div>
       </div>
     </section>

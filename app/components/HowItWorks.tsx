@@ -34,15 +34,16 @@ export default function HowItWorks() {
   return (
     <section 
       ref={ref as any}
-      className={`py-16 sm:py-20 border-t border-neutral-200 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
-      style={{ backgroundColor: 'transparent' }}
+      className={`py-16 sm:py-24 border-t border-neutral-100 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
+      
     >
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
-        <div className="text-center mb-12 sm:mb-24">
+        <div className="text-center mb-12">
+          <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">The Process</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
             How It Works
           </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="text-xl text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
             How prospect gifting fits into your sales motion
           </p>
         </div>
@@ -51,7 +52,7 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="border-t border-neutral-200 pt-8"
+              className="border-t border-neutral-100 pt-8"
             >
               <div className="text-4xl font-display font-light text-neutral-400 mb-6">
                 {step.number}

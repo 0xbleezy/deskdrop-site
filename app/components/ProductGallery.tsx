@@ -29,13 +29,13 @@ export default function ProductGallery() {
   ];
 
   return (
-    <section className="py-20 border-t border-neutral-200" style={{ backgroundColor: 'transparent' }}>
+    <section className="py-20 border-t border-neutral-100" >
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             See It In Action
           </h2>
-          <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
             The physical presence that earns attention on decision-makers' desks
           </p>
         </div>
