@@ -83,7 +83,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToContact}
-                className="glass-button-outline px-10 py-4 text-white text-sm uppercase tracking-widest font-light transition-all text-center whitespace-nowrap"
+                className="glass-button-light px-10 py-4 text-black text-sm uppercase tracking-widest font-light transition-all text-center whitespace-nowrap"
               >
                 Request a Sample
               </button>
