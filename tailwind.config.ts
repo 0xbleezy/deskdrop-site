@@ -44,6 +44,10 @@ const config: Config = {
         display: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
       fontSize: {
+        'base': ['clamp(1rem, 2vw, 3.2rem)', { lineHeight: '1.5' }],
+        'lg': ['clamp(1.125rem, 2.25vw, 3.6rem)', { lineHeight: '1.56' }],
+        'xl': ['clamp(1.25rem, 2.5vw, 4rem)', { lineHeight: '1.4' }],
+        '2xl': ['clamp(1.5rem, 3vw, 4.8rem)', { lineHeight: '1.33' }],
         '8xl': ['6rem', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
         '9xl': ['8rem', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
         '10xl': ['10rem', { lineHeight: '1.1', letterSpacing: '-0.03em' }],

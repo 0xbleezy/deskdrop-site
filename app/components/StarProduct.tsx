@@ -31,17 +31,17 @@ export default function StarProduct() {
               alt="Custom branded chocolate gift jar — a physical desk touchpoint"
               width={800}
               height={1200}
-              className="relative w-full h-auto object-contain md:scale-[1.3] transition-transform duration-500"
+              className="relative w-full h-auto object-contain md:scale-[1.124] transition-transform duration-500"
               priority
             />
           </div>
         </div>
 
         {/* Right — Constrained editorial text column */}
-        <div className="px-4 sm:px-6 md:pl-4 md:pr-[7vw] md:max-w-[560px] text-center md:text-left mx-auto md:mx-0">
+        <div className="px-4 sm:px-6 md:pl-4 md:pr-[7vw] text-center md:text-left mx-auto md:mx-0">
           <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-6">The Product</p>
           
-          <h2 className="!text-3xl md:!text-[2.75rem] font-display font-light text-neutral-950 mb-4 !leading-[1.15] tracking-tight">
+          <h2 className="font-display font-light text-neutral-950 mb-4 leading-[1.15] tracking-tight">
             A Brand Moment That Lives on Their Desk
           </h2>
           
