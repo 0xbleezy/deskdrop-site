@@ -336,19 +336,19 @@ h3 {
 .glass-button-outline {
   border-radius: 0.5rem;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, transparent 50%, rgba(255, 255, 255, 0.02) 100%),
-    rgba(255, 255, 255, 0.06);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.04) 100%),
+    rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid transparent;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.18);
-  border-right-color: rgba(255, 255, 255, 0.1);
-  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-top-color: rgba(255, 255, 255, 0.45);
+  border-left-color: rgba(255, 255, 255, 0.25);
+  border-right-color: rgba(255, 255, 255, 0.15);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
   box-shadow:
-    0 0 0 0.5px rgba(255, 255, 255, 0.1),
-    0 2px 8px rgba(0, 0, 0, 0.15),
-    inset 0 0.5px 0 rgba(255, 255, 255, 0.2);
+    0 0 0 0.5px rgba(255, 255, 255, 0.15),
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.3);
   transition: all 120ms ease-out;
 }
 
@@ -359,15 +359,15 @@ h3 {
 
 .glass-button-outline:hover {
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.04) 100%),
-    rgba(255, 255, 255, 0.12);
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.25);
-  border-right-color: rgba(255, 255, 255, 0.15);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, transparent 50%, rgba(255, 255, 255, 0.06) 100%),
+    rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(255, 255, 255, 0.55);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-right-color: rgba(255, 255, 255, 0.2);
   box-shadow:
-    0 0 0 0.5px rgba(255, 255, 255, 0.15),
-    0 4px 12px rgba(0, 0, 0, 0.2),
-    inset 0 0.5px 0 rgba(255, 255, 255, 0.3);
+    0 0 0 0.5px rgba(255, 255, 255, 0.2),
+    0 4px 12px rgba(0, 0, 0, 0.25),
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.35);
 }
 
 .glass-button-outline:active {
