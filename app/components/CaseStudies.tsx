@@ -46,7 +46,7 @@ export default function CaseStudies() {
 
   return (
     <section className="py-20 bg-cream-50">
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-chocolate-600 mb-4">
             Success Stories
@@ -62,8 +62,8 @@ export default function CaseStudies() {
               key={index}
               className="bg-white rounded-2xl p-8 md:p-12 shadow-luxury-lg border border-gray-200"
             >
-              <div className="grid lg:grid-cols-3 gap-8">
-                <div className="lg:col-span-1">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
                   <div className="mb-4">
                     <div className="text-3xl font-display font-bold text-chocolate-700 mb-1">
                       {study.company}
@@ -87,7 +87,7 @@ export default function CaseStudies() {
                     </div>
                   </div>
                 </div>
-                <div className="lg:col-span-2">
+                <div className="md:col-span-2">
                   <div className="mb-6">
                     <div className="text-sm font-semibold text-gold-600 uppercase tracking-wider mb-4">
                       Results

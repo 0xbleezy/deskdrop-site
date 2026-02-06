@@ -1,7 +1,7 @@
 export default function Customization() {
   return (
     <section id="customization" className="py-20 border-t border-neutral-100" >
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             Fully Customizable
@@ -11,7 +11,7 @@ export default function Customization() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-12">
           <div className="border-t border-neutral-100 pt-8 text-center">
             <div className="mb-6 aspect-square max-w-[200px] mx-auto">
               <div 

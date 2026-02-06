@@ -52,17 +52,17 @@ h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(2.56rem, 6.56vw, 6.56rem);
+  font-size: clamp(2.56rem, 6.56vw, 10.5rem);
   font-weight: 300;
 }
 
 h2 {
-  font-size: clamp(2.46rem, 4.92vw, 4.92rem);
+  font-size: clamp(2.46rem, 4.92vw, 7.87rem);
   font-weight: 300;
 }
 
 h3 {
-  font-size: clamp(1.64rem, 3.28vw, 2.46rem);
+  font-size: clamp(1.64rem, 3.28vw, 5.25rem);
 }
 
 /* Smooth scroll animations */

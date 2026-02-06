@@ -24,7 +24,7 @@ export default function TrustBadges() {
 
   return (
     <section ref={ref as any} className={`py-12 sm:py-16 overflow-hidden bg-warm fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center mb-12">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw] text-center mb-12">
         <p className="text-base text-neutral-600 font-semibold">
           Trusted by teams like
         </p>

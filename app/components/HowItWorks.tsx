@@ -37,10 +37,10 @@ export default function HowItWorks() {
       className={`py-16 sm:py-24 border-t border-neutral-100 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
       
     >
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-12">
           <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">The Process</p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
+          <h2 className="text-4xl md:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
             How It Works
           </h2>
           <p className="text-xl text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
@@ -48,7 +48,7 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 sm:gap-16">
           {steps.map((step, index) => (
             <div
               key={index}

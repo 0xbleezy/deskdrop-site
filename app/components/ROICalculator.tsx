@@ -122,17 +122,17 @@ export default function ROICalculator() {
 
   return (
     <section ref={ref as any} className={`py-16 sm:py-24 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-12">
           <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">ROI Calculator</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-light text-neutral-950">
+          <h2 className="text-3xl md:text-5xl font-display font-light text-neutral-950">
             Estimate Your Pipeline Impact
           </h2>
         </div>
 
         {/* Main GlassCard container */}
-        <div className="glass-card p-6 sm:p-8 lg:p-10">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+        <div className="glass-card p-6 sm:p-8 md:p-10">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
             {/* Left: Inputs */}
             <div className="h-full flex flex-col space-y-4">
               <Stepper

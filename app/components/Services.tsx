@@ -1,9 +1,9 @@
 export default function Services() {
   return (
     <section id="services" className="py-24 border-t border-neutral-100" >
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
+          <h2 className="text-4xl md:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Outbound Gifting for Revenue Growth
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">

@@ -16,14 +16,14 @@ export default function StarProduct() {
     <section 
       ref={ref as any}
       id="star-product" 
-      className={`py-16 sm:py-24 lg:py-32 overflow-hidden fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
+      className={`py-16 sm:py-24 md:py-32 overflow-hidden fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
     >
       {/* Two-column editorial layout — image bleeds left, text constrained right */}
-      <div className="lg:grid lg:grid-cols-2 items-center">
+      <div className="md:grid md:grid-cols-2 items-center">
         
         {/* Left — Oversized jar, bleeds off left viewport edge on desktop */}
-        <div className="hidden lg:block relative lg:px-0 lg:mb-0">
-          <div className="lg:-ml-[18vw] relative">
+        <div className="hidden md:block relative md:px-0 md:mb-0">
+          <div className="md:-ml-[18vw] relative">
             {/* Subtle radial glow behind jar for grounding */}
             <div className="absolute inset-0 bg-radial-gradient pointer-events-none" />
             <Image
@@ -31,17 +31,17 @@ export default function StarProduct() {
               alt="Custom branded chocolate gift jar — a physical desk touchpoint"
               width={800}
               height={1200}
-              className="relative w-full h-auto object-contain lg:scale-[1.3] transition-transform duration-500"
+              className="relative w-full h-auto object-contain md:scale-[1.3] transition-transform duration-500"
               priority
             />
           </div>
         </div>
 
         {/* Right — Constrained editorial text column */}
-        <div className="px-4 sm:px-6 lg:pl-4 lg:pr-[7vw] lg:max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
+        <div className="px-4 sm:px-6 md:pl-4 md:pr-[7vw] md:max-w-[560px] text-center md:text-left mx-auto md:mx-0">
           <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-6">The Product</p>
           
-          <h2 className="!text-3xl md:!text-4xl lg:!text-[2.75rem] font-display font-light text-neutral-950 mb-4 !leading-[1.15] tracking-tight">
+          <h2 className="!text-3xl md:!text-[2.75rem] font-display font-light text-neutral-950 mb-4 !leading-[1.15] tracking-tight">
             A Brand Moment That Lives on Their Desk
           </h2>
           
@@ -50,7 +50,7 @@ export default function StarProduct() {
           </p>
 
           {/* Mobile-only product image — sits between conviction line and body copy */}
-          <div className="lg:hidden flex justify-center my-10">
+          <div className="md:hidden flex justify-center my-10">
             <Image
               src="/images/The Prospecting Gift.png"
               alt="Custom branded chocolate gift jar"
@@ -61,7 +61,7 @@ export default function StarProduct() {
             />
           </div>
           
-          <p className="text-lg text-neutral-600 font-light mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          <p className="text-lg text-neutral-600 font-light mb-8 leading-relaxed max-w-2xl mx-auto md:mx-0">
             A physical desk drop designed to break through inbox fatigue. Unlike email or cold calls, 
             this gift stays visible, creating daily brand exposure without interruption.
           </p>

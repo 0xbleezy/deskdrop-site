@@ -28,12 +28,12 @@ export default function BlogPage() {
     <main className="min-h-screen bg-page">
       {/* Hero */}
       <section className="py-32 pt-40 bg-white">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <div className="max-w-3xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6">
               Resources
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-900 mb-8 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-display font-light text-neutral-900 mb-8 leading-tight">
               Blog
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
@@ -46,7 +46,7 @@ export default function BlogPage() {
 
       {/* Posts Grid */}
       <section className="py-24 bg-page">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <div className="grid md:grid-cols-2 gap-12">
             {posts.map((post, index) => (
               <Link
@@ -74,8 +74,8 @@ export default function BlogPage() {
 
       {/* CTA */}
       <section className="py-24 bg-warm">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-light text-neutral-900 mb-8 leading-tight">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw] text-center">
+          <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-900 mb-8 leading-tight">
             Ready to get started?
           </h2>
           <p className="text-lg text-neutral-700 mb-10 leading-relaxed font-light">

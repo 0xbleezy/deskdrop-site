@@ -30,7 +30,7 @@ export default function ProductGallery() {
 
   return (
     <section className="py-20 border-t border-neutral-100" >
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
             See It In Action
@@ -40,7 +40,7 @@ export default function ProductGallery() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Main Image */}
           <div className="relative">
             <div className="relative border border-neutral-200 aspect-[4/3] overflow-hidden">

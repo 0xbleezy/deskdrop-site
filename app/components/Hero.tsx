@@ -52,7 +52,7 @@ export default function Hero() {
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-black/40"></div>
       
-      <div className="relative z-10 mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+      <div className="relative z-10 mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="pt-16 pb-12 md:pt-16 md:pb-16">
           {/* Text Content */}
           <div>

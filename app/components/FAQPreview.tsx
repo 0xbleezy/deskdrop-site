@@ -37,7 +37,7 @@ export default function FAQPreview() {
 
   return (
     <section ref={sectionRef as any} className={`py-16 sm:py-24 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         {/* GlassCard wrapper */}
         <div className="glass-card p-8 sm:p-12">
           <div className="text-center mb-10">

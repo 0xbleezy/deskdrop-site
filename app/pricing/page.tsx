@@ -43,7 +43,7 @@ export default function PricingPage() {
     <main className="min-h-screen bg-page">
       {/* Hero */}
       <section className="py-20 pt-32 sm:py-32 sm:pt-40 bg-white">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <div className="max-w-3xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6 font-display">
               Pricing
@@ -60,7 +60,7 @@ export default function PricingPage() {
 
       {/* Single Campaign Pricing */}
       <section className="py-16 sm:py-24 border-t border-neutral-100 bg-page">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <div className="text-center mb-12">
             <p className="text-xl md:text-2xl font-medium text-neutral-700 max-w-3xl mx-auto leading-relaxed">
               Perfect for one-time campaigns, pilot programs, or testing your outbound strategy
@@ -194,7 +194,7 @@ export default function PricingPage() {
 
       {/* Monthly Pricing */}
       <section className="py-16 sm:py-24 border-t border-neutral-100 bg-white">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4 leading-tight">
               Monthly Pricing
@@ -450,7 +450,7 @@ export default function PricingPage() {
 
       {/* FAQ Section */}
       <section className="py-16 sm:py-24 border-t border-neutral-100 bg-page">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4 leading-tight">
               Pricing FAQ
@@ -508,7 +508,7 @@ export default function PricingPage() {
 
       {/* CTA Section */}
       <section className="py-16 sm:py-24 border-t border-neutral-100 bg-white">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw] text-center">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Ready to get started?
           </h2>

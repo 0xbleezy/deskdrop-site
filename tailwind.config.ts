@@ -7,6 +7,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: '640px',
+      md: '769px',
+    },
     extend: {
       colors: {
         // Minimalist Neutral Palette - Loro Piana/Aesop Style

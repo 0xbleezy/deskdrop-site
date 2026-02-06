@@ -6,7 +6,7 @@ export default function IntegrationsShowcase() {
 
   return (
     <section className="py-24 bg-white">
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-sans font-bold text-neutral-900 mb-6 leading-tight">
             Connect your favorite apps

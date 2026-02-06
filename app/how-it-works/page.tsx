@@ -6,12 +6,12 @@ export default function HowItWorksPage() {
     <main className="min-h-screen bg-page">
       {/* Hero */}
       <section className="py-20 pt-32 sm:py-32 sm:pt-40 bg-white">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <div className="max-w-3xl">
             <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-6 font-display">
               How It Works
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-neutral-900 mb-8 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-display font-light text-neutral-900 mb-8 leading-tight">
               How prospect gifting fits into your sales motion
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
@@ -41,7 +41,7 @@ export default function HowItWorksPage() {
 
       {/* Sequence Add-on */}
       <section className="py-16 sm:py-24 bg-white">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw]">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <div className="border-l-4 border-neutral-950 pl-6 py-4 bg-neutral-50 rounded-r">
             <p className="text-base text-neutral-700 leading-relaxed font-light">
               <span className="font-medium">What happens after the gift arrives?</span> We'll share the 
@@ -54,7 +54,7 @@ export default function HowItWorksPage() {
 
       {/* CTA */}
       <section className="py-16 sm:py-24 border-t border-neutral-100 bg-page">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-[7vw] text-center">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw] text-center">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-8 leading-tight">
             Ready to get started?
           </h2>
