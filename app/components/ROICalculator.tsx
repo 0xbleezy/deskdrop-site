@@ -87,7 +87,7 @@ function JarSelector({
   return (
     <div className="glass-card p-5">
       <label className="block text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">
-        Jar Type
+        Gift Size
       </label>
       <div className="grid grid-cols-3 gap-2">
         {options.map((option) => (

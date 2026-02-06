@@ -99,7 +99,7 @@ export default function PricingPage() {
 
               <button
                 onClick={scrollToContact}
-                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-light rounded transition-all mt-auto"
+                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-light transition-all mt-auto"
               >
                 Get Started
               </button>
@@ -140,7 +140,7 @@ export default function PricingPage() {
 
               <button
                 onClick={scrollToContact}
-                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-light rounded transition-all mt-auto"
+                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-light transition-all mt-auto"
               >
                 Get Started
               </button>
@@ -177,7 +177,7 @@ export default function PricingPage() {
 
               <button
                 onClick={scrollToContact}
-                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-light rounded transition-all mt-auto"
+                className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-light transition-all mt-auto"
               >
                 Get Started
               </button>
@@ -274,7 +274,7 @@ export default function PricingPage() {
 
                   <button
                     onClick={scrollToContact}
-                    className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
+                    className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light transition-all"
                   >
                     Get Started
                   </button>
@@ -354,7 +354,7 @@ export default function PricingPage() {
 
                   <button
                     onClick={scrollToContact}
-                    className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
+                    className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light transition-all"
                   >
                     Get Started
                   </button>
@@ -431,7 +431,7 @@ export default function PricingPage() {
 
                   <button
                     onClick={scrollToContact}
-                    className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light rounded transition-all"
+                    className="glass-button w-full px-6 py-3 text-white text-xs uppercase tracking-widest font-display font-light transition-all"
                   >
                     Get Started
                   </button>
@@ -518,13 +518,13 @@ export default function PricingPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button
               onClick={scrollToContact}
-              className="glass-button w-full sm:w-auto px-8 py-4 text-white text-base font-light rounded transition-all inline-block text-center font-display"
+              className="glass-button w-full sm:w-auto px-8 py-4 text-white text-base font-light transition-all inline-block text-center font-display"
             >
               Request a Sample
             </button>
             <button
               onClick={scrollToContact}
-              className="glass-button-light w-full sm:w-auto px-8 py-4 text-neutral-950 text-base font-light rounded transition-all inline-block text-center font-display border border-neutral-200"
+              className="glass-button-light w-full sm:w-auto px-8 py-4 text-neutral-950 text-base font-light transition-all inline-block text-center font-display"
             >
               Contact Sales
             </button>

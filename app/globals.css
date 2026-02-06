@@ -242,6 +242,7 @@ h3 {
 
 /* Dark filled — "Get Started", "View All FAQs", pricing CTAs */
 .glass-button {
+  border-radius: 0.5rem;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, transparent 50%, rgba(255, 255, 255, 0.03) 100%),
     linear-gradient(145deg, hsl(0 0% 12% / 0.95), hsl(0 0% 6% / 0.9));
@@ -287,6 +288,7 @@ h3 {
 
 /* Light filled — "Request a Sample" in nav */
 .glass-button-light {
+  border-radius: 0.5rem;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%),
     rgba(255, 255, 255, 0.9);
@@ -332,6 +334,7 @@ h3 {
 
 /* Outline on dark — "Let's Chat" in nav, "See how it works" hero */
 .glass-button-outline {
+  border-radius: 0.5rem;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, transparent 50%, rgba(255, 255, 255, 0.02) 100%),
     rgba(255, 255, 255, 0.06);
@@ -377,6 +380,7 @@ h3 {
 
 /* Outline on light — ROI stepper/jar buttons, interactive controls */
 .glass-button-outline-on-light {
+  border-radius: 0.5rem;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, transparent 50%, rgba(255, 255, 255, 0.06) 100%),
     rgba(255, 255, 255, 0.45);

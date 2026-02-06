@@ -60,20 +60,6 @@ export default function Hero() {
               Get replies when outreach stops working
             </h1>
 
-            {/* Conviction line — all breakpoints */}
-            <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed mb-6 md:mb-0">
-              Sales is an attention game. This gets attention.
-            </p>
-
-            {/* Mobile-only product image with extra breathing room */}
-            <div className="md:hidden flex justify-center my-10">
-              <img
-                src="/images/The Prospecting Gift.png"
-                alt="Custom branded chocolate gift jar"
-                className="w-[80%] h-auto object-contain"
-              />
-            </div>
-
             {/* Stats directly under headline */}
             <div className="flex gap-8 sm:gap-12 mb-10">
               <div>
@@ -97,13 +83,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToContact}
-                className="bg-white/90 hover:bg-white text-black border border-black/10 shadow-sm px-10 py-4 text-sm uppercase tracking-widest font-light rounded-lg transition-all text-center whitespace-nowrap"
+                className="glass-button-light px-10 py-4 text-black text-sm uppercase tracking-widest font-light transition-all text-center whitespace-nowrap"
               >
                 Request a Sample
               </button>
               <button
                 onClick={scrollToContact}
-                className="bg-white/15 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-8 py-3.5 text-sm uppercase tracking-widest font-light rounded-lg transition-all text-center whitespace-nowrap"
+                className="glass-button-outline px-8 py-3.5 text-white text-sm uppercase tracking-widest font-light transition-all text-center whitespace-nowrap"
               >
                 See How It Works
               </button>

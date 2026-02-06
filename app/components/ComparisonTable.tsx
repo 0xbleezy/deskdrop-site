@@ -117,7 +117,7 @@ export default function ComparisonTable() {
             </p>
             <a
               href="#contact"
-              className="glass-button inline-block px-10 py-4 text-white text-xs uppercase tracking-widest font-light transition-colors rounded"
+              className="glass-button inline-block px-10 py-4 text-white text-xs uppercase tracking-widest font-light transition-colors"
             >
               Request a Sample
             </a>

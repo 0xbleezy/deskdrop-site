@@ -126,7 +126,7 @@ export default function CaseStudies() {
           </p>
           <a
             href="#contact"
-            className="glass-button inline-block px-8 py-4 text-white text-sm uppercase tracking-widest font-light transition-colors"
+            className="glass-button inline-block px-8 py-4 text-white text-sm uppercase tracking-widest font-light transition-all"
           >
             Start Your Campaign
           </a>

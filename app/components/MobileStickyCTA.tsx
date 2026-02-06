@@ -30,7 +30,7 @@ export default function MobileStickyCTA() {
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-neutral-100 shadow-lg p-4">
       <button
         onClick={scrollToContact}
-        className="glass-button w-full px-6 py-4 text-white text-sm uppercase tracking-widest font-light transition-all rounded"
+        className="glass-button w-full px-6 py-4 text-white text-sm uppercase tracking-widest font-light transition-all"
       >
         Request a Sample
       </button>

@@ -61,7 +61,7 @@ export default function StarProduct() {
             />
           </div>
           
-          <p className="text-lg text-neutral-600 font-light mb-8 leading-relaxed">
+          <p className="text-lg text-neutral-600 font-light mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
             A physical desk drop designed to break through inbox fatigue. Unlike email or cold calls, 
             this gift stays visible, creating daily brand exposure without interruption.
           </p>
@@ -83,12 +83,14 @@ export default function StarProduct() {
           </ul>
 
           {/* Single primary CTA */}
-          <button
-            onClick={scrollToContact}
-            className="glass-button px-10 py-4 text-white text-xs uppercase tracking-widest font-light transition-colors"
-          >
-            Request a Sample
-          </button>
+          <div className="mt-10">
+            <button
+              onClick={scrollToContact}
+              className="glass-button px-10 py-4 text-white text-xs uppercase tracking-widest font-light transition-colors"
+            >
+              Request a Sample
+            </button>
+          </div>
         </div>
       </div>
     </section>

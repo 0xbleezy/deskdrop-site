@@ -64,7 +64,7 @@ export default function CustomizationTeaser() {
         <div className="mt-12 pt-10 border-t border-black/10 text-center">
           <Link
             href="/product/customization"
-            className="glass-button-light inline-block px-8 py-4 text-neutral-950 text-xs uppercase tracking-widest font-light transition-colors rounded-lg"
+            className="glass-button-light inline-block px-8 py-4 text-neutral-950 text-xs uppercase tracking-widest font-light transition-colors"
           >
             See Customization Options
           </Link>
