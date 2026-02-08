@@ -71,7 +71,7 @@ export default function FAQ() {
               </button>
               {openIndex === index && (
                 <div id={`faq-full-answer-${index}`} role="region" className="px-0 pb-6 pt-0">
-                  <p className="text-neutral-600 leading-relaxed font-light">
+                  <p className="text-base text-neutral-600 leading-relaxed font-light">
                     {faq.answer}
                   </p>
                 </div>

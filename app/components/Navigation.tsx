@@ -45,8 +45,9 @@ export default function Navigation() {
     if (isHomePage) {
       // On homepage, scroll to section
       const element = document.getElementById(id);
-      if (element) {
-        const navHeight = 64;
+      const navElement = navRef.current;
+      if (element && navElement) {
+        const navHeight = navElement.getBoundingClientRect().height;
         const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
         const offsetPosition = elementPosition - navHeight;
         window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
