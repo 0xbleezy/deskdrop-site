@@ -84,14 +84,14 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-white font-display font-light text-xl tracking-tight uppercase">NC</span>
-            <span className="text-neutral-400 text-xs font-display font-light tracking-widest uppercase">GIFTING</span>
+            <span className="text-neutral-400 text-[12.5px] font-display font-light tracking-widest uppercase">GIFTING</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/how-it-works"
-              className="text-xs text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
+              className="text-[12.5px] text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
             >
               How It Works
             </Link>
@@ -100,7 +100,7 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('role')}
-                className="text-xs text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                className="text-[12.5px] text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
               >
                 <span>By Role</span>
                 <span className="text-neutral-400">▼</span>
@@ -140,7 +140,7 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('product')}
-                className="text-xs text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                className="text-[12.5px] text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
               >
                 <span>Product</span>
                 <span className="text-neutral-400">▼</span>
@@ -170,7 +170,7 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('solutions')}
-                className="text-xs text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                className="text-[12.5px] text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
               >
                 <span>Solutions</span>
                 <span className="text-neutral-400">▼</span>
@@ -208,7 +208,7 @@ export default function Navigation() {
 
             <Link
               href="/pricing"
-              className="text-xs text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
+              className="text-[12.5px] text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
             >
               Pricing
             </Link>
@@ -218,13 +218,13 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={handleContactClick}
-              className="glass-button-outline px-3 py-1.5 text-neutral-200 text-xs font-display font-light tracking-widest uppercase transition-all"
+              className="glass-button-outline px-2.5 py-1 text-neutral-200 text-xs font-display font-light tracking-widest uppercase transition-all"
             >
               Let's Chat
             </button>
             <button
               onClick={handleContactClick}
-              className="glass-button-light px-3 py-1.5 text-neutral-900 text-xs font-display font-light tracking-widest uppercase transition-all"
+              className="glass-button-light px-2.5 py-1 text-neutral-900 text-xs font-display font-light tracking-widest uppercase transition-all"
             >
               REQUEST A SAMPLE
             </button>

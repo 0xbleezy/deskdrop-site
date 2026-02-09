@@ -24,20 +24,20 @@ export default function TrustBadges() {
 
   return (
     <section ref={ref as any} className={`py-12 sm:py-16 overflow-hidden bg-warm fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
-      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw] text-center mb-12">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw] text-center mb-6 sm:mb-12">
         <p className="text-base text-neutral-600 font-semibold">
           Trusted by teams like
         </p>
       </div>
       <div className="relative">
         {/* Gradient fade on edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#f5f3f0] to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#f5f3f0] to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-24 bg-gradient-to-r from-[#f5f3f0] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-24 bg-gradient-to-l from-[#f5f3f0] to-transparent z-10 pointer-events-none" />
         
         {/* Marquee track */}
         <div className="marquee-track">
           {[...logos, ...logos].map((logo, index) => (
-            <div key={index} className="flex-shrink-0 mx-12 flex items-center">
+            <div key={index} className="flex-shrink-0 mx-6 sm:mx-12 flex items-center">
               <img
                 src={logo}
                 alt=""

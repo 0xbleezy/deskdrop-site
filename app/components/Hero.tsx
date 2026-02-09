@@ -63,33 +63,33 @@ export default function Hero() {
             {/* Stats directly under headline */}
             <div className="flex gap-8 sm:gap-12 mb-10">
               <div>
-                <div className="text-5xl md:text-6xl font-display font-light text-white mb-2">
+                <div className="font-display font-light text-white mb-2" style={{ fontSize: 'clamp(1.5rem, 3.85vw, 6.15rem)', lineHeight: '1.1' }}>
                   {replyRate}%
                 </div>
-                <div className="text-xs text-white/80 uppercase tracking-widest font-light">REPLY RATE</div>
+                <div className="text-white/80 uppercase tracking-widest font-light" style={{ fontSize: 'clamp(0.5rem, 0.95vw, 1.5rem)' }}>REPLY RATE</div>
               </div>
               <div>
-                <div className="text-5xl md:text-6xl font-display font-light text-white mb-2">
+                <div className="font-display font-light text-white mb-2" style={{ fontSize: 'clamp(1.5rem, 3.85vw, 6.15rem)', lineHeight: '1.1' }}>
                   {exposure}x
                 </div>
-                <div className="text-xs text-white/80 uppercase tracking-widest font-light">EXPOSURE</div>
+                <div className="text-white/80 uppercase tracking-widest font-light" style={{ fontSize: 'clamp(0.5rem, 0.95vw, 1.5rem)' }}>EXPOSURE</div>
               </div>
             </div>
 
-            <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed font-light max-w-2xl">
+            <p className="text-base md:text-lg text-white/90 mb-10 leading-relaxed font-light max-w-2xl">
               The outbound play your prospects notice.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToContact}
-                className="glass-button-light px-8 py-3 text-black text-xs uppercase tracking-widest font-light transition-all text-center whitespace-nowrap"
+                className="glass-button-light px-7 py-2.5 text-black text-xs uppercase tracking-widest font-light transition-all text-center whitespace-nowrap"
               >
                 Request a Sample
               </button>
               <button
                 onClick={scrollToContact}
-                className="glass-button-outline px-6 py-2.5 text-white text-xs uppercase tracking-widest font-light transition-all text-center whitespace-nowrap"
+                className="glass-button-outline px-5 py-2 text-white text-xs uppercase tracking-widest font-light transition-all text-center whitespace-nowrap"
               >
                 See How It Works
               </button>
