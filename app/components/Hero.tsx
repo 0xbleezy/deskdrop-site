@@ -1,33 +1,9 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 
 export default function Hero() {
-  const [replyRate, setReplyRate] = useState(0);
-  const [exposure, setExposure] = useState(0);
   const heroRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const animateCounter = (setter: (val: number) => void, target: number) => {
-      const duration = 2000;
-      const steps = 60;
-      const increment = target / steps;
-      let current = 0;
-      
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          setter(target);
-          clearInterval(timer);
-        } else {
-          setter(Math.floor(current));
-        }
-      }, duration / steps);
-    };
-
-    animateCounter(setReplyRate, 30);
-    animateCounter(setExposure, 25);
-  }, []);
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -60,23 +36,7 @@ export default function Hero() {
               Get replies when outreach stops working
             </h1>
 
-            {/* Stats directly under headline */}
-            <div className="flex gap-8 sm:gap-12 mb-10">
-              <div>
-                <div className="font-display font-light text-white mb-2" style={{ fontSize: 'clamp(1.5rem, 3.85vw, 6.15rem)', lineHeight: '1.1' }}>
-                  {replyRate}%
-                </div>
-                <div className="text-white/80 uppercase tracking-widest font-light" style={{ fontSize: 'clamp(0.5rem, 0.95vw, 1.5rem)' }}>REPLY RATE</div>
-              </div>
-              <div>
-                <div className="font-display font-light text-white mb-2" style={{ fontSize: 'clamp(1.5rem, 3.85vw, 6.15rem)', lineHeight: '1.1' }}>
-                  {exposure}x
-                </div>
-                <div className="text-white/80 uppercase tracking-widest font-light" style={{ fontSize: 'clamp(0.5rem, 0.95vw, 1.5rem)' }}>EXPOSURE</div>
-              </div>
-            </div>
-
-            <p className="text-base md:text-lg text-white/90 mb-10 leading-relaxed font-light max-w-2xl">
+            <p className="text-[17.6px] md:text-[19.8px] text-white/90 mb-10 leading-relaxed font-light max-w-2xl">
               The outbound play your prospects notice.
             </p>
 

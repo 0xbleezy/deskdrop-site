@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import TrustBadges from './components/TrustBadges';
 import StarProduct from './components/StarProduct';
+import StatsBand from './components/StatsBand';
 import UseCases from './components/UseCases';
 import ComparisonTable from './components/ComparisonTable';
 import ROICalculator from './components/ROICalculator';
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <TrustBadges />
       <StarProduct />
+      <StatsBand />
       <CustomizationTeaser />
       <UseCases />
       <ComparisonTable />

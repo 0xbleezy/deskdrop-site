@@ -68,6 +68,12 @@ export default function Navigation() {
     }
   };
 
+  // Fluid font styles
+  const navLinkStyle = { fontSize: 'clamp(11px, 1.1vw, 18px)' };
+  const ctaStyle = { fontSize: 'clamp(10px, 1vw, 17px)' };
+  const logoStyle = { fontSize: 'clamp(16px, 1.4vw, 24px)' };
+  const giftingStyle = { fontSize: 'clamp(11px, 1.1vw, 18px)' };
+
   return (
     <nav
       ref={navRef}
@@ -83,15 +89,16 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-white font-display font-light text-xl tracking-tight uppercase">NC</span>
-            <span className="text-neutral-400 text-[12.5px] font-display font-light tracking-widest uppercase">GIFTING</span>
+            <span className="text-white font-display font-light tracking-tight uppercase" style={logoStyle}>NC</span>
+            <span className="text-neutral-400 font-display font-light tracking-widest uppercase" style={giftingStyle}>GIFTING</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/how-it-works"
-              className="text-[12.5px] text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
+              className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
+              style={navLinkStyle}
             >
               How It Works
             </Link>
@@ -100,7 +107,8 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('role')}
-                className="text-[12.5px] text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                style={navLinkStyle}
               >
                 <span>By Role</span>
                 <span className="text-neutral-400">▼</span>
@@ -140,7 +148,8 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('product')}
-                className="text-[12.5px] text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                style={navLinkStyle}
               >
                 <span>Product</span>
                 <span className="text-neutral-400">▼</span>
@@ -170,7 +179,8 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('solutions')}
-                className="text-[12.5px] text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                style={navLinkStyle}
               >
                 <span>Solutions</span>
                 <span className="text-neutral-400">▼</span>
@@ -208,7 +218,8 @@ export default function Navigation() {
 
             <Link
               href="/pricing"
-              className="text-[12.5px] text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
+              className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
+              style={navLinkStyle}
             >
               Pricing
             </Link>
@@ -218,13 +229,15 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={handleContactClick}
-              className="glass-button-outline px-2.5 py-1 text-neutral-200 text-xs font-display font-light tracking-widest uppercase transition-all"
+              className="glass-button-outline px-2.5 py-1 text-neutral-200 font-display font-light tracking-widest uppercase transition-all"
+              style={ctaStyle}
             >
               Let's Chat
             </button>
             <button
               onClick={handleContactClick}
-              className="glass-button-light px-2.5 py-1 text-neutral-900 text-xs font-display font-light tracking-widest uppercase transition-all"
+              className="glass-button-light px-2.5 py-1 text-neutral-900 font-display font-light tracking-widest uppercase transition-all"
+              style={ctaStyle}
             >
               REQUEST A SAMPLE
             </button>
