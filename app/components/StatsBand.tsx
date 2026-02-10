@@ -14,7 +14,7 @@ const stats: AnimatedStat[] = [
   { value: '30%', label: 'Reply Rate', animateTo: 30, suffix: '%' },
   { value: '25×', label: 'Exposure', animateTo: 25, suffix: '×' },
   { value: '2–3×', label: 'Meeting Rate' },
-  { value: '7–10', label: 'Days of Desk Presence' },
+  { value: '14–21', label: 'Days of Desk Presence' },
 ];
 
 function AnimatedNumber({ target, suffix = '' }: { target: number; suffix?: string }) {
