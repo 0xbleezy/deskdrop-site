@@ -72,7 +72,7 @@ h3 {
 }
 @media (min-width: 640px) {
   .hero-headline {
-    font-size: clamp(2.25rem, 4.5vw, 7.2rem);
+    font-size: clamp(2.56rem, 6.56vw, 10.5rem);
   }
 }
 

@@ -78,7 +78,7 @@ export default function FAQPreview() {
                   <div id={`faq-answer-${index}`} role="region" className="px-4 pb-5 pt-0 -mx-4">
                     <ul className="space-y-3">
                       {faq.bullets.map((bullet, i) => (
-                        <li key={i} className="flex items-start gap-3 text-black/70 font-light leading-relaxed">
+                        <li key={i} className="flex items-start gap-3 text-sm text-black/70 font-light leading-relaxed">
                           <span className="w-1 h-1 rounded-full bg-neutral-300 mt-2.5 flex-shrink-0" />
                           <span>{bullet}</span>
                         </li>

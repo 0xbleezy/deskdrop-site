@@ -4,7 +4,6 @@ import StarProduct from './components/StarProduct';
 import StatsBand from './components/StatsBand';
 import UseCases from './components/UseCases';
 import ComparisonTable from './components/ComparisonTable';
-import ROICalculator from './components/ROICalculator';
 import CustomizationTeaser from './components/CustomizationTeaser';
 import FAQPreview from './components/FAQPreview';
 import Contact from './components/Contact';
@@ -20,7 +19,6 @@ export default function Home() {
       <CustomizationTeaser />
       <UseCases />
       <ComparisonTable />
-      <ROICalculator />
       <FAQPreview />
       <Contact />
       <MobileStickyCTA />
