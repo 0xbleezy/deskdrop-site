@@ -32,15 +32,15 @@ export default function Hero() {
         <div className="pt-16 pb-12 md:pt-16 md:pb-16">
           {/* Text Content */}
           <div>
-            <h1 className="text-3xl md:text-4xl font-display font-light !text-white mb-6 leading-[1.1] tracking-tight">
+            <h1 className="hero-headline font-display font-light !text-white mb-[3.15rem] leading-[1.1] tracking-tight">
               Get replies when outreach stops working
             </h1>
 
-            <p className="text-[17.6px] md:text-[19.8px] text-white/90 mb-10 leading-relaxed font-light max-w-2xl">
+            <p className="text-white/90 mb-40 leading-relaxed font-light max-w-2xl" style={{ fontSize: 'clamp(1.1rem, 1.25vw, 2rem)' }}>
               The outbound play your prospects notice.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="hidden sm:flex flex-row gap-4">
               <button
                 onClick={scrollToContact}
                 className="glass-button-light px-7 py-2.5 text-black text-xs uppercase tracking-widest font-light transition-all text-center whitespace-nowrap"

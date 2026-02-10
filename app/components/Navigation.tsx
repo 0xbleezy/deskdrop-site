@@ -69,10 +69,10 @@ export default function Navigation() {
   };
 
   // Fluid font styles
-  const navLinkStyle = { fontSize: 'clamp(11px, 1.1vw, 18px)' };
-  const ctaStyle = { fontSize: 'clamp(10px, 1vw, 17px)' };
-  const logoStyle = { fontSize: 'clamp(16px, 1.4vw, 24px)' };
-  const giftingStyle = { fontSize: 'clamp(11px, 1.1vw, 18px)' };
+  const navLinkStyle = { fontSize: 'clamp(0.585rem, 0.935vw, 0.956rem)' };
+  const ctaStyle = { fontSize: 'clamp(0.531rem, 0.85vw, 0.903rem)' };
+  const logoStyle = { fontSize: 'clamp(0.85rem, 1.19vw, 1.275rem)' };
+  const giftingStyle = { fontSize: 'clamp(0.585rem, 0.935vw, 0.956rem)' };
 
   return (
     <nav

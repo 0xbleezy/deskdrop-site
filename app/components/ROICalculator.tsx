@@ -82,7 +82,7 @@ function JarSelector({
   value: 'scale' | 'desk' | 'office';
   onChange: (v: 'scale' | 'desk' | 'office') => void;
 }) {
-  const options: Array<'scale' | 'desk' | 'office'> = ['scale', 'desk', 'office'];
+  const options: Array<'scale' | 'desk' | 'office'> = ['office', 'desk', 'scale'];
 
   return (
     <div className="glass-card p-5">

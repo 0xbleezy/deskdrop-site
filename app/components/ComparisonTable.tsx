@@ -73,17 +73,17 @@ export default function ComparisonTable() {
             <table className="w-full">
               <thead>
                 <tr className="border-b border-black/10">
-                  <th className="px-3 md:px-6 py-4 md:py-5 text-left text-[10px] md:text-xs font-medium text-neutral-950 uppercase tracking-[0.15em]">
+                  <th className="px-3 md:px-6 py-4 md:py-5 text-left text-xs font-medium text-neutral-950 uppercase tracking-[0.15em]">
                     Feature
                   </th>
-                  <th className="px-3 md:px-6 py-4 md:py-5 text-left text-[10px] md:text-xs font-medium text-neutral-950 uppercase tracking-[0.15em] bg-black/[0.03]">
+                  <th className="px-3 md:px-6 py-4 md:py-5 text-left text-xs font-medium text-neutral-950 uppercase tracking-[0.15em] bg-black/[0.03]">
                     <span className="md:hidden">Desk Drop</span>
                     <span className="hidden md:inline">NC Desk Drop</span>
                   </th>
-                  <th className="px-3 md:px-6 py-4 md:py-5 text-left text-[10px] md:text-xs font-medium text-neutral-500 uppercase tracking-[0.15em]">
+                  <th className="px-3 md:px-6 py-4 md:py-5 text-left text-xs font-medium text-neutral-500 uppercase tracking-[0.15em]">
                     Email
                   </th>
-                  <th className="px-3 md:px-6 py-4 md:py-5 text-left text-[10px] md:text-xs font-medium text-neutral-500 uppercase tracking-[0.15em]">
+                  <th className="px-3 md:px-6 py-4 md:py-5 text-left text-xs font-medium text-neutral-500 uppercase tracking-[0.15em]">
                     <span className="md:hidden">Call</span>
                     <span className="hidden md:inline">Cold Call</span>
                   </th>

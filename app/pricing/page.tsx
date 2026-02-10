@@ -68,23 +68,23 @@ export default function PricingPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 items-stretch">
-            {/* Scale */}
+            {/* Office */}
             <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow flex flex-col h-full">
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
-                Scale
+                Office
               </div>
               <div className="text-4xl font-display font-light text-neutral-950 mb-1">
-                $4,375
+                $2,500
               </div>
               <div className="text-sm text-neutral-500 mb-6 font-light">
-                For 125 prospects
+                For 50 high-value prospects
               </div>
 
               <div className="mb-6">
                 <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">What&apos;s included</div>
                 <ul className="space-y-2 text-sm text-neutral-700 font-light">
-                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Custom branded chocolate desk drops</li>
-                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Delivered directly to each prospect</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Premium custom branded office drops</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Delivered directly to company offices or shared workspaces</li>
                   <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Fully managed fulfillment</li>
                 </ul>
               </div>
@@ -92,8 +92,8 @@ export default function PricingPage() {
               <div className="mb-8">
                 <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">Best for</div>
                 <ul className="space-y-2 text-sm text-neutral-700 font-light">
-                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Scaling outbound across larger prospect lists</li>
-                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Testing prospect gifting at volume</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Strategic accounts</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Executive-level deal acceleration</li>
                 </ul>
               </div>
 
@@ -146,23 +146,23 @@ export default function PricingPage() {
               </button>
             </div>
 
-            {/* Office */}
+            {/* Scale */}
             <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow flex flex-col h-full">
               <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
-                Office
+                Scale
               </div>
               <div className="text-4xl font-display font-light text-neutral-950 mb-1">
-                $2,500
+                $4,375
               </div>
               <div className="text-sm text-neutral-500 mb-6 font-light">
-                For 50 high-value prospects
+                For 125 prospects
               </div>
 
               <div className="mb-6">
                 <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">What&apos;s included</div>
                 <ul className="space-y-2 text-sm text-neutral-700 font-light">
-                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Premium custom branded office drops</li>
-                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Delivered directly to company offices or shared workspaces</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Custom branded chocolate desk drops</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Delivered directly to each prospect</li>
                   <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Fully managed fulfillment</li>
                 </ul>
               </div>
@@ -170,8 +170,8 @@ export default function PricingPage() {
               <div className="mb-8">
                 <div className="text-xs text-neutral-500 uppercase tracking-widest font-light mb-3">Best for</div>
                 <ul className="space-y-2 text-sm text-neutral-700 font-light">
-                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Strategic accounts</li>
-                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Executive-level deal acceleration</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Scaling outbound across larger prospect lists</li>
+                  <li className="flex items-start gap-2"><span className="text-neutral-300 mt-0.5">•</span>Testing prospect gifting at volume</li>
                 </ul>
               </div>
 
@@ -205,27 +205,27 @@ export default function PricingPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Scale Slider */}
+            {/* Office Slider */}
             {(() => {
-              const pricing = calculatePrice('small', smallQuantity);
+              const pricing = calculatePrice('large', largeQuantity);
               return (
                 <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow">
                   <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
-                    Scale
+                    Office
                   </div>
                   
                   {/* Slider */}
                   <div className="mb-6">
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-sm text-neutral-600 font-light">Prospects/Month</span>
-                      <span className="text-2xl font-display font-light text-neutral-950">{smallQuantity}</span>
+                      <span className="text-2xl font-display font-light text-neutral-950">{largeQuantity}</span>
                     </div>
                     <input
                       type="range"
                       min="1"
                       max="500"
-                      value={smallQuantity}
-                      onChange={(e) => setSmallQuantity(Number(e.target.value))}
+                      value={largeQuantity}
+                      onChange={(e) => setLargeQuantity(Number(e.target.value))}
                       className="w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer accent-neutral-950"
                     />
                     <div className="flex justify-between text-xs text-neutral-400 mt-1">
@@ -254,7 +254,7 @@ export default function PricingPage() {
                       <span className="text-lg font-display font-light text-neutral-950">
                         ${pricing.perTouchpoint.toFixed(2)}
                         {pricing.discount > 0 && (
-                          <span className="text-sm text-neutral-400 line-through ml-2">${basePrices.small}</span>
+                          <span className="text-sm text-neutral-400 line-through ml-2">${basePrices.large}</span>
                         )}
                       </span>
                     </div>
@@ -362,27 +362,27 @@ export default function PricingPage() {
               );
             })()}
 
-            {/* Office Slider */}
+            {/* Scale Slider */}
             {(() => {
-              const pricing = calculatePrice('large', largeQuantity);
+              const pricing = calculatePrice('small', smallQuantity);
               return (
                 <div className="glass-card p-6 sm:p-8 rounded hover:shadow-lg transition-shadow">
                   <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4 font-display">
-                    Office
+                    Scale
                   </div>
                   
                   {/* Slider */}
                   <div className="mb-6">
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-sm text-neutral-600 font-light">Prospects/Month</span>
-                      <span className="text-2xl font-display font-light text-neutral-950">{largeQuantity}</span>
+                      <span className="text-2xl font-display font-light text-neutral-950">{smallQuantity}</span>
                     </div>
                     <input
                       type="range"
                       min="1"
                       max="500"
-                      value={largeQuantity}
-                      onChange={(e) => setLargeQuantity(Number(e.target.value))}
+                      value={smallQuantity}
+                      onChange={(e) => setSmallQuantity(Number(e.target.value))}
                       className="w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer accent-neutral-950"
                     />
                     <div className="flex justify-between text-xs text-neutral-400 mt-1">
@@ -411,7 +411,7 @@ export default function PricingPage() {
                       <span className="text-lg font-display font-light text-neutral-950">
                         ${pricing.perTouchpoint.toFixed(2)}
                         {pricing.discount > 0 && (
-                          <span className="text-sm text-neutral-400 line-through ml-2">${basePrices.large}</span>
+                          <span className="text-sm text-neutral-400 line-through ml-2">${basePrices.small}</span>
                         )}
                       </span>
                     </div>

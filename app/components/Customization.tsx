@@ -13,7 +13,7 @@ export default function Customization() {
 
         <div className="grid md:grid-cols-3 gap-12">
           <div className="border-t border-neutral-100 pt-8 text-center">
-            <div className="mb-6 aspect-square max-w-[200px] mx-auto">
+            <div className="mb-6 aspect-square max-w-[12.5rem] mx-auto">
               <div 
                 className="w-full h-full bg-cover bg-center border border-neutral-200"
                 style={{
@@ -30,7 +30,7 @@ export default function Customization() {
           </div>
 
           <div className="border-t border-neutral-100 pt-8 text-center">
-            <div className="mb-6 aspect-square max-w-[200px] mx-auto">
+            <div className="mb-6 aspect-square max-w-[12.5rem] mx-auto">
               <div 
                 className="w-full h-full bg-cover bg-center border border-neutral-200"
                 style={{
@@ -47,7 +47,7 @@ export default function Customization() {
           </div>
 
           <div className="border-t border-neutral-100 pt-8 text-center">
-            <div className="mb-6 aspect-square max-w-[200px] mx-auto">
+            <div className="mb-6 aspect-square max-w-[12.5rem] mx-auto">
               <div 
                 className="w-full h-full bg-cover bg-center border border-neutral-200"
                 style={{

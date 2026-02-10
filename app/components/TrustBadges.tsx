@@ -41,7 +41,7 @@ export default function TrustBadges() {
               <img
                 src={logo}
                 alt=""
-                className="h-8 w-auto max-w-[150px] object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                className="h-8 w-auto max-w-[9.375rem] object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
               />
             </div>
           ))}
