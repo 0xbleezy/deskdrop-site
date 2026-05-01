@@ -33,7 +33,7 @@ export default function ProductGallery() {
       <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
-            See It In Action
+            See it in action
           </h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
             The physical presence that earns attention on decision-makers' desks
@@ -49,6 +49,8 @@ export default function ProductGallery() {
                 style={{
                   backgroundImage: `url('${images[selectedImage].url}')`,
                 }}
+                role="img"
+                aria-label={images[selectedImage].alt}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
@@ -66,7 +68,8 @@ export default function ProductGallery() {
               <button
                 key={index}
                 onClick={() => setSelectedImage(index)}
-                className={`relative border border-neutral-200 aspect-square transition-all duration-300 ${
+                aria-label={`View ${image.title}`}
+                className={`relative border border-neutral-200 aspect-square transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-400 ${
                   selectedImage === index
                     ? 'border-neutral-950 scale-105'
                     : 'hover:border-neutral-400 opacity-75 hover:opacity-100'

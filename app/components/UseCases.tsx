@@ -102,28 +102,28 @@ export default function UseCases() {
     {
       id: 'sales',
       bestFor: 'Sales',
-      title: 'Cold or Ignored Outbound',
+      title: 'Cold or ignored outbound',
       description: 'Warm cold prospects before your first outreach with a physical desk drop.',
       metrics: ['Up to 40% higher meeting acceptance', '2x faster response times', 'Breaks through inbox fatigue'],
     },
     {
       id: 'abm',
       bestFor: 'ABM',
-      title: 'Stalled High-Value Deals',
+      title: 'Stalled high-value deals',
       description: "Rekindle stalled conversations with decision-makers who've gone quiet.",
       metrics: ['3x engagement vs. email re-engagement', 'Faster deal velocity on revived opps', 'Reduces "radio silence" response times'],
     },
     {
       id: 'enterprise',
       bestFor: 'Enterprise',
-      title: 'Strategic Account Penetration',
+      title: 'Strategic account penetration',
       description: 'Get noticed across an entire buying committee simultaneously.',
       metrics: ['Penetrate multi-stakeholder accounts', 'Higher awareness across committees', 'Better positioning for enterprise deals'],
     },
     {
       id: 'events',
       bestFor: 'Events',
-      title: 'Conference Follow-Up',
+      title: 'Conference follow-up',
       description: 'Stand out after in-person connections with a physical follow-up.',
       metrics: ['60% better follow-up response', 'Higher conversion from event leads', 'Bridges online/offline touchpoints'],
     },
@@ -133,14 +133,14 @@ export default function UseCases() {
 
   return (
     <section
-      ref={ref as any}
+      ref={ref}
       className={`py-16 sm:py-24 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
     >
       <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-10">
           <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">Use Cases</p>
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
-            When It Works Best
+            When it works best
           </h2>
           <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
             Prospect gifting that delivers real pipeline results

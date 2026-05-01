@@ -1,4 +1,23 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Premium Packaging — Elegant Jars That Make an Impact | DeskDrop',
+  description: 'Premium glass jars in three sizes with careful shipping and desk-ready presentation. Secure packaging ensures gifts arrive in perfect condition.',
+  openGraph: {
+    title: 'Premium Packaging — Elegant Jars That Make an Impact | DeskDrop',
+    description: 'Premium glass jars with careful shipping and desk-ready presentation.',
+    url: 'https://thedeskdrop.com/product/packaging',
+    siteName: 'DeskDrop',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Premium Packaging | DeskDrop',
+    description: 'Premium glass jars with careful shipping and desk-ready presentation.',
+  },
+  alternates: { canonical: 'https://thedeskdrop.com/product/packaging' },
+};
 
 export default function PackagingPage() {
   return (
@@ -11,7 +30,7 @@ export default function PackagingPage() {
               Product
             </div>
             <h1 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 leading-tight">
-              Premium Packaging<br className="hidden md:inline" /> That Makes an Impact
+              Premium packaging<br className="hidden md:inline" /> that makes an impact
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
               Elegant jars and careful presentation create a memorable first impression.
@@ -27,9 +46,11 @@ export default function PackagingPage() {
             <div>
               <div className="aspect-[4/3] mb-8 bg-cover bg-center border border-neutral-200 rounded"
                 style={{ backgroundImage: "url('/images/premium packaging.png')" }}
+                role="img"
+                aria-label="Premium chocolate gift packaging"
               ></div>
               <h2 className="text-4xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Elegant Jar Design
+                Elegant jar design
               </h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Premium glass jars create a sophisticated presentation that reflects your brand quality. 
@@ -45,9 +66,11 @@ export default function PackagingPage() {
             <div>
               <div className="aspect-[4/3] mb-8 bg-cover bg-center border border-neutral-200 rounded"
                 style={{ backgroundImage: "url('/images/Prospect Gifting.png')" }}
+                role="img"
+                aria-label="Prospect gifting presentation and unboxing"
               ></div>
               <h2 className="text-4xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Careful Shipping
+                Careful shipping
               </h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Each jar is carefully packed to ensure it arrives in perfect condition. We handle 
@@ -68,13 +91,13 @@ export default function PackagingPage() {
       <section className="py-24 bg-white">
         <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-900 mb-12 leading-tight text-center">
-            Professional Presentation
+            Professional presentation
           </h2>
 
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h3 className="text-3xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Desk-Ready Delivery
+                Desk-ready delivery
               </h3>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Each gift arrives ready to display. Recipients can immediately place it on their desk, 
@@ -88,6 +111,8 @@ export default function PackagingPage() {
 
             <div className="aspect-[4/3] bg-cover bg-center border border-neutral-200 rounded"
               style={{ backgroundImage: "url('/images/desk no jar.png')" }}
+              role="img"
+              aria-label="Office desk showing where the gift sits"
             ></div>
           </div>
         </div>

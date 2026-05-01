@@ -1,4 +1,23 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Features — Custom Branding, Flexible Sizing & Fast Delivery | DeskDrop',
+  description: 'Everything you need to gift with confidence. Custom branding on every wrapper, three jar sizes, 2-week production, and direct shipping to your prospect list.',
+  openGraph: {
+    title: 'Features — Custom Branding, Flexible Sizing & Fast Delivery | DeskDrop',
+    description: 'Custom branding on every wrapper, three jar sizes, 2-week production, and direct shipping.',
+    url: 'https://thedeskdrop.com/product/features',
+    siteName: 'DeskDrop',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Features | DeskDrop',
+    description: 'Custom branding on every wrapper, three jar sizes, 2-week production, and direct shipping.',
+  },
+  alternates: { canonical: 'https://thedeskdrop.com/product/features' },
+};
 
 export default function FeaturesPage() {
   return (
@@ -27,7 +46,7 @@ export default function FeaturesPage() {
           <div className="grid md:grid-cols-2 gap-16 mb-24">
             <div>
               <h2 className="text-4xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Custom Branding
+                Custom branding
               </h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Each chocolate wrapper features your logo and messaging, creating a branded 
@@ -42,22 +61,22 @@ export default function FeaturesPage() {
 
             <div>
               <h2 className="text-4xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Flexible Sizing
+                Flexible sizing
               </h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Choose from three jar sizes to match your budget and campaign goals. Perfect 
                 for testing with smaller orders or scaling to hundreds of prospects.
               </p>
               <ul className="space-y-3 text-base text-neutral-700 font-light">
-                <li>• Small: 125 jars at $35 each</li>
-                <li>• Medium: 75 jars at $40 each</li>
-                <li>• Large: 50 jars at $50 each</li>
+                <li>• Scale: 125 jars at $25/jar (20 pieces each)</li>
+                <li>• Desk: 75 jars at $30/jar (30 pieces each)</li>
+                <li>• Office: 50 jars at $40/jar (40 pieces each)</li>
               </ul>
             </div>
 
             <div>
               <h2 className="text-4xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Fast Delivery
+                Fast delivery
               </h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Production takes 2 weeks from order confirmation. Once complete, we ship directly 
@@ -72,7 +91,7 @@ export default function FeaturesPage() {
 
             <div>
               <h2 className="text-4xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Premium Quality
+                Premium quality
               </h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Premium chocolates in elegant jars create a memorable impression. Recipients 

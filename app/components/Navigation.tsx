@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
@@ -71,12 +72,11 @@ export default function Navigation() {
   // Fluid font styles
   const navLinkStyle = { fontSize: 'clamp(0.585rem, 0.935vw, 0.956rem)' };
   const ctaStyle = { fontSize: 'clamp(0.531rem, 0.85vw, 0.903rem)' };
-  const logoStyle = { fontSize: 'clamp(0.85rem, 1.19vw, 1.275rem)' };
-  const giftingStyle = { fontSize: 'clamp(0.585rem, 0.935vw, 0.956rem)' };
 
   return (
     <nav
       ref={navRef}
+      aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
         isHomePage
           ? isScrolled
@@ -88,9 +88,15 @@ export default function Navigation() {
       <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-white font-display font-light tracking-tight uppercase" style={logoStyle}>NC</span>
-            <span className="text-neutral-400 font-display font-light tracking-widest uppercase" style={giftingStyle}>GIFTING</span>
+          <Link href="/" className="flex items-center" aria-label="DeskDrop home">
+            <Image
+              src="/images/deskdrop-wordmark-white.png"
+              alt="DeskDrop"
+              width={2465}
+              height={498}
+              className="h-6 sm:h-7 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -107,11 +113,13 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('role')}
-                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
                 style={navLinkStyle}
+                aria-expanded={openDropdown === 'role'}
+                aria-haspopup="true"
               >
                 <span>By Role</span>
-                <span className="text-neutral-400">▼</span>
+                <span className="text-neutral-400" aria-hidden="true">▼</span>
               </button>
               <div 
                 className={`absolute top-full left-0 mt-2 w-64 glass-dropdown rounded-lg py-4 ${openDropdown === 'role' ? 'open' : ''}`}
@@ -148,11 +156,13 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('product')}
-                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
                 style={navLinkStyle}
+                aria-expanded={openDropdown === 'product'}
+                aria-haspopup="true"
               >
                 <span>Product</span>
-                <span className="text-neutral-400">▼</span>
+                <span className="text-neutral-400" aria-hidden="true">▼</span>
               </button>
               <div 
                 className={`absolute top-full left-0 mt-2 w-64 glass-dropdown rounded-lg py-4 ${openDropdown === 'product' ? 'open' : ''}`}
@@ -179,11 +189,13 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('solutions')}
-                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1"
+                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
                 style={navLinkStyle}
+                aria-expanded={openDropdown === 'solutions'}
+                aria-haspopup="true"
               >
                 <span>Solutions</span>
-                <span className="text-neutral-400">▼</span>
+                <span className="text-neutral-400" aria-hidden="true">▼</span>
               </button>
               <div 
                 className={`absolute top-full left-0 mt-2 w-64 glass-dropdown rounded-lg py-4 ${openDropdown === 'solutions' ? 'open' : ''}`}
@@ -216,6 +228,49 @@ export default function Navigation() {
               </div>
             </div>
 
+            {/* Resources Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => handleDropdownToggle('resources')}
+                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
+                style={navLinkStyle}
+                aria-expanded={openDropdown === 'resources'}
+                aria-haspopup="true"
+              >
+                <span>Resources</span>
+                <span className="text-neutral-400" aria-hidden="true">▼</span>
+              </button>
+              <div 
+                className={`absolute top-full left-0 mt-2 w-64 glass-dropdown rounded-lg py-4 ${openDropdown === 'resources' ? 'open' : ''}`}
+                onMouseLeave={() => setOpenDropdown(null)}
+              >
+                  <Link 
+                    href="/resources/blog" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-white/10 text-neutral-200 font-display font-light"
+                  >
+                    <div className="font-medium text-sm">Blog</div>
+                    <div className="text-xs text-neutral-400 mt-1">Insights and best practices</div>
+                  </Link>
+                  <Link 
+                    href="/resources/customers" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-white/10 text-neutral-200 font-display font-light"
+                  >
+                    <div className="font-medium text-sm">Customers</div>
+                    <div className="text-xs text-neutral-400 mt-1">Success stories and testimonials</div>
+                  </Link>
+                  <Link 
+                    href="/resources/help" 
+                    onClick={() => setOpenDropdown(null)}
+                    className="block px-4 py-2 hover:bg-white/10 text-neutral-200 font-display font-light"
+                  >
+                    <div className="font-medium text-sm">Help Center</div>
+                    <div className="text-xs text-neutral-400 mt-1">FAQs and support</div>
+                  </Link>
+              </div>
+            </div>
+
             <Link
               href="/pricing"
               className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
@@ -229,15 +284,17 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={handleContactClick}
-              className="glass-button-outline px-2.5 py-1 text-neutral-200 font-display font-light tracking-widest uppercase transition-all"
+              className="glass-button-outline px-2.5 py-1 text-neutral-200 font-display font-light tracking-widest uppercase transition-all focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
               style={ctaStyle}
+              aria-label="Contact us to chat"
             >
-              Let's Chat
+              Let&apos;s Chat
             </button>
             <button
               onClick={handleContactClick}
-              className="glass-button-light px-2.5 py-1 text-neutral-900 font-display font-light tracking-widest uppercase transition-all"
+              className="glass-button-light px-2.5 py-1 text-neutral-900 font-display font-light tracking-widest uppercase transition-all focus:outline-none focus:ring-2 focus:ring-neutral-400 rounded"
               style={ctaStyle}
+              aria-label="Request a sample"
             >
               REQUEST A SAMPLE
             </button>
@@ -247,14 +304,16 @@ export default function Navigation() {
           <div className="md:hidden">
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-neutral-200 hover:text-white transition-colors"
+              className="text-neutral-200 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
+              aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -288,11 +347,23 @@ export default function Navigation() {
               >
                 Pricing
               </Link>
+              <div className="border-t border-neutral-800/50 mt-1 pt-1">
+                <span className="px-4 py-2 text-[10px] text-neutral-500 font-display tracking-widest uppercase block">Resources</span>
+                <Link href="/resources/blog" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
+                  Blog
+                </Link>
+                <Link href="/resources/customers" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
+                  Customers
+                </Link>
+                <Link href="/resources/help" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
+                  Help Center
+                </Link>
+              </div>
               <button
                 onClick={handleContactClick}
                 className="px-4 py-4 text-xs text-white font-display font-light tracking-widest uppercase text-left w-full"
               >
-                Let's Chat
+                Let&apos;s Chat
               </button>
             </div>
           </div>

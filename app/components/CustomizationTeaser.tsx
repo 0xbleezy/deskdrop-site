@@ -24,14 +24,14 @@ export default function CustomizationTeaser() {
 
   return (
     <section 
-      ref={ref as any}
+      ref={ref}
       className={`py-16 sm:py-24 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
     >
       <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-10">
           <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">Customization</p>
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
-            Fully Customizable
+            Fully customizable
           </h2>
           <p className="text-xl text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
             Every detail designed to reinforce your brand and value proposition

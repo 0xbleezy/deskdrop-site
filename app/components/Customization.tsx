@@ -4,7 +4,7 @@ export default function Customization() {
       <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4">
-            Fully Customizable
+            Fully customizable
           </h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed font-light">
             Every detail designed to reinforce your brand and value proposition
@@ -22,7 +22,7 @@ export default function Customization() {
               ></div>
             </div>
             <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
-              Logo Branding
+              Logo branding
             </h3>
             <p className="text-neutral-600 leading-relaxed font-light">
               Your logo prominently displayed on each wrapper. Maximum brand visibility where it matters most.
@@ -39,7 +39,7 @@ export default function Customization() {
               ></div>
             </div>
             <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
-              Custom Messaging
+              Custom messaging
             </h3>
             <p className="text-neutral-600 leading-relaxed font-light">
               Custom messaging on wrappers that reinforces your key value props. Each wrapper features your logo and messaging for consistent brand reinforcement.
@@ -56,7 +56,7 @@ export default function Customization() {
               ></div>
             </div>
             <h3 className="text-xl font-display font-light text-neutral-950 mb-3 leading-tight">
-              Premium Packaging
+              Premium packaging
             </h3>
             <p className="text-neutral-600 leading-relaxed font-light">
               Premium packaging and presentation. Professional first impression that sets the tone for the relationship.
@@ -66,7 +66,7 @@ export default function Customization() {
 
         <div className="mt-24 border-t border-neutral-100 pt-16 text-center">
           <h3 className="text-2xl font-display font-light text-neutral-950 mb-4 leading-tight">
-            Personalized Gift Messages
+            Personalized gift messages
           </h3>
           <p className="text-neutral-600 mb-8 leading-relaxed font-light max-w-2xl mx-auto">
             Add custom notes, gift cards, or promotional inserts to create truly personalized experiences 

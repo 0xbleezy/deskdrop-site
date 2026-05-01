@@ -1,4 +1,23 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Customer Stories — Prospect Gifting Success | DeskDrop',
+  description: 'See how companies use prospect gifting to drive revenue, build relationships, and accelerate pipeline. Real results from real teams.',
+  openGraph: {
+    title: 'Customer Stories — Prospect Gifting Success | DeskDrop',
+    description: 'See how companies use prospect gifting to drive revenue, build relationships, and accelerate pipeline.',
+    url: 'https://thedeskdrop.com/resources/customers',
+    siteName: 'DeskDrop',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Customer Stories | DeskDrop',
+    description: 'See how companies use prospect gifting to drive revenue, build relationships, and accelerate pipeline.',
+  },
+  alternates: { canonical: 'https://thedeskdrop.com/resources/customers' },
+};
 
 export default function CustomersPage() {
   const testimonials = [

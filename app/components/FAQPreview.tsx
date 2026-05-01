@@ -43,7 +43,7 @@ export default function FAQPreview() {
           <div className="text-center mb-10">
             <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">FAQ</p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-neutral-950">
-              Frequently Asked Questions
+              Frequently asked questions
             </h2>
           </div>
 

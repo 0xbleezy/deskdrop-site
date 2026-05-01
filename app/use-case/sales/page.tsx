@@ -1,6 +1,25 @@
-'use client';
-
 import Link from 'next/link';
+import PlaybookTeaser from '../../components/PlaybookTeaser';
+import InlineFAQ from '../../components/InlineFAQ';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Prospect Gifting for Sales Teams — Book More Meetings | DeskDrop',
+  description: 'When email and LinkedIn stop working, a physical gift cuts through. 30%+ reply rates, 2-3x faster deal velocity. Get the follow-up playbook included.',
+  openGraph: {
+    title: 'Prospect Gifting for Sales Teams — Book More Meetings | DeskDrop',
+    description: 'Physical gifts that cut through inbox fatigue. 30%+ reply rates, 2-3x faster deal velocity.',
+    url: 'https://thedeskdrop.com/use-case/sales',
+    siteName: 'DeskDrop',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Prospect Gifting for Sales Teams | DeskDrop',
+    description: 'Physical gifts that cut through inbox fatigue. 30%+ reply rates, 2-3x faster deal velocity.',
+  },
+  alternates: { canonical: 'https://thedeskdrop.com/use-case/sales' },
+};
 
 export default function SalesPage() {
   return (
@@ -24,7 +43,7 @@ export default function SalesPage() {
                 href="/#contact"
                 className="glass-button w-full sm:w-auto px-8 py-4 text-white text-base font-light rounded transition-all inline-block text-center"
               >
-                Get Started
+                Send Your First Campaign
               </Link>
               <Link
                 href="/how-it-works"
@@ -40,8 +59,8 @@ export default function SalesPage() {
       {/* Benefits */}
       <section className="py-16 sm:py-24 bg-page">
         <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
-          <div className="grid md:grid-cols-3 gap-12">
-            <div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
                 Increase reply rates
               </h3>
@@ -50,7 +69,7 @@ export default function SalesPage() {
                 and create a reason for prospects to respond that they actually appreciate.
               </p>
             </div>
-            <div>
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
                 Book more meetings
               </h3>
@@ -59,7 +78,7 @@ export default function SalesPage() {
                 follow up, making it easier to secure that crucial discovery call.
               </p>
             </div>
-            <div>
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
                 Accelerate deal velocity
               </h3>
@@ -70,13 +89,27 @@ export default function SalesPage() {
             </div>
           </div>
 
-          {/* Sequence Add-on */}
-          <div className="mt-12 border-l-4 border-neutral-950 pl-6 py-4 bg-white rounded-r">
-            <p className="text-base text-neutral-700 leading-relaxed font-light">
-              <span className="font-medium">What happens after the gift arrives?</span> We'll share the 
-              outreach sequence we've A/B tested to turn attention into replies—the same playbook that's 
-              booked meetings with leaders at Rippling, Loro Piana, Richard Mille, and other enterprise teams.
-            </p>
+          <PlaybookTeaser />
+        </div>
+      </section>
+
+      {/* Explore More */}
+      <section className="py-16 sm:py-24 bg-white border-t border-neutral-100">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
+          <h2 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 text-center">Explore more</h2>
+          <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            <Link href="/use-case/marketing" className="glass-card p-6 rounded text-center hover:shadow-lg transition-shadow block">
+              <div className="text-sm font-display font-light text-neutral-900">Marketing</div>
+              <div className="text-xs text-neutral-500 mt-1">ABM &amp; demand gen</div>
+            </Link>
+            <Link href="/use-case/revenue" className="glass-card p-6 rounded text-center hover:shadow-lg transition-shadow block">
+              <div className="text-sm font-display font-light text-neutral-900">Revenue</div>
+              <div className="text-xs text-neutral-500 mt-1">Pipeline acceleration</div>
+            </Link>
+            <Link href="/solutions/prospect-gifting" className="glass-card p-6 rounded text-center hover:shadow-lg transition-shadow block">
+              <div className="text-sm font-display font-light text-neutral-900">Prospect Gifting</div>
+              <div className="text-xs text-neutral-500 mt-1">Full solution overview</div>
+            </Link>
           </div>
         </div>
       </section>
@@ -94,8 +127,13 @@ export default function SalesPage() {
             href="/#contact"
             className="glass-button px-8 py-4 text-white text-base font-light rounded transition-all inline-block text-center"
           >
-            Get Started
+            Send Your First Campaign
           </Link>
+          <InlineFAQ faqs={[
+            { question: 'How quickly can I launch a campaign?', answer: 'Production takes 2 weeks from order confirmation. We ship directly to your prospect list and provide the follow-up playbook so you can start outreach immediately.' },
+            { question: 'What\'s the minimum order?', answer: 'Our minimum is 50 jars. Most sales teams start with 50–75 jars to test with their highest-priority accounts before scaling.' },
+            { question: 'Do I get the follow-up sequence?', answer: 'Yes. Every order includes our A/B-tested outreach playbook—the same sequence that\'s earned 30%+ reply rates with enterprise prospects.' },
+          ]} />
         </div>
       </section>
     </main>

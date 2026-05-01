@@ -14,7 +14,7 @@ export default function StarProduct() {
 
   return (
     <section 
-      ref={ref as any}
+      ref={ref}
       id="star-product" 
       className={`py-16 sm:py-24 md:py-32 overflow-hidden fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
     >
@@ -42,7 +42,7 @@ export default function StarProduct() {
           <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-6">The Product</p>
           
           <h2 className="font-display font-light text-neutral-950 mb-4 leading-[1.15] tracking-tight">
-            A Brand Moment That Lives on Their Desk
+            A brand moment that lives on their desk
           </h2>
           
           <p className="text-xl text-neutral-500 font-light mb-8 leading-relaxed">

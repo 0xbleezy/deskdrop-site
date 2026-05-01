@@ -1,6 +1,24 @@
-'use client';
-
 import Link from 'next/link';
+import InlineFAQ from '../../components/InlineFAQ';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Prospect Gifting for Revenue Teams — Accelerate Pipeline | DeskDrop',
+  description: 'Increase pipeline velocity, optimize gifting ROI, and support ABM programs. Strategic prospect gifting that helps revenue teams hit targets faster.',
+  openGraph: {
+    title: 'Prospect Gifting for Revenue Teams — Accelerate Pipeline | DeskDrop',
+    description: 'Increase pipeline velocity and optimize gifting ROI. Strategic prospect gifting for revenue teams.',
+    url: 'https://thedeskdrop.com/use-case/revenue',
+    siteName: 'DeskDrop',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Prospect Gifting for Revenue Teams | DeskDrop',
+    description: 'Increase pipeline velocity and optimize gifting ROI. Strategic prospect gifting for revenue teams.',
+  },
+  alternates: { canonical: 'https://thedeskdrop.com/use-case/revenue' },
+};
 
 export default function RevenuePage() {
   return (
@@ -24,7 +42,7 @@ export default function RevenuePage() {
                 href="/#contact"
                 className="glass-button w-full sm:w-auto px-8 py-4 text-white text-base font-light rounded transition-all inline-block text-center"
               >
-                Get Started
+                See How Revenue Leaders Use This
               </Link>
               <Link
                 href="/how-it-works"
@@ -40,8 +58,8 @@ export default function RevenuePage() {
       {/* Benefits */}
       <section className="py-16 sm:py-24 bg-page">
         <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
-          <div className="grid md:grid-cols-3 gap-12">
-            <div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
                 Increase pipeline velocity
               </h3>
@@ -50,7 +68,7 @@ export default function RevenuePage() {
                 sales cycle and reduces time to close, helping you hit revenue targets.
               </p>
             </div>
-            <div>
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
                 Optimize revenue operations
               </h3>
@@ -59,7 +77,7 @@ export default function RevenuePage() {
                 data-driven decisions that support your revenue goals.
               </p>
             </div>
-            <div>
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
                 Support ABM programs
               </h3>
@@ -68,6 +86,27 @@ export default function RevenuePage() {
                 to create cohesive experiences for your target accounts.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Explore More */}
+      <section className="py-16 sm:py-24 bg-white border-t border-neutral-100">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
+          <h2 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 text-center">Explore more</h2>
+          <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            <Link href="/use-case/sales" className="glass-card p-6 rounded text-center hover:shadow-lg transition-shadow block">
+              <div className="text-sm font-display font-light text-neutral-900">Sales</div>
+              <div className="text-xs text-neutral-500 mt-1">Book meetings &amp; close deals</div>
+            </Link>
+            <Link href="/use-case/marketing" className="glass-card p-6 rounded text-center hover:shadow-lg transition-shadow block">
+              <div className="text-sm font-display font-light text-neutral-900">Marketing</div>
+              <div className="text-xs text-neutral-500 mt-1">ABM &amp; demand gen</div>
+            </Link>
+            <Link href="/solutions/prospect-gifting" className="glass-card p-6 rounded text-center hover:shadow-lg transition-shadow block">
+              <div className="text-sm font-display font-light text-neutral-900">Prospect Gifting</div>
+              <div className="text-xs text-neutral-500 mt-1">Full solution overview</div>
+            </Link>
           </div>
         </div>
       </section>
@@ -85,8 +124,13 @@ export default function RevenuePage() {
             href="/#contact"
             className="glass-button px-8 py-4 text-white text-base font-light rounded transition-all inline-block text-center"
           >
-            Get Started
+            See How Revenue Leaders Use This
           </Link>
+          <InlineFAQ faqs={[
+            { question: 'How does this impact pipeline velocity?', answer: 'Prospects who receive a gift move through the pipeline 2-3x faster on average. The physical touchpoint creates goodwill and genuine interest that accelerates every stage of the sales cycle.' },
+            { question: 'Can I measure ROI on gifting spend?', answer: 'Yes. Track reply rates (30%+), meetings booked, and deals influenced. Most campaigns pay for themselves with the first closed deal from gifted prospects.' },
+            { question: 'How does this scale across the team?', answer: 'Monthly plans support consistent gifting across your entire sales org. We handle production scheduling, shipping, and provide the playbook—your team just follows up.' },
+          ]} />
         </div>
       </section>
     </main>

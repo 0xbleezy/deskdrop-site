@@ -1,5 +1,26 @@
 import HowItWorks from '../components/HowItWorks';
+import PilotPlan from '../components/PilotPlan';
+import PlaybookTeaser from '../components/PlaybookTeaser';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'How It Works — Prospect Gifting Process | DeskDrop',
+  description: 'A simple process: we produce and ship your custom branded gifts, then arm you with the follow-up sequence that converts attention into booked meetings.',
+  openGraph: {
+    title: 'How It Works — Prospect Gifting Process | DeskDrop',
+    description: 'We produce and ship your custom branded gifts, then arm you with the follow-up sequence that converts attention into booked meetings.',
+    url: 'https://thedeskdrop.com/how-it-works',
+    siteName: 'DeskDrop',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How It Works — Prospect Gifting Process | DeskDrop',
+    description: 'We produce and ship your custom branded gifts, then arm you with the follow-up sequence that converts attention into booked meetings.',
+  },
+  alternates: { canonical: 'https://thedeskdrop.com/how-it-works' },
+};
 
 export default function HowItWorksPage() {
   return (
@@ -36,21 +57,61 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
+      {/* Who This Is For */}
+      <section className="py-12 sm:py-16 border-t border-neutral-100 bg-white">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
+          <div className="glass-card p-8 rounded max-w-3xl">
+            <h3 className="text-lg font-display font-light text-neutral-900 mb-4 tracking-widest uppercase">Who this is for</h3>
+            <ul className="space-y-2 text-base text-neutral-700 font-light">
+              <li className="flex items-start gap-2"><span className="text-neutral-400">→</span> Sales teams running outbound or ABM motions that need a higher reply rate</li>
+              <li className="flex items-start gap-2"><span className="text-neutral-400">→</span> Marketing teams looking for a physical channel to complement digital campaigns</li>
+              <li className="flex items-start gap-2"><span className="text-neutral-400">→</span> Revenue leaders who want to accelerate pipeline and shorten sales cycles</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Jump Links */}
+      <section className="py-8 bg-white border-t border-neutral-100">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
+          <nav className="flex flex-wrap gap-3 text-sm" aria-label="Page sections">
+            <a href="#steps" className="text-neutral-500 hover:text-neutral-900 transition-colors font-light underline underline-offset-4">Steps</a>
+            <a href="#sequence" className="text-neutral-500 hover:text-neutral-900 transition-colors font-light underline underline-offset-4">Follow-Up Sequence</a>
+            <a href="#sample" className="text-neutral-500 hover:text-neutral-900 transition-colors font-light underline underline-offset-4">Sample Process</a>
+            <a href="#pilot" className="text-neutral-500 hover:text-neutral-900 transition-colors font-light underline underline-offset-4">Pilot Plan</a>
+          </nav>
+        </div>
+      </section>
+
       {/* How It Works Section */}
-      <HowItWorks />
+      <div id="steps">
+        <HowItWorks />
+      </div>
 
       {/* Sequence Add-on */}
-      <section className="py-16 sm:py-24 bg-white">
+      <section id="sequence" className="py-16 sm:py-24 bg-white">
         <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
-          <div className="border-l-4 border-neutral-950 pl-6 py-4 bg-neutral-50 rounded-r">
+          <PlaybookTeaser />
+        </div>
+      </section>
+
+      {/* Sample Process Callout */}
+      <section id="sample" className="py-12 sm:py-16 bg-page border-t border-neutral-100">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
+          <div className="border-l-4 border-neutral-950 pl-6 py-4 bg-white rounded-r max-w-3xl">
             <p className="text-base text-neutral-700 leading-relaxed font-light">
-              <span className="font-medium">What happens after the gift arrives?</span> We'll share the 
-              outreach sequence we've A/B tested to turn attention into replies—the same playbook that's 
-              booked meetings with leaders at Rippling, Loro Piana, Richard Mille, and other enterprise teams.
+              <span className="font-medium">Want to see it first?</span> Request a free sample before committing.
+              We&apos;ll send you an unbranded jar so you can evaluate the quality, packaging, and presentation.
+              Once approved, production begins with your custom branding.
             </p>
           </div>
         </div>
       </section>
+
+      {/* Pilot Plan */}
+      <div id="pilot">
+        <PilotPlan />
+      </div>
 
       {/* CTA */}
       <section className="py-16 sm:py-24 border-t border-neutral-100 bg-page">

@@ -1,4 +1,25 @@
 import Link from 'next/link';
+import PlaybookTeaser from '../../components/PlaybookTeaser';
+import InlineFAQ from '../../components/InlineFAQ';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Prospect Gifting Solution — Send Gifts That Book Meetings | DeskDrop',
+  description: 'Send gifts that get noticed. Follow up with the sequence that gets replies. 30%+ reply rates, scalable production, and direct shipping included.',
+  openGraph: {
+    title: 'Prospect Gifting Solution — Send Gifts That Book Meetings | DeskDrop',
+    description: 'Send gifts that get noticed. 30%+ reply rates, scalable production, and direct shipping included.',
+    url: 'https://thedeskdrop.com/solutions/prospect-gifting',
+    siteName: 'DeskDrop',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Prospect Gifting Solution | DeskDrop',
+    description: 'Send gifts that get noticed. 30%+ reply rates, scalable production, and direct shipping included.',
+  },
+  alternates: { canonical: 'https://thedeskdrop.com/solutions/prospect-gifting' },
+};
 
 export default function ProspectGiftingPage() {
   return (
@@ -11,7 +32,7 @@ export default function ProspectGiftingPage() {
               Solutions
             </div>
             <h1 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 leading-tight">
-              Prospect Gifting<br className="hidden md:inline" /> Solution
+              Prospect gifting<br className="hidden md:inline" /> solution
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
               Send gifts that get noticed. Follow up with a sequence that gets replies. We handle 
@@ -24,28 +45,28 @@ export default function ProspectGiftingPage() {
       {/* Benefits */}
       <section className="py-24 bg-page">
         <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
-          <div className="grid md:grid-cols-3 gap-12 mb-16">
-            <div>
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
-                30%+ Reply Rates
+                30%+ reply rates
               </h3>
               <p className="text-base text-neutral-700 leading-relaxed font-light">
                 Get responses when traditional outreach fails. Physical gifts cut through digital 
                 noise and create a reason for prospects to respond.
               </p>
             </div>
-            <div>
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
-                Scalable Production
+                Scalable production
               </h3>
               <p className="text-base text-neutral-700 leading-relaxed font-light">
                 Scale from 50 to hundreds of prospects. Our production model handles campaigns 
                 of any size with consistent quality and branding.
               </p>
             </div>
-            <div>
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
-                Direct Shipping
+                Direct shipping
               </h3>
               <p className="text-base text-neutral-700 leading-relaxed font-light">
                 We handle all logistics and shipping. Send directly to your prospect list with 
@@ -54,14 +75,7 @@ export default function ProspectGiftingPage() {
             </div>
           </div>
 
-          {/* Sequence Add-on */}
-          <div className="mt-12 border-l-4 border-neutral-950 pl-6 py-4 bg-white rounded-r">
-            <p className="text-base text-neutral-700 leading-relaxed font-light">
-              <span className="font-medium">What happens after the gift arrives?</span> We'll share the 
-              outreach sequence we've A/B tested to turn attention into replies—the same playbook that's 
-              booked meetings with leaders at Rippling, Loro Piana, Richard Mille, and other enterprise teams.
-            </p>
-          </div>
+          <PlaybookTeaser />
         </div>
       </section>
 
@@ -72,10 +86,10 @@ export default function ProspectGiftingPage() {
             Use cases
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-16 mb-16">
-            <div>
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-3xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Outbound Prospecting
+                Outbound prospecting
               </h3>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Break through inbox fatigue with physical touchpoints. Send thoughtful gifts before 
@@ -88,9 +102,9 @@ export default function ProspectGiftingPage() {
               </ul>
             </div>
 
-            <div>
+            <div className="glass-card p-6 sm:p-8 rounded">
               <h3 className="text-3xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Re-engagement Campaigns
+                Re-engagement campaigns
               </h3>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Reopen conversations with stalled deals or cold prospects. A well-timed gift can 
@@ -102,6 +116,27 @@ export default function ProspectGiftingPage() {
                 <li>• Build relationships with champions</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Explore More */}
+      <section className="py-16 sm:py-24 bg-page border-t border-neutral-100">
+        <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
+          <h2 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 text-center">Explore more</h2>
+          <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            <Link href="/use-case/sales" className="glass-card p-6 rounded text-center hover:shadow-lg transition-shadow block">
+              <div className="text-sm font-display font-light text-neutral-900">Sales</div>
+              <div className="text-xs text-neutral-500 mt-1">Book meetings &amp; close deals</div>
+            </Link>
+            <Link href="/solutions/abm" className="glass-card p-6 rounded text-center hover:shadow-lg transition-shadow block">
+              <div className="text-sm font-display font-light text-neutral-900">ABM Gifting</div>
+              <div className="text-xs text-neutral-500 mt-1">Account-based strategy</div>
+            </Link>
+            <Link href="/product/gifts" className="glass-card p-6 rounded text-center hover:shadow-lg transition-shadow block">
+              <div className="text-sm font-display font-light text-neutral-900">The Gift</div>
+              <div className="text-xs text-neutral-500 mt-1">See the product</div>
+            </Link>
           </div>
         </div>
       </section>
@@ -121,6 +156,11 @@ export default function ProspectGiftingPage() {
           >
             Get Started
           </Link>
+          <InlineFAQ faqs={[
+            { question: 'What\'s the minimum order for a pilot program?', answer: 'Our minimum custom production run starts at 50 jars. We offer three jar sizes (Scale, Desk, and Office), with the Office size being our most popular for prospecting campaigns.' },
+            { question: 'How quickly can I deploy this?', answer: 'Production takes 2 weeks from order confirmation. Once production completes, we ship directly to your prospect list. Plan your campaign timing accordingly.' },
+            { question: 'What kind of ROI can I expect?', answer: 'Our clients see 30%+ reply rates, which is 10-15x higher than email campaigns (2-3%) or cold calls (1-2%). Combined with 2-3x faster deal velocity, most campaigns pay for themselves with the first closed deal.' },
+          ]} />
         </div>
       </section>
     </main>

@@ -121,12 +121,12 @@ export default function ROICalculator() {
   const totalRevenue = closedDeals * avgDealValue;
 
   return (
-    <section ref={ref as any} className={`py-16 sm:py-24 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
+    <section ref={ref} className={`py-16 sm:py-24 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
       <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-12">
           <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">ROI Calculator</p>
           <h2 className="text-3xl md:text-5xl font-display font-light text-neutral-950">
-            Estimate Your Pipeline Impact
+            Estimate your pipeline impact
           </h2>
         </div>
 

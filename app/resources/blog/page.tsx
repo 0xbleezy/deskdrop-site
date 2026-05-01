@@ -1,4 +1,23 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog — Prospect Gifting Insights & Best Practices | DeskDrop',
+  description: 'Insights, strategies, and best practices for using prospect gifting to drive revenue and build stronger relationships with your target accounts.',
+  openGraph: {
+    title: 'Blog — Prospect Gifting Insights & Best Practices | DeskDrop',
+    description: 'Insights, strategies, and best practices for using prospect gifting to drive revenue and build stronger relationships.',
+    url: 'https://thedeskdrop.com/resources/blog',
+    siteName: 'DeskDrop',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog — Prospect Gifting Insights | DeskDrop',
+    description: 'Insights, strategies, and best practices for using prospect gifting to drive revenue and build stronger relationships.',
+  },
+  alternates: { canonical: 'https://thedeskdrop.com/resources/blog' },
+};
 
 export default function BlogPage() {
   const posts = [
@@ -49,24 +68,23 @@ export default function BlogPage() {
         <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <div className="grid md:grid-cols-2 gap-12">
             {posts.map((post, index) => (
-              <Link
+              <div
                 key={index}
-                href="#"
-                className="glass-card p-8 rounded hover:shadow-lg transition-shadow"
+                className="glass-card p-8 rounded transition-shadow relative"
               >
+                <span className="absolute top-4 right-4 bg-neutral-100 text-neutral-500 text-xs uppercase tracking-widest px-3 py-1 rounded-full font-light">
+                  Coming soon
+                </span>
                 <div className="text-sm font-medium text-neutral-600 uppercase tracking-widest mb-4">
                   {post.category}
                 </div>
                 <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
                   {post.title}
                 </h3>
-                <p className="text-base text-neutral-700 leading-relaxed font-light mb-4">
+                <p className="text-base text-neutral-700 leading-relaxed font-light">
                   {post.excerpt}
                 </p>
-                <div className="text-sm font-light text-neutral-600">
-                  Read more →
-                </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>

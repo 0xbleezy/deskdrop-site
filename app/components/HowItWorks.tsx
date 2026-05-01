@@ -7,25 +7,25 @@ export default function HowItWorks() {
   const steps = [
     {
       number: '01',
-      title: 'Identify Targets',
+      title: 'Identify targets',
       description: 'Identify your target accounts, stalled deals, or prospects who need re-engagement. Works for both targeted campaigns and broader outreach programs.',
       image: '/images/identify target accounts.png',
     },
     {
       number: '02',
-      title: 'Plan Your Outreach',
+      title: 'Plan your outreach',
       description: 'Choose your timing. We maintain inventory in our warehouse, ready to ship same-day or scheduled delivery. Perfect for planned campaigns or on-demand sends when opportunities arise.',
       image: '/images/Plan Your Outreach.png',
     },
     {
       number: '03',
-      title: 'Deliver the Touchpoint',
+      title: 'Deliver the touchpoint',
       description: 'A thoughtfully designed gift arrives and takes its place on their desk. No coordination needed. We handle all logistics and delivery confirmations.',
       image: '/images/Deliver the Touchpoint.png',
     },
     {
       number: '04',
-      title: 'Follow Up with Purpose',
+      title: 'Follow up with purpose',
       description: 'Reach out after delivery with a genuine check-in. The gift gives you a natural reason to re-engage that doesn\'t feel like a demand for their time.',
       image: '/images/follow up with purpose.png',
     },
@@ -33,7 +33,7 @@ export default function HowItWorks() {
 
   return (
     <section 
-      ref={ref as any}
+      ref={ref}
       className={`py-16 sm:py-24 border-t border-neutral-100 fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
       
     >
@@ -41,7 +41,7 @@ export default function HowItWorks() {
         <div className="text-center mb-12">
           <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">The Process</p>
           <h2 className="text-4xl md:text-6xl font-display font-light text-neutral-950 mb-8 leading-tight">
-            How It Works
+            How it works
           </h2>
           <p className="text-xl text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
             How prospect gifting fits into your sales motion
@@ -63,6 +63,8 @@ export default function HowItWorks() {
                   style={{
                     backgroundImage: `url('${step.image}')`
                   }}
+                  role="img"
+                  aria-label={step.title}
                 ></div>
               </div>
               <h3 className="text-2xl font-display font-light text-neutral-950 mb-6 leading-tight">

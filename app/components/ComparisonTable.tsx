@@ -38,7 +38,7 @@ export default function ComparisonTable() {
     },
     {
       feature: 'Cost per Touchpoint',
-      deskDrop: '$35-50 per unit',
+      deskDrop: '$25-40 per prospect',
       email: '$0.10-1',
       coldCall: '$50-100',
     },
@@ -52,14 +52,14 @@ export default function ComparisonTable() {
 
   return (
     <section 
-      ref={ref as any} 
+      ref={ref} 
       className={`py-16 sm:py-20 bg-gradient-to-b from-neutral-50/80 to-transparent fade-in-on-scroll ${isVisible ? 'visible' : ''}`}
     >
       <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
         <div className="text-center mb-10">
           <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-4">Comparison</p>
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-950 mb-4 leading-tight">
-            Why This Works Where<br />Other Channels Stall
+            Why this works where<br />other channels stall
           </h2>
           <p className="text-xl text-neutral-600 max-w-2xl mx-auto leading-relaxed font-light">
             Behavioral advantages that drive different outcomes
@@ -77,8 +77,7 @@ export default function ComparisonTable() {
                     Feature
                   </th>
                   <th className="px-3 md:px-6 py-4 md:py-5 text-left text-xs font-medium text-neutral-950 uppercase tracking-[0.15em] bg-black/[0.03]">
-                    <span className="md:hidden">Desk Drop</span>
-                    <span className="hidden md:inline">NC Desk Drop</span>
+                    <span>DeskDrop</span>
                   </th>
                   <th className="px-3 md:px-6 py-4 md:py-5 text-left text-xs font-medium text-neutral-500 uppercase tracking-[0.15em]">
                     Email

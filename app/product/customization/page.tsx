@@ -1,4 +1,23 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Customization — Your Logo on Every Wrapper | DeskDrop',
+  description: 'Fully customizable branding with your logo and messaging on every chocolate wrapper. Professional design, mockup approval, and premium packaging.',
+  openGraph: {
+    title: 'Customization — Your Logo on Every Wrapper | DeskDrop',
+    description: 'Your logo and messaging on every chocolate wrapper. Professional design and premium packaging.',
+    url: 'https://thedeskdrop.com/product/customization',
+    siteName: 'DeskDrop',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Customization | DeskDrop',
+    description: 'Your logo and messaging on every chocolate wrapper. Professional design and premium packaging.',
+  },
+  alternates: { canonical: 'https://thedeskdrop.com/product/customization' },
+};
 
 export default function CustomizationPage() {
   return (
@@ -11,7 +30,7 @@ export default function CustomizationPage() {
               Product
             </div>
             <h1 className="text-3xl md:text-4xl font-display font-light text-neutral-900 mb-8 leading-tight">
-              Fully Customizable<br className="hidden md:inline" /> Branding
+              Fully customizable<br className="hidden md:inline" /> branding
             </h1>
             <p className="text-xl text-neutral-700 mb-10 leading-relaxed font-light max-w-3xl">
               Each chocolate wrapper features your logo and messaging, creating a branded 
@@ -29,9 +48,11 @@ export default function CustomizationPage() {
             <div>
               <div className="aspect-[4/3] mb-8 bg-cover bg-center border border-neutral-200 rounded"
                 style={{ backgroundImage: "url('/images/logo branding.png')" }}
+                role="img"
+                aria-label="Custom logo branding on chocolate wrapper"
               ></div>
               <h2 className="text-4xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Logo Placement
+                Logo placement
               </h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Your logo appears on every chocolate wrapper, ensuring consistent brand presence 
@@ -49,9 +70,11 @@ export default function CustomizationPage() {
             <div>
               <div className="aspect-[4/3] mb-8 bg-cover bg-center border border-neutral-200 rounded"
                 style={{ backgroundImage: "url('/images/custom messaging.png')" }}
+                role="img"
+                aria-label="Custom messaging on branded chocolate packaging"
               ></div>
               <h2 className="text-4xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Custom Messaging
+                Custom messaging
               </h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Include your value proposition, tagline, or key messaging on each wrapper. 
@@ -71,13 +94,13 @@ export default function CustomizationPage() {
       <section className="py-24 bg-white">
         <div className="mx-auto w-full px-4 sm:px-6 md:px-[7vw]">
           <h2 className="text-4xl md:text-5xl font-display font-light text-neutral-900 mb-12 leading-tight text-center">
-            Premium Packaging
+            Premium packaging
           </h2>
 
           <div className="grid md:grid-cols-2 gap-16 items-center mb-16">
             <div>
               <h3 className="text-3xl font-display font-light text-neutral-900 mb-6 leading-tight">
-                Elegant Jar Presentation
+                Elegant jar presentation
               </h3>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed font-light">
                 Premium jars create a sophisticated presentation that reflects your brand quality. 
@@ -91,6 +114,8 @@ export default function CustomizationPage() {
 
             <div className="aspect-[4/3] bg-cover bg-center border border-neutral-200 rounded"
               style={{ backgroundImage: "url('/images/premium packaging.png')" }}
+              role="img"
+              aria-label="Premium packaging and presentation"
             ></div>
           </div>
         </div>
@@ -107,7 +132,7 @@ export default function CustomizationPage() {
             <div>
               <div className="text-5xl font-display font-light text-neutral-400 mb-6">01</div>
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
-                Provide Assets
+                Provide assets
               </h3>
               <p className="text-base text-neutral-700 leading-relaxed font-light">
                 Send us your logo files and messaging. We'll handle the design and layout to ensure 
@@ -118,7 +143,7 @@ export default function CustomizationPage() {
             <div>
               <div className="text-5xl font-display font-light text-neutral-400 mb-6">02</div>
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
-                Review & Approve
+                Review & approve
               </h3>
               <p className="text-base text-neutral-700 leading-relaxed font-light">
                 We'll share mockups for your approval before production begins. Make any adjustments 
@@ -129,7 +154,7 @@ export default function CustomizationPage() {
             <div>
               <div className="text-5xl font-display font-light text-neutral-400 mb-6">03</div>
               <h3 className="text-2xl font-display font-light text-neutral-900 mb-4 leading-tight">
-                Production & Delivery
+                Production & delivery
               </h3>
               <p className="text-base text-neutral-700 leading-relaxed font-light">
                 Once approved, production takes 2 weeks. We'll handle printing, assembly, and shipping 

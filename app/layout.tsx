@@ -22,6 +22,19 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Get Replies When Outreach Stops Working | Prospect Gifting Solutions",
   description: "The outbound play your prospects notice. Physical touchpoint that breaks through inbox fatigue and earns replies. 30%+ reply rate. Perfect for ABM strategies and sales teams.",
+  openGraph: {
+    title: "Get Replies When Outreach Stops Working | DeskDrop",
+    description: "Physical touchpoint that breaks through inbox fatigue and earns replies. 30%+ reply rate.",
+    url: "https://thedeskdrop.com",
+    siteName: "DeskDrop",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Get Replies When Outreach Stops Working | DeskDrop",
+    description: "Physical touchpoint that breaks through inbox fatigue and earns replies. 30%+ reply rate.",
+  },
+  alternates: { canonical: "https://thedeskdrop.com" },
 };
 
 export default function RootLayout({
@@ -32,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased text-neutral-900 pb-20 md:pb-0 bg-page`}
+        className={`${inter.variable} ${playfair.variable} font-sans antialiased text-neutral-900 pb-20 sm:pb-0 bg-page`}
       >
         <Navigation />
         {children}
