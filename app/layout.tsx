@@ -3,6 +3,7 @@ import "./globals.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import MobileStickyCTA from "./components/MobileStickyCTA";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Get Replies When Outreach Stops Working | Prospect Gifting Solutions",
@@ -34,6 +35,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <MobileStickyCTA />
+        <Analytics />
       </body>
     </html>
   );
