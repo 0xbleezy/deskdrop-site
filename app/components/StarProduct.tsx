@@ -39,15 +39,9 @@ export default function StarProduct() {
 
         {/* Right — Constrained editorial text column */}
         <div className="px-4 sm:px-6 md:pl-4 md:pr-[7vw] text-center md:text-left mx-auto md:mx-0">
-          <p className="text-xs text-neutral-400 uppercase tracking-[0.3em] font-light mb-6">The Product</p>
-          
-          <h2 className="font-display font-light text-neutral-950 mb-4 leading-[1.15] tracking-tight">
-            A brand moment that lives on their desk
+          <h2 className="font-display font-light text-neutral-950 mb-8 leading-[1.15] tracking-tight">
+            This gets attention.
           </h2>
-          
-          <p className="text-xl text-neutral-500 font-light mb-8 leading-relaxed">
-            Sales is an attention game. This gets attention.
-          </p>
 
           {/* Mobile-only product image — sits between conviction line and body copy */}
           <div className="md:hidden flex justify-center my-10">

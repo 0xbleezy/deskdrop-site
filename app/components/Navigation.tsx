@@ -96,6 +96,7 @@ export default function Navigation() {
               height={498}
               className="h-6 sm:h-7 w-auto"
               priority
+              unoptimized
             />
           </Link>
 
@@ -103,7 +104,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/how-it-works"
-              className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
+              className="text-neutral-200 hover:text-white transition-colors font-sans font-light tracking-widest uppercase"
               style={navLinkStyle}
             >
               How It Works
@@ -113,7 +114,7 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('role')}
-                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
+                className="text-neutral-200 hover:text-white transition-colors font-sans font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
                 style={navLinkStyle}
                 aria-expanded={openDropdown === 'role'}
                 aria-haspopup="true"
@@ -156,7 +157,7 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('product')}
-                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
+                className="text-neutral-200 hover:text-white transition-colors font-sans font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
                 style={navLinkStyle}
                 aria-expanded={openDropdown === 'product'}
                 aria-haspopup="true"
@@ -189,7 +190,7 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('solutions')}
-                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
+                className="text-neutral-200 hover:text-white transition-colors font-sans font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
                 style={navLinkStyle}
                 aria-expanded={openDropdown === 'solutions'}
                 aria-haspopup="true"
@@ -232,7 +233,7 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => handleDropdownToggle('resources')}
-                className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
+                className="text-neutral-200 hover:text-white transition-colors font-sans font-light tracking-widest uppercase flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
                 style={navLinkStyle}
                 aria-expanded={openDropdown === 'resources'}
                 aria-haspopup="true"
@@ -273,7 +274,7 @@ export default function Navigation() {
 
             <Link
               href="/pricing"
-              className="text-neutral-200 hover:text-white transition-colors font-display font-light tracking-widest uppercase"
+              className="text-neutral-200 hover:text-white transition-colors font-sans font-light tracking-widest uppercase"
               style={navLinkStyle}
             >
               Pricing
@@ -284,7 +285,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={handleContactClick}
-              className="glass-button-outline px-2.5 py-1 text-neutral-200 font-display font-light tracking-widest uppercase transition-all focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
+              className="glass-button-outline px-2.5 py-1 text-neutral-200 font-sans font-light tracking-widest uppercase transition-all focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
               style={ctaStyle}
               aria-label="Contact us to chat"
             >
@@ -292,7 +293,7 @@ export default function Navigation() {
             </button>
             <button
               onClick={handleContactClick}
-              className="glass-button-light px-2.5 py-1 text-neutral-900 font-display font-light tracking-widest uppercase transition-all focus:outline-none focus:ring-2 focus:ring-neutral-400 rounded"
+              className="glass-button-light px-2.5 py-1 text-neutral-900 font-sans font-light tracking-widest uppercase transition-all focus:outline-none focus:ring-2 focus:ring-neutral-400 rounded"
               style={ctaStyle}
               aria-label="Request a sample"
             >
@@ -327,41 +328,41 @@ export default function Navigation() {
               <Link
                 href="/how-it-works"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block"
+                className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-sans font-light tracking-widest uppercase text-left block"
               >
                 How It Works
               </Link>
-              <Link href="/use-case/marketing" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
+              <Link href="/use-case/marketing" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-sans font-light tracking-widest uppercase text-left block">
                 Marketing
               </Link>
-              <Link href="/use-case/sales" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
+              <Link href="/use-case/sales" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-sans font-light tracking-widest uppercase text-left block">
                 Sales
               </Link>
-              <Link href="/use-case/revenue" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
+              <Link href="/use-case/revenue" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-sans font-light tracking-widest uppercase text-left block">
                 Revenue
               </Link>
               <Link
                 href="/pricing"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block"
+                className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-sans font-light tracking-widest uppercase text-left block"
               >
                 Pricing
               </Link>
               <div className="border-t border-neutral-800/50 mt-1 pt-1">
                 <span className="px-4 py-2 text-[10px] text-neutral-500 font-display tracking-widest uppercase block">Resources</span>
-                <Link href="/resources/blog" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
+                <Link href="/resources/blog" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-sans font-light tracking-widest uppercase text-left block">
                   Blog
                 </Link>
-                <Link href="/resources/customers" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
+                <Link href="/resources/customers" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-sans font-light tracking-widest uppercase text-left block">
                   Customers
                 </Link>
-                <Link href="/resources/help" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-display font-light tracking-widest uppercase text-left block">
+                <Link href="/resources/help" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-4 text-xs text-neutral-200 hover:text-white hover:bg-neutral-800 transition-colors font-sans font-light tracking-widest uppercase text-left block">
                   Help Center
                 </Link>
               </div>
               <button
                 onClick={handleContactClick}
-                className="px-4 py-4 text-xs text-white font-display font-light tracking-widest uppercase text-left w-full"
+                className="px-4 py-4 text-xs text-white font-sans font-light tracking-widest uppercase text-left w-full"
               >
                 Let&apos;s Chat
               </button>

@@ -1,5 +1,84 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'FreightDisp Book';
+  src: url('/fonts/FreightDispBook.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/sohne-font-family/TestSohne-Leicht-BF663d89cd4952e.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sohne';
+  src: url('/sohne-font-family/TestSohne-LeichtKursiv-BF663d89cd9a361.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sohne';
+  src: url('/sohne-font-family/TestSohne-Buch-BF663d89cd32e6a.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sohne';
+  src: url('/sohne-font-family/TestSohne-BuchKursiv-BF663d89cd3e887.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sohne';
+  src: url('/sohne-font-family/TestSohne-Kraftig-BF663d89cd37e26.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sohne';
+  src: url('/sohne-font-family/TestSohne-KraftigKursiv-BF663d89cd2bd4b.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sohne';
+  src: url('/sohne-font-family/TestSohne-Halbfett-BF663d89cd2d67b.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sohne';
+  src: url('/sohne-font-family/TestSohne-HalbfettKursiv-BF663d89cd41624.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sohne';
+  src: url('/sohne-font-family/TestSohne-Fett-BF663d89cca89ff.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sohne';
+  src: url('/sohne-font-family/TestSohne-FettKursiv-BF663d89cc64878.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --background: #f9f8fa;
   --foreground: #1A1A1A;
@@ -14,8 +93,9 @@
   --color-foreground: var(--foreground);
   --color-page: #f9f8fa;
   --color-warm: #f5f3f0;
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
+  --font-sans: 'Sohne', system-ui, sans-serif;
+  --font-serif: 'FreightDisp Book', Georgia, serif;
+  --font-display: 'FreightDisp Book', Georgia, serif;
 }
 
 body {
@@ -25,7 +105,7 @@ body {
     var(--background);
   background-attachment: fixed;
   color: var(--foreground);
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-family: 'Sohne', system-ui, -apple-system, sans-serif;
   line-height: 1.9;
   font-size: clamp(1rem, 2vw, 3.2rem);
 }
@@ -35,17 +115,17 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Typography — Playfair Display for H1/H2, Inter for everything else */
+/* Typography — Freight Display Book for H1/H2, Söhne for everything else */
 h1, h2 {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: 'FreightDisp Book', Georgia, serif;
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.03em;
   color: #000000;
 }
 
-h3, h4, h5, h6 {
-  font-family: var(--font-inter), 'Inter', system-ui, sans-serif;
+h4, h5, h6 {
+  font-family: 'Sohne', system-ui, sans-serif;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.01em;

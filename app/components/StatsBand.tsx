@@ -11,9 +11,9 @@ interface AnimatedStat {
 }
 
 const stats: AnimatedStat[] = [
-  { value: '30%', label: 'Reply Rate', animateTo: 30, suffix: '%' },
-  { value: '25×', label: 'Exposure', animateTo: 25, suffix: '×' },
-  { value: '2–3×', label: 'Meeting Rate' },
+  { value: '20–30%', label: 'Reply Rate' },
+  { value: '25×', label: 'Touchpoints Per Jar', animateTo: 25, suffix: '×' },
+  { value: '3×', label: 'Daily Brand Impressions', animateTo: 3, suffix: '×' },
   { value: '14–21', label: 'Days of Desk Presence' },
 ];
 

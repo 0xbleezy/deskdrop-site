@@ -1,23 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import MobileStickyCTA from "./components/MobileStickyCTA";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-playfair",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Get Replies When Outreach Stops Working | Prospect Gifting Solutions",
@@ -44,9 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased text-neutral-900 pb-20 sm:pb-0 bg-page`}
-      >
+      <body className="font-sans antialiased text-neutral-900 pb-20 sm:pb-0 bg-page">
         <Navigation />
         {children}
         <Footer />

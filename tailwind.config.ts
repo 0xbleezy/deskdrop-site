@@ -39,9 +39,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-playfair)', 'Georgia', 'serif'],
-        display: ['var(--font-playfair)', 'Georgia', 'serif'],
+        sans: ['Sohne', 'system-ui', 'sans-serif'],
+        serif: ['FreightDisp Book', 'Georgia', 'serif'],
+        display: ['FreightDisp Book', 'Georgia', 'serif'],
       },
       fontSize: {
         'xs': ['clamp(0.75rem, 1.5vw, 2.4rem)', { lineHeight: '1.5' }],
