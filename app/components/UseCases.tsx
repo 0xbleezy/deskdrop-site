@@ -116,9 +116,9 @@ export default function UseCases() {
     {
       id: 'enterprise',
       bestFor: 'Enterprise',
-      title: 'Strategic account penetration',
-      description: 'Get noticed across an entire buying committee simultaneously.',
-      metrics: ['Penetrate multi-stakeholder accounts', 'Higher awareness across committees', 'Better positioning for enterprise deals'],
+      title: 'Break into hard accounts',
+      description: 'Stand out at companies where emails go unanswered and calls get screened.',
+      metrics: ['Cut through at notoriously hard-to-reach companies', 'Create a reason to finally respond', 'Better positioning for enterprise deals'],
     },
     {
       id: 'events',

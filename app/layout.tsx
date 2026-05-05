@@ -5,19 +5,26 @@ import Footer from "./components/Footer";
 import MobileStickyCTA from "./components/MobileStickyCTA";
 
 export const metadata: Metadata = {
-  title: "Get Replies When Outreach Stops Working | Prospect Gifting Solutions",
-  description: "The outbound play your prospects notice. Physical touchpoint that breaks through inbox fatigue and earns replies. 30%+ reply rate. Perfect for ABM strategies and sales teams.",
+  title: "DeskDrop — The Physical Touchpoint for Outbound Sales",
+  description: "The outbound play your prospects notice. A custom-branded desk drop that breaks through inbox fatigue and earns replies. 20–30% reply rate.",
+  icons: {
+    icon: [
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
-    title: "Get Replies When Outreach Stops Working | DeskDrop",
-    description: "Physical touchpoint that breaks through inbox fatigue and earns replies. 30%+ reply rate.",
+    title: "DeskDrop — The Physical Touchpoint for Outbound Sales",
+    description: "A custom-branded desk drop that breaks through inbox fatigue and earns replies. 20–30% reply rate.",
     url: "https://thedeskdrop.com",
     siteName: "DeskDrop",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Get Replies When Outreach Stops Working | DeskDrop",
-    description: "Physical touchpoint that breaks through inbox fatigue and earns replies. 30%+ reply rate.",
+    title: "DeskDrop — The Physical Touchpoint for Outbound Sales",
+    description: "A custom-branded desk drop that breaks through inbox fatigue and earns replies. 20–30% reply rate.",
   },
   alternates: { canonical: "https://thedeskdrop.com" },
 };
