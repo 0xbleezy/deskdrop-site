@@ -94,7 +94,7 @@ export default function Navigation() {
               alt="DeskDrop"
               width={2945}
               height={570}
-              className="h-6 sm:h-7 w-auto"
+              className="h-5 sm:h-6 w-auto"
               priority
               unoptimized
             />
