@@ -92,8 +92,8 @@ export default function Navigation() {
             <Image
               src="/images/deskdrop-wordmark-white.png"
               alt="DeskDrop"
-              width={2465}
-              height={498}
+              width={2945}
+              height={570}
               className="h-6 sm:h-7 w-auto"
               priority
               unoptimized

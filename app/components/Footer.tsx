@@ -12,8 +12,8 @@ export default function Footer() {
               <Image
                 src="/images/deskdrop-wordmark-white.png"
                 alt="DeskDrop"
-                width={2465}
-                height={498}
+                width={2945}
+                height={570}
                 className="h-7 w-auto"
                 unoptimized
               />
